@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Telugu Lyricists Spotify Playlists | PlaylistVerse</title>
+
+    <meta name="description" content="Celebrate the wordsmiths behind Telugu cinema's most memorable songs. Explore playlists curated around the industry's finest lyricists and their poetic, heartfelt writing.">
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="../../favicon.webp">
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="artist-page-container">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+
+            <a href="/" aria-label="Home">
+                <i class="bi bi-house-door-fill"></i>
+            </a>
+
+            <span>&rsaquo;</span>
+            <a href="../index.html">Telugu</a>
+            <span>&rsaquo;</span>
+            <span class="current">Lyricists</span>
+        </nav>
+
+
+        <section class="artist-header">
+
+            <div class="artist-info">
+
+                <h1>Telugu Lyricists Spotify Playlists</h1>
+
+                <p>
+                    Celebrate the wordsmiths behind Telugu cinema's most memorable songs. Explore playlists curated around the industry's finest lyricists and their poetic, heartfelt writing.
+                </p>
+
+            </div>
+
+        </section>
+
+        <input type="text" id="searchInput" placeholder="Search Lyricist..." class="hero-search">
+
+        <section class="artist-playlists">
+
+            <h2>Popular Lyricists</h2>
+
+            <div class="hero-grid">
+                <a href="sirivennela-seetharama-sastry-top-200-hits.html" class="hero-card">
+
+                    <img src="/images/telugu/lyricists/sirivennela-seetharama-sastry.webp">
+
+                    <h3>Sirivennela Seetharama Sastry</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="chandrabose-top-100-hits.html" class="hero-card">
+
+                    <img src="/images/telugu/lyricists/chandrabose.webp">
+
+                    <h3>Chandrabose</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="ramajogayya-sastry-top-100-hits.html" class="hero-card">
+
+                    <img src="/images/telugu/lyricists/ramajogayya-sastry.webp">
+
+                    <h3>Ramajogayya Sastry</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="veturi-top-100-hits.html" class="hero-card">
+
+                    <img src="/images/telugu/lyricists/veturi.webp">
+
+                    <h3>Veturi</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="about-artist">
+
+            <h2>About Lyricists</h2>
+
+            <p>
+                Great Telugu film songs are as much about the words as the music. This collection highlights playlists built around celebrated lyricists whose writing has shaped generations of listeners.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        const search = document.getElementById("searchInput");
+
+        search.addEventListener("keyup", function ()
+        {
+
+            let value = this.value.toLowerCase();
+
+            document.querySelectorAll(".hero-card").forEach(card =>
+            {
+
+                card.style.display = card.innerText.toLowerCase().includes(value)
+                    ? "block" : "none";
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+<div id="footer"></div>
+
+<script src="/js/include.js"></script>
+</html>
