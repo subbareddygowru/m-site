@@ -996,6 +996,21 @@ main,
 
 }
 
+@media (max-width: 768px) {
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        margin-top: 20px;
+    }
+
+    .category-card {
+        padding: 22px 12px;
+        font-size: 15px;
+    }
+
+}
+
 
 /* FOLLOW SECTION 
 
