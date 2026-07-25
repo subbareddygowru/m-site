@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Telugu Decade Playlists | PlaylistVerse</title>
+
+    <meta name="description" content="Travel through the eras of Telugu film music, from golden-age classics to the latest chartbusters, organized decade by decade.">
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="../../favicon.webp">
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="artist-page-container">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+
+            <a href="/" aria-label="Home">
+                <i class="bi bi-house-door-fill"></i>
+            </a>
+
+            <span>&rsaquo;</span>
+            <a href="../index.html">Telugu</a>
+            <span>&rsaquo;</span>
+            <span class="current">Decades</span>
+        </nav>
+
+
+        <section class="artist-header">
+
+            <div class="artist-info">
+
+                <h1>Telugu Decade Playlists</h1>
+
+                <p>
+                    Travel through the eras of Telugu film music, from golden-age classics to the latest chartbusters, organized decade by decade.
+                </p>
+
+            </div>
+
+        </section>
+
+        <input type="text" id="searchInput" placeholder="Search Decade..." class="hero-search">
+
+        <section class="artist-playlists">
+
+            <h2>Browse by Decade</h2>
+
+            <div class="hero-grid">
+                <a href="telugu-80s-top-hits.html" class="hero-card">
+
+                    <img src="/images/telugu/decades/telugu-80s-top-hits.webp">
+
+                    <h3>Telugu 1980s Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="telugu-90s-top-200-hits.html" class="hero-card">
+
+                    <img src="/images/telugu/decades/telugu-90s-top-200-hits.webp">
+
+                    <h3>Telugu 1990s Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="telugu-2000s-top-500-hits.html" class="hero-card">
+
+                    <img src="/images/telugu/decades/telugu-2000s-top-500-hits.webp">
+
+                    <h3>Telugu 2000s Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="telugu-2010s-top-100-hits.html" class="hero-card">
+
+                    <img src="/images/telugu/decades/telugu-2010s-top-100-hits.webp">
+
+                    <h3>Telugu 2010s Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="telugu-2010s-top-hits.html" class="hero-card">
+
+                    <img src="/images/telugu/decades/telugu-2010s-top-hits.webp">
+
+                    <h3>Telugu 2020s Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="about-artist">
+
+            <h2>About Decades</h2>
+
+            <p>
+                Telugu cinema's sound has evolved dramatically across the decades. This collection lets you explore that journey era by era, from nostalgic classics to the freshest hits of today.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        const search = document.getElementById("searchInput");
+
+        search.addEventListener("keyup", function ()
+        {
+
+            let value = this.value.toLowerCase();
+
+            document.querySelectorAll(".hero-card").forEach(card =>
+            {
+
+                card.style.display = card.innerText.toLowerCase().includes(value)
+                    ? "block" : "none";
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+<div id="footer"></div>
+
+<script src="/js/include.js"></script>
+</html>
