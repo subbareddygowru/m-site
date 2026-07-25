@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Telugu Mood Playlists | PlaylistVerse</title>
+
+    <meta name="description" content="Find the perfect Telugu playlist for every mood — romantic, emotional, high-energy or nostalgic. Curated collections to match exactly how you're feeling.">
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="../../favicon.webp">
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="artist-page-container">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+
+            <a href="/" aria-label="Home">
+                <i class="bi bi-house-door-fill"></i>
+            </a>
+
+            <span>&rsaquo;</span>
+            <a href="../index.html">Telugu</a>
+            <span>&rsaquo;</span>
+            <span class="current">Moods</span>
+        </nav>
+
+
+        <section class="artist-header">
+
+            <div class="artist-info">
+
+                <h1>Telugu Mood Playlists</h1>
+
+                <p>
+                    Find the perfect Telugu playlist for every mood — romantic, emotional, high-energy or nostalgic. Curated collections to match exactly how you're feeling.
+                </p>
+
+            </div>
+
+        </section>
+
+        <input type="text" id="searchInput" placeholder="Search Mood..." class="hero-search">
+
+        <section class="artist-playlists">
+
+            <h2>Popular Moods</h2>
+
+            <div class="hero-grid">
+                <a href="telugu-love-songs-top-100-hits.html" class="hero-card">
+
+                    <img src="/images/telugu/moods/telugu-love-songs-top-100-hits.webp">
+
+                    <h3>Telugu Love Songs</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="telugu-sad-songs-top-100-hits.html" class="hero-card">
+
+                    <img src="/images/telugu/moods/telugu-sad-songs-top-100-hits.webp">
+
+                    <h3>Telugu Sad Songs</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="telugu-mas-songs-top-100-hits.html" class="hero-card">
+
+                    <img src="/images/telugu/moods/telugu-mas-songs-top-100-hits.webp">
+
+                    <h3>Telugu Mass Songs</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="telugu-melody-songs-top-1000-hits.html" class="hero-card">
+
+                    <img src="/images/telugu/moods/telugu-melody-songs-top-1000-hits.webp">
+
+                    <h3>Telugu Melody Songs</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="telugu-underrated-songs.html" class="hero-card">
+
+                    <img src="/images/telugu/moods/telugu-underrated-songs.webp">
+
+                    <h3>Telugu Underrated Songs</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="about-artist">
+
+            <h2>About Moods</h2>
+
+            <p>
+                Music hits differently depending on the moment. This collection organizes Telugu songs by mood, so whether you want love songs, sad songs, mass beats or hidden gems, there's a playlist ready for you.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        const search = document.getElementById("searchInput");
+
+        search.addEventListener("keyup", function ()
+        {
+
+            let value = this.value.toLowerCase();
+
+            document.querySelectorAll(".hero-card").forEach(card =>
+            {
+
+                card.style.display = card.innerText.toLowerCase().includes(value)
+                    ? "block" : "none";
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+<div id="footer"></div>
+
+<script src="/js/include.js"></script>
+</html>
