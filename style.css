@@ -62,6 +62,12 @@ body {
     box-shadow: 0 3px 10px rgba(0,0,0,.4);
 }
 
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: 800;
@@ -96,6 +102,17 @@ body {
     color: #ffffff;
 }
 
+.dropdown-toggle i {
+    font-size: 0.75rem;
+    margin-left: 4px;
+    transition: transform 0.25s ease;
+}
+
+.dropdown.open > .dropdown-toggle i,
+.dropdown:hover > .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -106,6 +123,14 @@ body {
     overflow: hidden;
     z-index: 1;
     top: 100%;
+}
+
+/* Language-level menu holds nested category submenus, so it must not
+   clip their flyouts the way a plain leaf dropdown-content does */
+.dropdown-content.lang-menu {
+    overflow: visible;
+    padding: 6px 0;
+    min-width: 210px;
 }
 
 .dropdown-content a {
@@ -121,9 +146,169 @@ body {
     color: #ffffff;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.coming-soon {
     display: block;
+    padding: 12px 16px;
+    color: #6a6a6a;
+    font-size: 0.9rem;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+/* A submenu (e.g. Heroes, Singers under a language) is itself a
+   .dropdown, so its content flies out to the side instead of below */
+.submenu {
+    display: block;
+    width: 100%;
+}
+
+.submenu > .dropdown-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+.submenu > .dropdown-content {
+    top: -6px;
+    left: 100%;
+    min-width: 180px;
+}
+
+/* --- Show the dropdown menu on hover -- only the direct child, so hovering
+   a language doesn't also reveal every nested submenu at once --- */
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+/* --- SITE SEARCH --- */
+.search-toggle {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 8px;
+    line-height: 0;
+    transition: color 0.3s ease;
+}
+
+.search-toggle:hover,
+.search-toggle.active {
+    color: #1db954;
+}
+
+.search-panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #111;
+    border-bottom: 1px solid #262626;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.55);
+    padding: 16px 20px;
+    z-index: 1200;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+}
+
+.search-panel.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.search-panel-inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 640px;
+    margin: 0 auto;
+    background: #1c1c1c;
+    border: 1px solid #2e2e2e;
+    border-radius: 10px;
+    padding: 10px 14px;
+}
+
+.search-panel-inner:focus-within {
+    border-color: #1db954;
+}
+
+.search-panel-icon {
+    color: #6a6a6a;
+    font-size: 1rem;
+}
+
+#site-search-input {
+    flex: 1;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+#site-search-input::placeholder {
+    color: #6a6a6a;
+}
+
+.search-close {
+    background: none;
+    border: none;
+    color: #6a6a6a;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 4px;
+    line-height: 0;
+}
+
+.search-close:hover {
+    color: #ffffff;
+}
+
+.search-results {
+    max-width: 640px;
+    margin: 10px auto 0;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.search-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.search-result:hover {
+    background-color: #1c1c1c;
+}
+
+.search-result-name {
+    font-weight: 600;
+}
+
+.search-result-sub {
+    font-size: 0.8rem;
+    color: #6a6a6a;
+    white-space: nowrap;
+}
+
+.search-empty {
+    padding: 10px 14px;
+    color: #6a6a6a;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 /* --- SEARCH BAR --- */
@@ -469,6 +654,20 @@ main,
     cursor:pointer;
 }
 
+.search-panel{
+    padding:14px 16px;
+}
+
+.search-panel-inner{
+    padding:9px 12px;
+}
+
+.search-result{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:2px;
+}
+
 .nav-links{
 
     position:fixed;
@@ -477,6 +676,7 @@ main,
     right:-100%;
 
     width:280px;
+    max-width:85vw;
     height:100vh;
 
     background:#111;
@@ -485,6 +685,8 @@ main,
     flex-direction:column;
 
     padding:25px;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
 
     transition:.35s;
 
@@ -493,6 +695,19 @@ main,
 
 .nav-links.active{
     right:0;
+}
+
+/* Dimmed backdrop behind the slide-in mobile menu */
+.nav-backdrop{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    z-index:999;
+}
+
+.nav-backdrop.active{
+    display:block;
 }
 
 .close-menu{
@@ -522,6 +737,12 @@ main,
 
     width:100%;
 
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
     text-align:left;
 
     font-size:18px;
@@ -548,7 +769,30 @@ main,
     border-radius:8px;
 }
 
-.dropdown:hover .dropdown-content{
+/* Nested submenu content (e.g. names under Heroes) sits indented
+   below its category row instead of flying out sideways */
+.submenu > .dropdown-content{
+
+    margin-left:16px;
+
+    margin-bottom:6px;
+}
+
+.submenu > .dropdown-toggle{
+
+    font-size:16px;
+
+    padding:12px 0;
+}
+
+.coming-soon{
+
+    padding:10px 18px;
+}
+
+/* On touch devices :hover is unreliable, so open/close is driven by
+   the .open class toggled via JS on tap of the dropdown button */
+.dropdown.open > .dropdown-content{
 
     display:block;
 }
@@ -690,14 +934,6 @@ main,
 
 }
 
-@media (max-width: 768px) {
-
-    .category-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-    }
-
-}
 
 /* Telugu Index Page */
 .category-grid {
