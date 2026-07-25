@@ -885,6 +885,12 @@ main,
 
     border: 1px solid #282828;
 
+    min-width: 0;
+
+    overflow-wrap: break-word;
+
+    word-break: break-word;
+
 }
 
 @media (max-width: 768px) {
@@ -963,6 +969,12 @@ main,
     border: 1px solid #282828;
 
     transition: .3s;
+
+    min-width: 0;
+
+    overflow-wrap: break-word;
+
+    word-break: break-word;
 
 }
 
@@ -2090,6 +2102,7 @@ main,
     text-decoration: none;
     transition: .3s;
     border: 1px solid #e5e5e5;
+    min-width: 0;
 }
 
 .related-card img {
