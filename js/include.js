@@ -114,9 +114,11 @@ document.addEventListener("DOMContentLoaded", function ()
             });
 
             // ---- Site search ----
-            // The index is built straight from the nav links themselves,
-            // so Telugu/Tamil/Hindi/English + category structure only
-            // needs to be maintained in one place (the markup above).
+            // The index is loaded from /search-index.json, which is a
+            // generated snapshot of every real page on the site (not just
+            // the ones linked in the header dropdowns). If that file can't
+            // be loaded for some reason, we fall back to scraping the nav
+            // links so search still works, just with less coverage.
             const searchToggle = document.getElementById("search-toggle");
             const searchPanel = document.getElementById("search-panel");
             const searchClose = document.getElementById("search-close");
@@ -127,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function ()
                 "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
             }[ch]));
 
-            const buildSearchIndex = () =>
+            const buildNavSearchIndex = () =>
             {
                 if (!nav) return [];
 
@@ -149,6 +151,31 @@ document.addEventListener("DOMContentLoaded", function ()
             };
 
             let searchIndex = [];
+            let searchIndexPromise = null;
+
+            const loadSearchIndex = () =>
+            {
+                if (searchIndexPromise) return searchIndexPromise;
+
+                searchIndexPromise = fetch("/search-index.json")
+                    .then(res =>
+                    {
+                        if (!res.ok) throw new Error("search-index.json not found");
+                        return res.json();
+                    })
+                    .then(siteWide =>
+                    {
+                        // Merge in nav links too (covers "View All →" links,
+                        // external links, and anything not yet regenerated
+                        // into search-index.json), de-duplicated by href.
+                        const seen = new Set(siteWide.map(item => item.href));
+                        const navExtras = buildNavSearchIndex().filter(item => !seen.has(item.href));
+                        return siteWide.concat(navExtras);
+                    })
+                    .catch(() => buildNavSearchIndex());
+
+                return searchIndexPromise;
+            };
 
             const renderResults = (query) =>
             {
@@ -182,10 +209,18 @@ document.addEventListener("DOMContentLoaded", function ()
             {
                 if (!searchPanel) return;
                 closeMenu();
-                searchIndex = buildSearchIndex();
                 searchPanel.classList.add("active");
                 if (searchToggle) searchToggle.setAttribute("aria-expanded", "true");
                 setTimeout(() => searchInput && searchInput.focus(), 50);
+
+                loadSearchIndex().then(index =>
+                {
+                    searchIndex = index;
+                    if (searchInput && searchInput.value.trim())
+                    {
+                        renderResults(searchInput.value);
+                    }
+                });
             };
 
             const closeSearch = () =>
