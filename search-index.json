@@ -1,0 +1,347 @@
+[
+  {
+    "name": "About PlaylistVerse",
+    "href": "/about.html",
+    "subtitle": ""
+  },
+  {
+    "name": "Contact PlaylistVerse",
+    "href": "/contact.html",
+    "subtitle": ""
+  },
+  {
+    "name": "Disclaimer",
+    "href": "/disclaimer.html",
+    "subtitle": ""
+  },
+  {
+    "name": "English",
+    "href": "/english/index.html",
+    "subtitle": ""
+  },
+  {
+    "name": "Hindi",
+    "href": "/hindi/index.html",
+    "subtitle": ""
+  },
+  {
+    "name": "Privacy Policy",
+    "href": "/privacy-policy.html",
+    "subtitle": ""
+  },
+  {
+    "name": "Tamil",
+    "href": "/tamil/index.html",
+    "subtitle": ""
+  },
+  {
+    "name": "Telugu",
+    "href": "/telugu/index.html",
+    "subtitle": ""
+  },
+  {
+    "name": "Terms of Use",
+    "href": "/terms-of-use.html",
+    "subtitle": ""
+  },
+  {
+    "name": "Your Universe of Music Playlists",
+    "href": "/index.html",
+    "subtitle": ""
+  },
+  {
+    "name": "Hindi Heroes",
+    "href": "/hindi/heroes/index.html",
+    "subtitle": "Hindi"
+  },
+  {
+    "name": "Hindi Singers",
+    "href": "/hindi/singers/index.html",
+    "subtitle": "Hindi"
+  },
+  {
+    "name": "Shah Rukh Khan",
+    "href": "/hindi/heroes/shah-rukh-khan-top-100-hits.html",
+    "subtitle": "Hindi · Heroes"
+  },
+  {
+    "name": "Shreya Ghoshal",
+    "href": "/hindi/singers/shreya-ghoshal-top-100-hits.html",
+    "subtitle": "Hindi · Singers"
+  },
+  {
+    "name": "Tamil Music Directors",
+    "href": "/tamil/music-directors/index.html",
+    "subtitle": "Tamil"
+  },
+  {
+    "name": "Harris Jayaraj",
+    "href": "/tamil/music-directors/harris-jayaraj-top-200-hits.html",
+    "subtitle": "Tamil · Music Directors"
+  },
+  {
+    "name": "Telugu Decades",
+    "href": "/telugu/decades/index.html",
+    "subtitle": "Telugu"
+  },
+  {
+    "name": "Telugu Heroes",
+    "href": "/telugu/heroes/index.html",
+    "subtitle": "Telugu"
+  },
+  {
+    "name": "Telugu Lyricists",
+    "href": "/telugu/lyricists/index.html",
+    "subtitle": "Telugu"
+  },
+  {
+    "name": "Telugu Moods",
+    "href": "/telugu/moods/index.html",
+    "subtitle": "Telugu"
+  },
+  {
+    "name": "Telugu Music Directors",
+    "href": "/telugu/music-directors/index.html",
+    "subtitle": "Telugu"
+  },
+  {
+    "name": "Telugu Singers",
+    "href": "/telugu/singers/index.html",
+    "subtitle": "Telugu"
+  },
+  {
+    "name": "Telugu 1980s Hits",
+    "href": "/telugu/decades/telugu-80s-top-hits.html",
+    "subtitle": "Telugu · Decades"
+  },
+  {
+    "name": "Telugu 1990s Hits",
+    "href": "/telugu/decades/telugu-90s-top-200-hits.html",
+    "subtitle": "Telugu · Decades"
+  },
+  {
+    "name": "Telugu 2000s Hits",
+    "href": "/telugu/decades/telugu-2000s-top-500-hits.html",
+    "subtitle": "Telugu · Decades"
+  },
+  {
+    "name": "Telugu 2010s Hits",
+    "href": "/telugu/decades/telugu-2010s-top-100-hits.html",
+    "subtitle": "Telugu · Decades"
+  },
+  {
+    "name": "Telugu 2020s Hits",
+    "href": "/telugu/decades/telugu-2010s-top-hits.html",
+    "subtitle": "Telugu · Decades"
+  },
+  {
+    "name": "Allu Arjun",
+    "href": "/telugu/heroes/allu-arjun-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Balakrishna",
+    "href": "/telugu/heroes/balakrishna-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Chiranjeevi",
+    "href": "/telugu/heroes/chiranjeevi-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Jr. NTR",
+    "href": "/telugu/heroes/jr-ntr-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Mahesh Babu",
+    "href": "/telugu/heroes/mahesh-babu-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Nagarjuna",
+    "href": "/telugu/heroes/nagarjuna-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Nani",
+    "href": "/telugu/heroes/nani-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Pawan Kalyan",
+    "href": "/telugu/heroes/pawan-kalyan-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Prabhas",
+    "href": "/telugu/heroes/prabhas-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Ram Charan",
+    "href": "/telugu/heroes/ram-charan-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Ram Pothineni",
+    "href": "/telugu/heroes/ram-pothineni-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Venkatesh",
+    "href": "/telugu/heroes/venkatesh-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Chandrabose",
+    "href": "/telugu/lyricists/chandrabose-top-100-hits.html",
+    "subtitle": "Telugu · Lyricists"
+  },
+  {
+    "name": "Ramajogayya Sastry",
+    "href": "/telugu/lyricists/ramajogayya-sastry-top-100-hits.html",
+    "subtitle": "Telugu · Lyricists"
+  },
+  {
+    "name": "Sirivennela Seetharama Sastry",
+    "href": "/telugu/lyricists/sirivennela-seetharama-sastry-top-200-hits.html",
+    "subtitle": "Telugu · Lyricists"
+  },
+  {
+    "name": "Veturi",
+    "href": "/telugu/lyricists/veturi-top-100-hits.html",
+    "subtitle": "Telugu · Lyricists"
+  },
+  {
+    "name": "Telugu Love Songs",
+    "href": "/telugu/moods/telugu-love-songs-top-100-hits.html",
+    "subtitle": "Telugu · Moods"
+  },
+  {
+    "name": "Telugu Mass Songs",
+    "href": "/telugu/moods/telugu-mas-songs-top-100-hits.html",
+    "subtitle": "Telugu · Moods"
+  },
+  {
+    "name": "Telugu Melody Songs",
+    "href": "/telugu/moods/telugu-melody-songs-top-1000-hits.html",
+    "subtitle": "Telugu · Moods"
+  },
+  {
+    "name": "Telugu Sad Songs",
+    "href": "/telugu/moods/telugu-sad-songs-top-100-hits.html",
+    "subtitle": "Telugu · Moods"
+  },
+  {
+    "name": "Telugu Underrated Songs",
+    "href": "/telugu/moods/telugu-underrated-songs.html",
+    "subtitle": "Telugu · Moods"
+  },
+  {
+    "name": "AR Rahman",
+    "href": "/telugu/music-directors/ar-rahman-top-200-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "Anirudh Ravichander",
+    "href": "/telugu/music-directors/anirudh-top-200-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "Anup Rubens",
+    "href": "/telugu/music-directors/anup-rubens-top-100-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "Chakri",
+    "href": "/telugu/music-directors/chakri-top-100-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "Devi Sri Prasad",
+    "href": "/telugu/music-directors/devi-sri-prasad-top-200-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "Harris Jayaraj",
+    "href": "/telugu/music-directors/harris-jayaraj-top-100-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "Ilaiyaraaja",
+    "href": "/telugu/music-directors/ilaiyaraaja-top-200-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "M. M. Keeravani",
+    "href": "/telugu/music-directors/m-m-keeravani-200-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "Mani Sharma",
+    "href": "/telugu/music-directors/mani-sharma-top-200-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "Raj-Koti",
+    "href": "/telugu/music-directors/raj-koti-top-100-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "Ramana Gogula",
+    "href": "/telugu/music-directors/ramana-gogula-top-100-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "S. A. Rajkumar",
+    "href": "/telugu/music-directors/s-a-rajkumar-top-100-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "Sandeep Chowta",
+    "href": "/telugu/music-directors/sandeep-chowta-top-100-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "Thaman S",
+    "href": "/telugu/music-directors/thaman-top-200-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "Vijai Bulganin",
+    "href": "/telugu/music-directors/vijai-bulganin-top-100-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "Yuvan Shankar Raja",
+    "href": "/telugu/music-directors/yuvan-shankar-raja-top-100-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "Karthik",
+    "href": "/telugu/singers/karthik-top-100-hits.html",
+    "subtitle": "Telugu · Singers"
+  },
+  {
+    "name": "SP Balasubrahmanyam",
+    "href": "/telugu/singers/spb-top-500-hits.html",
+    "subtitle": "Telugu · Singers"
+  },
+  {
+    "name": "SP Charan",
+    "href": "/telugu/singers/sp-charan-top-100-hits.html",
+    "subtitle": "Telugu · Singers"
+  },
+  {
+    "name": "Shreya Ghoshal",
+    "href": "/telugu/singers/shreya-ghoshal-top-100-hits.html",
+    "subtitle": "Telugu · Singers"
+  },
+  {
+    "name": "Sid Sriram",
+    "href": "/telugu/singers/sid-sriram-top-100-hits.html",
+    "subtitle": "Telugu · Singers"
+  }
+]
