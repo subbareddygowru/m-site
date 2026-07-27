@@ -1,3 +1,54 @@
+// ---- PWA setup ----
+// Runs immediately (not gated on DOMContentLoaded) so the <link rel="manifest">
+// and theme-color meta are present in <head> as early as possible on every
+// page, without needing to hand-edit all 69+ HTML files individually.
+(function setupPWA()
+{
+    if (!document.querySelector('link[rel="manifest"]'))
+    {
+        const link = document.createElement("link");
+        link.rel = "manifest";
+        link.href = "/manifest.json";
+        document.head.appendChild(link);
+    }
+
+    if (!document.querySelector('meta[name="theme-color"]'))
+    {
+        const meta = document.createElement("meta");
+        meta.name = "theme-color";
+        meta.content = "#4f46e5";
+        document.head.appendChild(meta);
+    }
+
+    if (!document.querySelector('link[rel="apple-touch-icon"]'))
+    {
+        const appleIcon = document.createElement("link");
+        appleIcon.rel = "apple-touch-icon";
+        appleIcon.href = "/icons/icon-192.png";
+        document.head.appendChild(appleIcon);
+    }
+
+    if (!document.querySelector('meta[name="apple-mobile-web-app-capable"]'))
+    {
+        const appleCapable = document.createElement("meta");
+        appleCapable.name = "apple-mobile-web-app-capable";
+        appleCapable.content = "yes";
+        document.head.appendChild(appleCapable);
+    }
+
+    if ("serviceWorker" in navigator)
+    {
+        window.addEventListener("load", () =>
+        {
+            navigator.serviceWorker.register("/service-worker.js").catch(() =>
+            {
+                // Fails silently on file:// or unsupported setups; the site
+                // still works fully as a normal website either way.
+            });
+        });
+    }
+})();
+
 document.addEventListener("DOMContentLoaded", function ()
 {
 
