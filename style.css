@@ -1458,6 +1458,28 @@ main,
 
     font-size: 14px;
 
+    line-height: 1.6;
+
+}
+
+.footer-heart {
+
+    display: inline-block;
+
+    animation: footer-heart-beat 1.4s ease-in-out infinite;
+
+}
+
+@keyframes footer-heart-beat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
 }
 
 
