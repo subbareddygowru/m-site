@@ -25,13 +25,13 @@
     "subtitle": ""
   },
   {
-    "name": "Privacy Policy",
-    "href": "/privacy-policy.html",
+    "name": "Music Directors",
+    "href": "/tamil/index.html",
     "subtitle": ""
   },
   {
-    "name": "Tamil",
-    "href": "/tamil/index.html",
+    "name": "Privacy Policy",
+    "href": "/privacy-policy.html",
     "subtitle": ""
   },
   {
@@ -48,6 +48,11 @@
     "name": "Your Universe of Music Playlists",
     "href": "/index.html",
     "subtitle": ""
+  },
+  {
+    "name": "Linkin Park",
+    "href": "/english/artists/linkin-park-top-100-hits.html",
+    "subtitle": "English"
   },
   {
     "name": "Hindi Heroes",
@@ -77,6 +82,11 @@
   {
     "name": "Harris Jayaraj",
     "href": "/tamil/music-directors/harris-jayaraj-top-200-hits.html",
+    "subtitle": "Tamil · Music Directors"
+  },
+  {
+    "name": "Yuvan Shankar Raja",
+    "href": "/tamil/music-directors/yuvan-shankar-raja-top-100-hits.html",
     "subtitle": "Tamil · Music Directors"
   },
   {
@@ -131,8 +141,13 @@
   },
   {
     "name": "Telugu 2020s Hits",
-    "href": "/telugu/decades/telugu-2010s-top-hits.html",
+    "href": "/telugu/decades/telugu-2020s-top-hits.html",
     "subtitle": "Telugu · Decades"
+  },
+  {
+    "name": "Allari Naresh",
+    "href": "/telugu/heroes/allari-naresh-top-50-hits.html",
+    "subtitle": "Telugu · Heroes"
   },
   {
     "name": "Allu Arjun",
@@ -155,8 +170,28 @@
     "subtitle": "Telugu · Heroes"
   },
   {
+    "name": "Kiran Abbavaram",
+    "href": "/telugu/heroes/kiran-abbavaram-top-50-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
     "name": "Mahesh Babu",
     "href": "/telugu/heroes/mahesh-babu-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Manchu Manoj",
+    "href": "/telugu/heroes/manchu-manoj-all-time-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Mohan Babu",
+    "href": "/telugu/heroes/mohan-babu-top-50-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Naga Chaitanya",
+    "href": "/telugu/heroes/naga-chaitanya-top-50-hits.html",
     "subtitle": "Telugu · Heroes"
   },
   {
@@ -170,6 +205,11 @@
     "subtitle": "Telugu · Heroes"
   },
   {
+    "name": "Nithin",
+    "href": "/telugu/heroes/nithin-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
     "name": "Pawan Kalyan",
     "href": "/telugu/heroes/pawan-kalyan-top-100-hits.html",
     "subtitle": "Telugu · Heroes"
@@ -177,6 +217,16 @@
   {
     "name": "Prabhas",
     "href": "/telugu/heroes/prabhas-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Rajasekhar",
+    "href": "/telugu/heroes/rajasekhar-all-time-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Rajinikanth",
+    "href": "/telugu/heroes/rajinikanth-all-time-hits-telugu.html",
     "subtitle": "Telugu · Heroes"
   },
   {
@@ -190,8 +240,43 @@
     "subtitle": "Telugu · Heroes"
   },
   {
+    "name": "Ravi Teja",
+    "href": "/telugu/heroes/ravi-teja-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Siddharth",
+    "href": "/telugu/heroes/siddharth-all-time-hits-telugu.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Sree Vishnu",
+    "href": "/telugu/heroes/sree-vishnu-top-50-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Sundeep Kishan",
+    "href": "/telugu/heroes/sundeep-kishan-all-time-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Suriya",
+    "href": "/telugu/heroes/suriya-top-100-hits-telugu.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Uday Kiran",
+    "href": "/telugu/heroes/uday-kiran-top-50-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
     "name": "Venkatesh",
     "href": "/telugu/heroes/venkatesh-top-100-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
+    "name": "Vijay Deverakonda",
+    "href": "/telugu/heroes/vijay-deverakonda-all-time-hits.html",
     "subtitle": "Telugu · Heroes"
   },
   {
@@ -221,7 +306,7 @@
   },
   {
     "name": "Telugu Mass Songs",
-    "href": "/telugu/moods/telugu-mas-songs-top-100-hits.html",
+    "href": "/telugu/moods/telugu-mass-songs-top-100-hits.html",
     "subtitle": "Telugu · Moods"
   },
   {
@@ -325,13 +410,13 @@
     "subtitle": "Telugu · Singers"
   },
   {
-    "name": "SP Balasubrahmanyam",
-    "href": "/telugu/singers/spb-top-500-hits.html",
+    "name": "SP Charan",
+    "href": "/telugu/singers/sp-charan-top-100-hits.html",
     "subtitle": "Telugu · Singers"
   },
   {
-    "name": "SP Charan",
-    "href": "/telugu/singers/sp-charan-top-100-hits.html",
+    "name": "SPB",
+    "href": "/telugu/singers/spb-top-500-hits.html",
     "subtitle": "Telugu · Singers"
   },
   {
@@ -343,15 +428,5 @@
     "name": "Sid Sriram",
     "href": "/telugu/singers/sid-sriram-top-100-hits.html",
     "subtitle": "Telugu · Singers"
-  },
-  {
-    "name": "Linkin Park",
-    "href": "/english/artists/linkin-park-top-100-hits.html",
-    "subtitle": "English · Artists · Tribute to Chester Bennington"
-  },
-  {
-    "name": "Yuvan Shankar Raja",
-    "href": "/tamil/music-directors/yuvan-shankar-raja-top-100-hits.html",
-    "subtitle": "Tamil · Music Directors"
   }
 ]

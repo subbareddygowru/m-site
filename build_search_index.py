@@ -1,6 +1,6 @@
 import os, re, json
 
-ROOT = "/home/claude/work/music-site-main"
+ROOT = os.path.dirname(os.path.abspath(__file__))
 
 EXCLUDE_NAMES = {"template.html", "404.html", "coming-soon.html"}
 EXCLUDE_DIRS = {"includes", ".git"}
