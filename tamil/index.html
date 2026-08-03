@@ -7,14 +7,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tamil Music Directors Spotify Playlists | PlaylistVerse</title>
+    <title>Tamil Spotify Playlists | PlaylistVerse</title>
 
-    <meta name="description" content="Discover the composers who have defined the sound of Tamil cinema, from lush orchestral melodies to high-energy anthems.">
+    <meta name="description"
+        content="Explore Tamil Spotify playlists by heroes, music directors and singers. Discover curated collections celebrating the best of Kollywood music.">
 
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="icon" href="../../favicon.webp">
+    <link rel="icon" href="../favicon.webp">
 
 </head>
 
@@ -29,42 +30,63 @@
             <a href="/" aria-label="Home">
                 <i class="bi bi-house-door-fill"></i>
             </a>
+            <span>&rsaquo;</span>
 
-            <span>&rsaquo;</span>
-            <a href="../index.html">Tamil</a>
-            <span>&rsaquo;</span>
-            <span class="current">Music Directors</span>
+            <span class="current">Tamil</span>
+
         </nav>
 
-
-        <section class="artist-header">
+        <div class="artist-header">
 
             <div class="artist-info">
 
-                <h1>Tamil Music Directors Spotify Playlists</h1>
+                <h1>Tamil Spotify Playlists</h1>
 
                 <p>
-                    Discover the composers who have defined the sound of Tamil cinema, from lush orchestral melodies to high-energy anthems.
+
+                    Discover the best Tamil Spotify playlists organised by heroes, singers and
+                    music directors. From evergreen melodies to today's biggest chartbusters,
+                    PlaylistVerse helps you find the perfect Kollywood playlist.
+
                 </p>
 
             </div>
 
-        </section>
+        </div>
 
-        <input type="text" id="searchInput" placeholder="Search Music Director..." class="hero-search">
+        <section>
 
-        <section class="artist-playlists">
+            <h2>Browse Categories</h2>
 
-            <h2>Popular Music Directors</h2>
+            <div class="category-grid">
 
-            <div class="hero-grid">
-                <a href="harris-jayaraj-top-200-hits.html" class="hero-card">
+                <a href="heroes/index.html" class="category-card">
 
-                    <img src="/images/tamil/music-directors/harris-jayaraj.webp">
+                    🎬
 
-                    <h3>Harris Jayaraj</h3>
+                    <h3>Heroes</h3>
 
-                    <p>Top Hits</p>
+                    <p>Top Tamil heroes playlists</p>
+
+                </a>
+
+                <a href="music-directors/index.html" class="category-card">
+
+                    🎼
+
+                    <h3>Music Directors</h3>
+
+                    <p>Legendary composers</p>
+
+                </a>
+
+                <a href="singers/index.html" class="category-card">
+
+                    🎤
+
+                    <h3>Singers</h3>
+
+                    <p>Male & Female singers</p>
 
                 </a>
 
@@ -74,37 +96,19 @@
 
         <section class="about-artist">
 
-            <h2>About Music Directors</h2>
+            <h2>About Tamil Music</h2>
 
             <p>
-                Tamil film music has been shaped by a generation of gifted composers. This collection brings together curated Spotify playlists celebrating their biggest soundtracks.
+
+                Tamil cinema has produced generations of unforgettable songs, shaped by
+                iconic heroes, gifted composers and legendary playback singers. Browse
+                playlists by your favourite artists, all curated for Spotify listeners.
+
             </p>
 
         </section>
 
     </main>
-
-    <script>
-
-        const search = document.getElementById("searchInput");
-
-        search.addEventListener("keyup", function ()
-        {
-
-            let value = this.value.toLowerCase();
-
-            document.querySelectorAll(".hero-card").forEach(card =>
-            {
-
-                card.style.display = card.innerText.toLowerCase().includes(value)
-                    ? "block" : "none";
-
-            });
-
-        });
-
-    </script>
-
 
 </body>
 <div id="footer"></div>
