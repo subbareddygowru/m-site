@@ -25,7 +25,7 @@
     "subtitle": ""
   },
   {
-    "name": "Music Directors",
+    "name": "Tamil",
     "href": "/tamil/index.html",
     "subtitle": ""
   },
@@ -428,5 +428,20 @@
     "name": "Sid Sriram",
     "href": "/telugu/singers/sid-sriram-top-100-hits.html",
     "subtitle": "Telugu · Singers"
+  },
+  {
+    "name": "Tamil Heroes",
+    "href": "/tamil/heroes/index.html",
+    "subtitle": "Tamil"
+  },
+  {
+    "name": "Vijay",
+    "href": "/tamil/heroes/vijay-top-100-hits.html",
+    "subtitle": "Tamil · Heroes"
+  },
+  {
+    "name": "Tamil Singers",
+    "href": "/tamil/singers/index.html",
+    "subtitle": "Tamil"
   }
 ]

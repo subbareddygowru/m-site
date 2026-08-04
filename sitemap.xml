@@ -85,6 +85,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://playlistverse.in/tamil/heroes/index.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://playlistverse.in/tamil/heroes/vijay-top-100-hits.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://playlistverse.in/tamil/singers/index.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://playlistverse.in/tamil/music-directors/harris-jayaraj-top-200-hits.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>
