@@ -25,13 +25,13 @@
     "subtitle": ""
   },
   {
-    "name": "Tamil",
-    "href": "/tamil/index.html",
+    "name": "Privacy Policy",
+    "href": "/privacy-policy.html",
     "subtitle": ""
   },
   {
-    "name": "Privacy Policy",
-    "href": "/privacy-policy.html",
+    "name": "Tamil",
+    "href": "/tamil/index.html",
     "subtitle": ""
   },
   {
@@ -75,9 +75,24 @@
     "subtitle": "Hindi · Singers"
   },
   {
+    "name": "Tamil Heroes",
+    "href": "/tamil/heroes/index.html",
+    "subtitle": "Tamil"
+  },
+  {
     "name": "Tamil Music Directors",
     "href": "/tamil/music-directors/index.html",
     "subtitle": "Tamil"
+  },
+  {
+    "name": "Tamil Singers",
+    "href": "/tamil/singers/index.html",
+    "subtitle": "Tamil"
+  },
+  {
+    "name": "Vijay",
+    "href": "/tamil/heroes/vijay-top-100-hits.html",
+    "subtitle": "Tamil · Heroes"
   },
   {
     "name": "Harris Jayaraj",
@@ -265,6 +280,11 @@
     "subtitle": "Telugu · Heroes"
   },
   {
+    "name": "Tarun Complete Filmography Hits",
+    "href": "/telugu/heroes/tarun-complete-filmography-hits.html",
+    "subtitle": "Telugu · Heroes"
+  },
+  {
     "name": "Uday Kiran",
     "href": "/telugu/heroes/uday-kiran-top-50-hits.html",
     "subtitle": "Telugu · Heroes"
@@ -325,11 +345,6 @@
     "subtitle": "Telugu · Moods"
   },
   {
-    "name": "AR Rahman",
-    "href": "/telugu/music-directors/ar-rahman-top-200-hits.html",
-    "subtitle": "Telugu · Music Directors"
-  },
-  {
     "name": "Anirudh Ravichander",
     "href": "/telugu/music-directors/anirudh-top-200-hits.html",
     "subtitle": "Telugu · Music Directors"
@@ -337,6 +352,11 @@
   {
     "name": "Anup Rubens",
     "href": "/telugu/music-directors/anup-rubens-top-100-hits.html",
+    "subtitle": "Telugu · Music Directors"
+  },
+  {
+    "name": "AR Rahman",
+    "href": "/telugu/music-directors/ar-rahman-top-200-hits.html",
     "subtitle": "Telugu · Music Directors"
   },
   {
@@ -410,16 +430,6 @@
     "subtitle": "Telugu · Singers"
   },
   {
-    "name": "SP Charan",
-    "href": "/telugu/singers/sp-charan-top-100-hits.html",
-    "subtitle": "Telugu · Singers"
-  },
-  {
-    "name": "SPB",
-    "href": "/telugu/singers/spb-top-500-hits.html",
-    "subtitle": "Telugu · Singers"
-  },
-  {
     "name": "Shreya Ghoshal",
     "href": "/telugu/singers/shreya-ghoshal-top-100-hits.html",
     "subtitle": "Telugu · Singers"
@@ -430,18 +440,13 @@
     "subtitle": "Telugu · Singers"
   },
   {
-    "name": "Tamil Heroes",
-    "href": "/tamil/heroes/index.html",
-    "subtitle": "Tamil"
+    "name": "SP Charan",
+    "href": "/telugu/singers/sp-charan-top-100-hits.html",
+    "subtitle": "Telugu · Singers"
   },
   {
-    "name": "Vijay",
-    "href": "/tamil/heroes/vijay-top-100-hits.html",
-    "subtitle": "Tamil · Heroes"
-  },
-  {
-    "name": "Tamil Singers",
-    "href": "/tamil/singers/index.html",
-    "subtitle": "Tamil"
+    "name": "SPB",
+    "href": "/telugu/singers/spb-top-500-hits.html",
+    "subtitle": "Telugu · Singers"
   }
 ]
