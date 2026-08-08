@@ -389,15 +389,20 @@ input[type="text"]::placeholder {
     transform: scale(1.05);
 }
 
-/* --- PLAYLIST GRID --- */
+/* ======================================================================
+   🎧 SPOTIFY PLAYLIST EMBED — WIDTH CONTROL (EDIT HERE)
+   This section controls how wide the Spotify embed cards are.
+   See the matching "SPOTIFY PLAYLIST EMBED — HEIGHT CONTROL" block
+   further down for the iframe height (number of tracks shown).
+   ====================================================================== */
 .grid {
     display: grid;
-    /* Desktop: 2 cards per row */
-    grid-template-columns: repeat(2, 1fr);
+    /* auto-fit: a single card fills the full width; multiple cards wrap responsively */
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 24px;
     padding: 40px;
-    max-width: 1000px;
-    /* Constrained width for better focus */
+    max-width: 1200px;
+    /* Matches .artist-page-container so embeds use the full page width */
     margin: 0 auto;
 }
 
@@ -410,6 +415,7 @@ input[type="text"]::placeholder {
         gap: 20px;
     }
 }
+/* ==================== END WIDTH CONTROL SECTION ==================== */
 
 .card {
     background-color: #181818;
@@ -617,11 +623,16 @@ input[type="text"]::placeholder {
 }
 
 
-/* --- SPOTIFY IFRAME FIX --- */
+/* ======================================================================
+   🎧 SPOTIFY PLAYLIST EMBED — HEIGHT CONTROL (EDIT HERE)
+   Height controls how many tracks are visible before scrolling inside
+   the embed. Roughly: 380px ≈ 3 tracks, 480px ≈ 4 tracks, 580px ≈ 5.
+   Width comes from the ".grid" rule above (search "WIDTH CONTROL").
+   ====================================================================== */
 .card iframe {
     width: 100%;
-    /* 380px is often better for standard Spotify embeds to show the full UI */
-    height: 380px;
+    height: 480px;
+    /* 480px shows about 4 tracks before the embed scrolls */
     border: none;
     background-color: transparent;
     display: block;
@@ -629,6 +640,7 @@ input[type="text"]::placeholder {
     /* This prevents the iframe from showing a white background before loading */
     background: #181818;
 }
+/* ==================== END HEIGHT CONTROL SECTION ==================== */
 
 /* --- MOBILE RESPONSIVENESS TWEAKS --- */
 @media (max-width: 600px) {
@@ -649,8 +661,8 @@ input[type="text"]::placeholder {
     }
 
     .card iframe {
-        height: 152px;
-        /* Maintains the compact player height on phones */
+        height: 480px;
+        /* Same 480px as desktop — keeps ~4 tracks visible on phones too */
     }
 }
 
