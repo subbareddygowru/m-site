@@ -626,13 +626,13 @@ input[type="text"]::placeholder {
 /* ======================================================================
    🎧 SPOTIFY PLAYLIST EMBED — HEIGHT CONTROL (EDIT HERE)
    Height controls how many tracks are visible before scrolling inside
-   the embed. Roughly: 380px ≈ 3 tracks, 480px ≈ 4 tracks, 580px ≈ 5.
+   the embed. Roughly: 380px ≈ 3 tracks, 440px ≈ 4 tracks, 580px ≈ 5.
    Width comes from the ".grid" rule above (search "WIDTH CONTROL").
    ====================================================================== */
 .card iframe {
     width: 100%;
-    height: 480px;
-    /* 480px shows about 4 tracks before the embed scrolls */
+    height: 440px;
+    /* 440px shows about 4 tracks before the embed scrolls */
     border: none;
     background-color: transparent;
     display: block;
@@ -661,8 +661,8 @@ input[type="text"]::placeholder {
     }
 
     .card iframe {
-        height: 480px;
-        /* Same 480px as desktop — keeps ~4 tracks visible on phones too */
+        height: 440px;
+        /* Same 440px as desktop — keeps ~4 tracks visible on phones too */
     }
 }
 
@@ -924,7 +924,7 @@ main,
 
     margin: 10px 0 20px;
 
-    border: 1px solid #2a2a2a;
+    border: 1px solid #1DB954;
 
     border-radius: 12px;
 
