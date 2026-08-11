@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>English Artist Playlists | PlaylistVerse</title>
+
+    <meta name="description" content="Explore curated English artist Spotify playlists, from global pop icons to rising independent stars.">
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="../../favicon.webp">
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="artist-page-container">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+
+            <a href="/" aria-label="Home">
+                <i class="bi bi-house-door-fill"></i>
+            </a>
+
+            <span>&rsaquo;</span>
+            <a href="../index.html">English</a>
+            <span>&rsaquo;</span>
+            <span class="current">Artists</span>
+        </nav>
+
+
+        <section class="artist-header">
+
+            <div class="artist-info">
+
+                <h1>English Artists</h1>
+
+                <p>
+                    From legendary icons to rising independent voices, this collection gathers dedicated Spotify playlists for popular English-language artists. Each page is a hand-picked tribute to an artist's biggest songs and defining sound.
+                </p>
+
+            </div>
+
+        </section>
+
+        <input type="text" id="searchInput" placeholder="Search Artist..." class="hero-search">
+
+        <section class="artist-playlists">
+
+            <h2>Popular Artists</h2>
+
+            <div class="hero-grid">
+                <a href="naika-all-time-hits.html" class="hero-card">
+
+                    <img src="/images/english/artists/naika-all-time-hits.webp" alt="Naïka All Time Hits">
+
+                    <h3>Naïka All Time Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="ananya-birla-all-time-hits.html" class="hero-card">
+
+                    <img src="/images/english/artists/ananya-birla-all-time-hits.webp" alt="Ananya Birla All Time Hits">
+
+                    <h3>Ananya Birla All Time Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="lana-del-rey-top-20-hits.html" class="hero-card">
+
+                    <img src="/images/english/artists/lana-del-rey-top-20-hits.webp" alt="Lana Del Rey Top 20 Hits">
+
+                    <h3>Lana Del Rey Top 20 Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="bebe-rexha-hits.html" class="hero-card">
+
+                    <img src="/images/english/artists/bebe-rexha-hits.webp" alt="Bebe Rexha Hits">
+
+                    <h3>Bebe Rexha Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="michael-jackson-all-time-hits.html" class="hero-card">
+
+                    <img src="/images/english/artists/michael-jackson-all-time-hits.webp" alt="Michael Jackson All Time Hits">
+
+                    <h3>Michael Jackson All Time Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="katy-perry-top-10-hits.html" class="hero-card">
+
+                    <img src="/images/english/artists/katy-perry-top-10-hits.webp" alt="Katy Perry Top 10 Hits">
+
+                    <h3>Katy Perry Top 10 Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="twenty-one-pilots-top-10-hits.html" class="hero-card">
+
+                    <img src="/images/english/artists/twenty-one-pilots-top-10-hits.webp" alt="Twenty One Pilots Top 10 Hits">
+
+                    <h3>Twenty One Pilots Top 10 Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="skillet-top-hits.html" class="hero-card">
+
+                    <img src="/images/english/artists/skillet-top-hits.webp" alt="Skillet Top Hits">
+
+                    <h3>Skillet Top Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="about-artist">
+
+            <h2>About Artist Playlists</h2>
+
+            <p>
+                Every artist hears differently. This collection organizes English music by artist, so whether you're a lifelong fan or just discovering someone new, there's a playlist built entirely around their sound.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        const search = document.getElementById("searchInput");
+
+        search.addEventListener("keyup", function ()
+        {
+
+            let value = this.value.toLowerCase();
+
+            document.querySelectorAll(".hero-card").forEach(card =>
+            {
+
+                card.style.display = card.innerText.toLowerCase().includes(value)
+                    ? "block" : "none";
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+<div id="footer"></div>
+
+<script src="/js/include.js"></script>
+</html>
