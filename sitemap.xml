@@ -152,6 +152,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://playlistverse.in/telugu/genres/index.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://playlistverse.in/telugu/genres/telugu-dj-folk-songs-top-100-hits.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://playlistverse.in/telugu/genres/telugu-folk-songs-fresh-hits.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://playlistverse.in/telugu/heroes/allari-naresh-top-50-hits.html</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>
