@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>English Discovery Playlists | PlaylistVerse</title>
+
+    <meta name="description" content="Explore curated English discovery Spotify playlists, from billion-stream hits to hidden underrated gems.">
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="../../favicon.webp">
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="artist-page-container">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+
+            <a href="/" aria-label="Home">
+                <i class="bi bi-house-door-fill"></i>
+            </a>
+
+            <span>&rsaquo;</span>
+            <a href="../index.html">English</a>
+            <span>&rsaquo;</span>
+            <span class="current">Discovery</span>
+        </nav>
+
+
+        <section class="artist-header">
+
+            <div class="artist-info">
+
+                <h1>English Discovery</h1>
+
+                <p>
+                    Whether you want the biggest global hits or hidden gems you've never heard, this collection helps you discover English music from every angle.
+                </p>
+
+            </div>
+
+        </section>
+
+        <input type="text" id="searchInput" placeholder="Search Discovery..." class="hero-search">
+
+        <section class="artist-playlists">
+
+            <h2>Popular Discovery</h2>
+
+            <div class="hero-grid">
+                <a href="english-top-500-hits-1-billion-streams-club.html" class="hero-card">
+
+                    <img src="/images/english/discovery/english-top-500-hits-1-billion-streams-club.webp" alt="English Top 500 Hits">
+
+                    <h3>English Top 500 Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="english-underrated-songs.html" class="hero-card">
+
+                    <img src="/images/english/discovery/english-underrated-songs.webp" alt="English Underrated Songs">
+
+                    <h3>English Underrated Songs</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="most-streamed-artists.html" class="hero-card">
+
+                    <img src="/images/english/discovery/most-streamed-artists.webp" alt="Most Streamed Artists">
+
+                    <h3>Most Streamed Artists</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="songs-you-never-heard-before-english.html" class="hero-card">
+
+                    <img src="/images/english/discovery/songs-you-never-heard-before-english.webp" alt="Songs You Never Heard Before">
+
+                    <h3>Songs You Never Heard Before</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="english-most-popular-hit-songs.html" class="hero-card">
+
+                    <img src="/images/english/discovery/english-most-popular-hit-songs.webp" alt="English Most Popular Hit Songs">
+
+                    <h3>English Most Popular Hit Songs</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="about-artist">
+
+            <h2>About Discovery</h2>
+
+            <p>
+                Discovery means something different to everyone. This collection covers both ends of the spectrum &mdash; the biggest, most-streamed English hits, and the underrated songs still waiting to be found.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        const search = document.getElementById("searchInput");
+
+        search.addEventListener("keyup", function ()
+        {
+
+            let value = this.value.toLowerCase();
+
+            document.querySelectorAll(".hero-card").forEach(card =>
+            {
+
+                card.style.display = card.innerText.toLowerCase().includes(value)
+                    ? "block" : "none";
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+<div id="footer"></div>
+
+<script src="/js/include.js"></script>
+</html>
