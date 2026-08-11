@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>English Decade Playlists | PlaylistVerse</title>
+
+    <meta name="description" content="Explore curated English decade Spotify playlists, from 70s classics to 2023's biggest hits, by PlaylistVerse.">
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="../../favicon.webp">
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="artist-page-container">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+
+            <a href="/" aria-label="Home">
+                <i class="bi bi-house-door-fill"></i>
+            </a>
+
+            <span>&rsaquo;</span>
+            <a href="../index.html">English</a>
+            <span>&rsaquo;</span>
+            <span class="current">Decades</span>
+        </nav>
+
+
+        <section class="artist-header">
+
+            <div class="artist-info">
+
+                <h1>English Decade Playlists</h1>
+
+                <p>
+                    Take a trip through time with English playlists organized by decade, from 70s and 80s classics to the latest hits of the 2020s.
+                </p>
+
+            </div>
+
+        </section>
+
+        <input type="text" id="searchInput" placeholder="Search Decade..." class="hero-search">
+
+        <section class="artist-playlists">
+
+            <h2>Popular Decades</h2>
+
+            <div class="hero-grid">
+                <a href="70s-80s-90s-english-hits.html" class="hero-card">
+
+                    <img src="/images/english/decades/70s-80s-90s-english-hits.webp" alt="70s, 80s & 90s English Hits">
+
+                    <h3>70s, 80s & 90s English Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="english-top-1000-hits-all-time.html" class="hero-card">
+
+                    <img src="/images/english/decades/english-top-1000-hits-all-time.webp" alt="English Top 1000 Hits">
+
+                    <h3>English Top 1000 Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="english-all-time-hits.html" class="hero-card">
+
+                    <img src="/images/english/decades/english-all-time-hits.webp" alt="English All Time Hits">
+
+                    <h3>English All Time Hits</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="oldies-but-goodies-english.html" class="hero-card">
+
+                    <img src="/images/english/decades/oldies-but-goodies-english.webp" alt="Oldies But Goodies">
+
+                    <h3>Oldies But Goodies</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="english-top-hits-2023.html" class="hero-card">
+
+                    <img src="/images/english/decades/english-top-hits-2023.webp" alt="English Top Hits 2023">
+
+                    <h3>English Top Hits 2023</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="about-artist">
+
+            <h2>About Decades</h2>
+
+            <p>
+                Every decade has its own sound. This collection organizes English songs by era, so you can revisit the classics or catch up on the latest hits, all in one place.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        const search = document.getElementById("searchInput");
+
+        search.addEventListener("keyup", function ()
+        {
+
+            let value = this.value.toLowerCase();
+
+            document.querySelectorAll(".hero-card").forEach(card =>
+            {
+
+                card.style.display = card.innerText.toLowerCase().includes(value)
+                    ? "block" : "none";
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+<div id="footer"></div>
+
+<script src="/js/include.js"></script>
+</html>
