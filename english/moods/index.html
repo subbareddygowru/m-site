@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>English Mood Playlists | PlaylistVerse</title>
+
+    <meta name="description" content="Find the perfect English playlist for every mood — catchy, calm, motivational or feel-good — curated by PlaylistVerse.">
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="../../favicon.webp">
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="artist-page-container">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+
+            <a href="/" aria-label="Home">
+                <i class="bi bi-house-door-fill"></i>
+            </a>
+
+            <span>&rsaquo;</span>
+            <a href="../index.html">English</a>
+            <span>&rsaquo;</span>
+            <span class="current">Moods</span>
+        </nav>
+
+
+        <section class="artist-header">
+
+            <div class="artist-info">
+
+                <h1>English Mood Playlists</h1>
+
+                <p>
+                    Find the perfect English playlist for every mood — catchy, calm, motivational or feel-good. Curated collections to match exactly how you're feeling.
+                </p>
+
+            </div>
+
+        </section>
+
+        <input type="text" id="searchInput" placeholder="Search Mood..." class="hero-search">
+
+        <section class="artist-playlists">
+
+            <h2>Popular Moods</h2>
+
+            <div class="hero-grid">
+                <a href="songs-that-cant-get-out-of-your-mind.html" class="hero-card">
+
+                    <img src="/images/english/moods/songs-that-cant-get-out-of-your-mind.webp" alt="Songs That Can't Get Out of Your Mind">
+
+                    <h3>Songs That Can't Get Out of Your Mind</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="english-bedtime-melodies.html" class="hero-card">
+
+                    <img src="/images/english/moods/english-bedtime-melodies.webp" alt="English Bedtime Melodies">
+
+                    <h3>English Bedtime Melodies</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="english-motivational-songs-top-100-hits.html" class="hero-card">
+
+                    <img src="/images/english/moods/english-motivational-songs-top-100-hits.webp" alt="English Motivational Songs">
+
+                    <h3>English Motivational Songs</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="mood-boosters.html" class="hero-card">
+
+                    <img src="/images/english/moods/mood-boosters.webp" alt="Mood Boosters">
+
+                    <h3>Mood Boosters</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="english-top-melody-hits-2000-2026.html" class="hero-card">
+
+                    <img src="/images/english/moods/english-top-melody-hits-2000-2026.webp" alt="English Top Melody Hits (2000–2026)">
+
+                    <h3>English Top Melody Hits (2000–2026)</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+                <a href="feel-good-songs-english.html" class="hero-card">
+
+                    <img src="/images/english/moods/feel-good-songs-english.webp" alt="Feel Good Songs">
+
+                    <h3>Feel Good Songs</h3>
+
+                    <p>Top Hits</p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="about-artist">
+
+            <h2>About Moods</h2>
+
+            <p>
+                Music hits differently depending on the moment. This collection organizes English songs by mood, so whether you want an earworm, a wind-down, motivation or a feel-good boost, there's a playlist ready for you.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        const search = document.getElementById("searchInput");
+
+        search.addEventListener("keyup", function ()
+        {
+
+            let value = this.value.toLowerCase();
+
+            document.querySelectorAll(".hero-card").forEach(card =>
+            {
+
+                card.style.display = card.innerText.toLowerCase().includes(value)
+                    ? "block" : "none";
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+<div id="footer"></div>
+
+<script src="/js/include.js"></script>
+</html>
