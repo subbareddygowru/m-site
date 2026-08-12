@@ -683,6 +683,11 @@ main,
     padding-top: 15px;
 }
 
+/* Homepage hero sits flush under the sticky nav — no gap needed here */
+main.home-main {
+    padding-top: 0;
+}
+
 
 .menu-toggle,
 .close-menu {
