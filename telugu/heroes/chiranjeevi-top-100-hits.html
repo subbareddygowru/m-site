@@ -84,9 +84,7 @@
                 <div class="card">
                     <h3>🔥 Megastar Chiranjeevi Top 100 Hits</h3>
                     <!-- Replace src with the specific Spotify embed link -->
-                    <div id="spotify-embed" style="min-height:152px;display:grid;place-items:center;border-radius:12px;background:#181818;padding:24px;text-align:center">
-                        <button id="load-spotify" type="button" style="border:0;border-radius:999px;background:#1DB954;color:#000;font-weight:700;padding:12px 22px;cursor:pointer">Load Spotify Player</button>
-                    </div>
+                    <iframe title="Megastar Chiranjeevi Top 100 Hits" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3OvAW5ftw50pQeriBrhuKz" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                 </div>
 
                 <!-- <div class="card">
@@ -168,21 +166,7 @@
     <div id="footer"></div>
 
     <script src="/js/include.js" defer></script>
-    <script>
-        document.getElementById("load-spotify").addEventListener("click", function () {
-            const host = document.getElementById("spotify-embed");
-            const iframe = document.createElement("iframe");
-            iframe.title = "Megastar Chiranjeevi Top 100 Hits";
-            iframe.src = "https://open.spotify.com/embed/playlist/3OvAW5ftw50pQeriBrhuKz";
-            iframe.width = "100%";
-            iframe.height = "352";
-            iframe.style.border = "0";
-            iframe.style.borderRadius = "12px";
-            iframe.allowFullscreen = true;
-            iframe.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
-            host.replaceWith(iframe);
-        }, { once: true });
-    </script>
+
 </body>
 
 </html>
