@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <title>Megastar Chiranjeevi Top 100 Hits Playlist | PlaylistVerse</title>
 
@@ -17,6 +16,8 @@
     <meta name="robots" content="index,follow">
 
     <link rel="canonical" href="https://playlistverse.in/telugu/heroes/chiranjeevi-top-100-hits.html">
+
+    <link rel="preload" as="image" href="/images/telugu/heroes/chiranjeevi.webp" fetchpriority="high">
 
     <link rel="stylesheet" href="/style.css">
 
@@ -44,7 +45,7 @@
     <main class="artist-page-container">
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="/" aria-label="Home">
-                <i class="bi bi-house-door-fill"></i>
+                <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 .5 1 6v9h5v-5h4v5h5V6L8 .5z"/></svg>
             </a>
             <span>›</span>
 
@@ -60,7 +61,7 @@
         <div class="artist-header">
             <!-- Drop your 3D enriched visual asset here -->
             <img src="/images/telugu/heroes/chiranjeevi.webp" alt="Megastar Chiranjeevi Top Hits Spotify Playlist"
-                class="artist-cover-image">
+                class="artist-cover-image" width="320" height="320" fetchpriority="high" decoding="async">
 
             <div class="artist-info">
                 <h1>Megastar Chiranjeevi</h1>
@@ -83,11 +84,9 @@
                 <div class="card">
                     <h3>🔥 Megastar Chiranjeevi Top 100 Hits</h3>
                     <!-- Replace src with the specific Spotify embed link -->
-                    <iframe style="border-radius:12px" title="Megastar Chiranjeevi Top 100 Hits"
-                        src="https://open.spotify.com/embed/playlist/3OvAW5ftw50pQeriBrhuKz" width="100%" height="352"
-                        frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"></iframe>
+                    <div id="spotify-embed" style="min-height:152px;display:grid;place-items:center;border-radius:12px;background:#181818;padding:24px;text-align:center">
+                        <button id="load-spotify" type="button" style="border:0;border-radius:999px;background:#1DB954;color:#000;font-weight:700;padding:12px 22px;cursor:pointer">Load Spotify Player</button>
+                    </div>
                 </div>
 
                 <!-- <div class="card">
@@ -125,22 +124,22 @@
             <div class="related-grid">
 
                 <a href="balakrishna-top-100-hits.html" class="related-card">
-                    <img src="/images/telugu/heroes/balakrishna.webp" alt="Balakrishna" loading="lazy">
+                    <img src="/images/telugu/heroes/balakrishna.webp" alt="Balakrishna" width="1000" height="1015" loading="lazy" decoding="async">
                     <h3>Balakrishna</h3>
                 </a>
 
                 <a href="nagarjuna-top-100-hits.html" class="related-card">
-                    <img src="/images/telugu/heroes/akkineni-nagarjuna.webp" alt="Nagarjuna" loading="lazy">
+                    <img src="/images/telugu/heroes/akkineni-nagarjuna.webp" alt="Nagarjuna" width="640" height="480" loading="lazy" decoding="async">
                     <h3>Nagarjuna</h3>
                 </a>
 
                 <a href="venkatesh-top-100-hits.html" class="related-card">
-                    <img src="/images/telugu/heroes/venkatesh.webp" alt="Venkatesh" loading="lazy">
+                    <img src="/images/telugu/heroes/venkatesh.webp" alt="Venkatesh" width="440" height="403" loading="lazy" decoding="async">
                     <h3>Venkatesh</h3>
                 </a>
 
                 <a href="pawan-kalyan-top-100-hits.html" class="related-card">
-                    <img src="/images/telugu/heroes/pawan-kalyan.webp" alt="Pawan Kalyan" loading="lazy">
+                    <img src="/images/telugu/heroes/pawan-kalyan.webp" alt="Pawan Kalyan" width="474" height="643" loading="lazy" decoding="async">
                     <h3>Pawan Kalyan</h3>
                 </a>
 
@@ -166,9 +165,24 @@
 
 </script>
 
-</body>
-<div id="footer"></div>
+    <div id="footer"></div>
 
-<script src="/js/include.js"></script>
+    <script src="/js/include.js" defer></script>
+    <script>
+        document.getElementById("load-spotify").addEventListener("click", function () {
+            const host = document.getElementById("spotify-embed");
+            const iframe = document.createElement("iframe");
+            iframe.title = "Megastar Chiranjeevi Top 100 Hits";
+            iframe.src = "https://open.spotify.com/embed/playlist/3OvAW5ftw50pQeriBrhuKz";
+            iframe.width = "100%";
+            iframe.height = "352";
+            iframe.style.border = "0";
+            iframe.style.borderRadius = "12px";
+            iframe.allowFullscreen = true;
+            iframe.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
+            host.replaceWith(iframe);
+        }, { once: true });
+    </script>
+</body>
 
 </html>
