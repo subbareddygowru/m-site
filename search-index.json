@@ -220,6 +220,11 @@
     "subtitle": "English · Moods"
   },
   {
+    "name": "Hindi Genres",
+    "href": "/hindi/genres/index.html",
+    "subtitle": "Hindi"
+  },
+  {
     "name": "Hindi Heroes",
     "href": "/hindi/heroes/index.html",
     "subtitle": "Hindi"
@@ -228,6 +233,21 @@
     "name": "Hindi Singers",
     "href": "/hindi/singers/index.html",
     "subtitle": "Hindi"
+  },
+  {
+    "name": "Hindi Item Songs Top 100 Hits",
+    "href": "/hindi/genres/hindi-item-songs-top-100-hits.html",
+    "subtitle": "Hindi · Genres"
+  },
+  {
+    "name": "Hindi Mashup Hits",
+    "href": "/hindi/genres/hindi-mashup-hits.html",
+    "subtitle": "Hindi · Genres"
+  },
+  {
+    "name": "Hindi Remix Top 100 Hits",
+    "href": "/hindi/genres/hindi-remix-top-100-hits.html",
+    "subtitle": "Hindi · Genres"
   },
   {
     "name": "Shah Rukh Khan",

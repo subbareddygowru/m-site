@@ -7,8 +7,9 @@ EXCLUDE_DIRS = {"includes", ".git"}
 
 LANG_LABELS = {"telugu": "Telugu", "hindi": "Hindi", "tamil": "Tamil", "english": "English"}
 CATEGORY_LABELS = {
-    "heroes": "Heroes", "singers": "Singers", "music-directors": "Music Directors",
-    "lyricists": "Lyricists", "moods": "Moods", "decades": "Decades",
+    "heroes": "Heroes", "heroines": "Heroines", "singers": "Singers", "music-directors": "Music Directors",
+    "lyricists": "Lyricists", "moods": "Moods", "decades": "Decades", "genres": "Genres",
+    "artists": "Artists", "discovery": "Discovery",
 }
 
 CURRENT_RE = re.compile(r'<span class="current">(.*?)</span>', re.S)
