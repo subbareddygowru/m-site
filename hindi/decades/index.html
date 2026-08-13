@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hindi Decades Playlists | PlaylistVerse</title>
+
+    <meta name="description" content="Explore curated Hindi decade Spotify playlists, from evergreen old songs to 90s dance hits and 2000s chartbusters, all in one place.">
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="../../favicon.webp">
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="artist-page-container">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+
+            <a href="/" aria-label="Home">
+                <i class="bi bi-house-door-fill"></i>
+            </a>
+
+            <span>&rsaquo;</span>
+            <a href="../index.html">Hindi</a>
+            <span>&rsaquo;</span>
+            <span class="current">Decades</span>
+        </nav>
+
+
+        <section class="artist-header">
+
+            <div class="artist-info">
+
+                <h1>Hindi Decades</h1>
+
+                <p>
+                    Bollywood music has a distinct sound for every era. This collection organizes Hindi songs by decade, from evergreen old classics to 90s dance floor favourites and the melody-rich 2000s, so you can jump straight into the era you love.
+                </p>
+
+            </div>
+
+        </section>
+
+        <input type="text" id="searchInput" placeholder="Search Decade..." class="hero-search">
+
+        <section class="artist-playlists">
+
+            <h2>Popular Decades</h2>
+
+            <div class="hero-grid">
+                <a href="hindi-old-songs-evergreen-hits.html" class="hero-card">
+
+                    <img src="/images/hindi/decades/hindi-old-songs-evergreen-hits.webp" alt="Hindi Old Songs | Evergreen Hits">
+
+                    <h3>Hindi Old Songs | Evergreen Hits</h3>
+
+                </a>
+                <a href="90s-dance-hits-hindi.html" class="hero-card">
+
+                    <img src="/images/hindi/decades/90s-dance-hits-hindi.webp" alt="90s Dance Hits | Hindi">
+
+                    <h3>90s Dance Hits | Hindi</h3>
+
+                </a>
+                <a href="90s-melodies-top-100-hits-hindi.html" class="hero-card">
+
+                    <img src="/images/hindi/decades/90s-melodies-top-100-hits-hindi.webp" alt="90s Melodies Top 100 Hits | Hindi">
+
+                    <h3>90s Melodies Top 100 Hits | Hindi</h3>
+
+                </a>
+                <a href="2000s-hindi-hits-2000-2009.html" class="hero-card">
+
+                    <img src="/images/hindi/decades/2000s-hindi-hits-2000-2009.webp" alt="2000s Hindi Hits (Best of 2000 - 2009)">
+
+                    <h3>2000s Hindi Hits (Best of 2000 - 2009)</h3>
+
+                </a>
+                <a href="90s-2000s-hindi-pop-hits.html" class="hero-card">
+
+                    <img src="/images/hindi/decades/90s-2000s-hindi-pop-hits.webp" alt="90s and 2000s Hindi Pop Hits">
+
+                    <h3>90s and 2000s Hindi Pop Hits</h3>
+
+                </a>
+                <a href="hindi-top-melody-hits-2000-2025.html" class="hero-card">
+
+                    <img src="/images/hindi/decades/hindi-top-melody-hits-2000-2025.webp" alt="Hindi Top Melody Hits (Best of 2000 - 2025)">
+
+                    <h3>Hindi Top Melody Hits (Best of 2000 - 2025)</h3>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="about-artist">
+
+            <h2>About Decade Playlists</h2>
+
+            <p>
+                Every decade of Bollywood has its own signature sound. This collection organizes Hindi songs by era, from timeless old classics to 90s dance anthems and 2000s melodies, so you can relive the soundtrack of any period, any time.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        const search = document.getElementById("searchInput");
+
+        search.addEventListener("keyup", function ()
+        {
+
+            let value = this.value.toLowerCase();
+
+            document.querySelectorAll(".hero-card").forEach(card =>
+            {
+
+                card.style.display = card.innerText.toLowerCase().includes(value)
+                    ? "block" : "none";
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+<div id="footer"></div>
+
+<script src="/js/include.js"></script>
+</html>
