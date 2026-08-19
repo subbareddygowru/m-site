@@ -1077,6 +1077,23 @@ main.home-main {
     transform: scale(1.05);
 }
 
+@media (max-width: 480px) {
+
+    .section-header {
+        flex-wrap: wrap;
+    }
+
+    .section-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .view-all-btn {
+        padding: 6px 16px;
+        font-size: 0.8rem;
+    }
+
+}
+
 /* Telugu Index Page */
 .category-grid {
 
