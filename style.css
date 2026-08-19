@@ -84,7 +84,8 @@ body {
     display: inline-block;
 }
 
-.dropdown button {
+.dropdown button,
+.dropdown>a.dropdown-toggle {
     background: none;
     border: none;
     color: #b3b3b3;
@@ -93,9 +94,12 @@ body {
     cursor: pointer;
     padding: 10px;
     transition: color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.dropdown button:hover {
+.dropdown button:hover,
+.dropdown>a.dropdown-toggle:hover {
     color: #ffffff;
 }
 
@@ -807,7 +811,8 @@ main.home-main {
         width: 100%;
     }
 
-    .dropdown button {
+    .dropdown button,
+    .dropdown>a.dropdown-toggle {
 
         width: 100%;
 
@@ -828,6 +833,8 @@ main.home-main {
         border: none;
 
         color: white;
+
+        text-decoration: none;
     }
 
     .dropdown-content {
