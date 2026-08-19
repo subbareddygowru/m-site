@@ -1042,6 +1042,41 @@ main.home-main {
 }
 
 
+/* Category preview rows (homepage-style sections with a View All link) */
+.playlist-section {
+    margin-bottom: 50px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 12px;
+}
+
+.section-header h2 {
+    margin: 0;
+}
+
+.view-all-btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid #727272;
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.view-all-btn:hover {
+    border-color: #1DB954;
+    color: #1DB954;
+    transform: scale(1.05);
+}
+
 /* Telugu Index Page */
 .category-grid {
 
