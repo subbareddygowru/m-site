@@ -972,11 +972,11 @@ main.home-main {
 
 .hero-card {
 
-    background: #181818;
+    background: none;
 
-    padding: 25px;
+    padding: 0;
 
-    border-radius: 15px;
+    border-radius: 0;
 
     text-align: center;
 
@@ -984,7 +984,7 @@ main.home-main {
 
     transition: .3s;
 
-    border: 1px solid #282828;
+    border: none;
 
     min-width: 0;
 
@@ -1003,9 +1003,9 @@ main.home-main {
 
 }
 
-.hero-card:hover {
+.hero-card:hover img {
 
-    transform: translateY(-8px);
+    transform: translateY(-6px);
 
     border-color: #1DB954;
 
@@ -1021,9 +1021,11 @@ main.home-main {
 
     object-fit: cover;
 
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 
     border: 3px solid #1DB954;
+
+    transition: .3s;
 
 }
 
@@ -1031,13 +1033,15 @@ main.home-main {
 
     color: white;
 
-    margin-bottom: 8px;
+    margin-bottom: 0;
+
+    font-size: 1rem;
 
 }
 
 .hero-card p {
 
-    color: #b3b3b3;
+    display: none;
 
 }
 
