@@ -202,7 +202,7 @@
 
             <h2>You May Also Like</h2>
 
-            <div class="related-grid">
+            <div class="related-grid" id="relatedGrid">
                 <a href="telugu-2012-hits.html" class="related-card">
                     <img src="/images/telugu/years/telugu-2012-hits.webp" alt="Best Telugu Songs of 2012" loading="lazy">
                     <h3>Telugu Songs of 2012</h3>
@@ -215,8 +215,11 @@
                     <img src="/images/telugu/decades/telugu-2010s-top-hits.webp" alt="Telugu 2010s Hits" loading="lazy">
                     <h3>Telugu 2010s Hits</h3>
                 </a>
+                <a href="index.html" class="related-card">
+                    <img src="/images/telugu/years/telugu-2010-hits.webp" alt="Browse all Telugu Years" loading="lazy">
+                    <h3>Browse Telugu Years</h3>
+                </a>
             </div>
-
         </section>
 
     </main>
@@ -267,6 +270,18 @@
 
 </script>
 
+    <script>
+        (function () {
+            var grid = document.getElementById("relatedGrid");
+            if (!grid) return;
+            var cards = Array.prototype.slice.call(grid.children);
+            for (var i = cards.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var tmp = cards[i]; cards[i] = cards[j]; cards[j] = tmp;
+            }
+            cards.forEach(function (c) { grid.appendChild(c); });
+        })();
+    </script>
 </body>
 <div id="footer"></div>
 
