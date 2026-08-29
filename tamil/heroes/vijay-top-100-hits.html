@@ -24,7 +24,7 @@
 
     <!-- Open Graph -->
 
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="music.playlist">
 
     <meta property="og:title" content="Thalapathy Vijay Songs Playlist">
 
@@ -33,6 +33,46 @@
     <meta property="og:url" content="https://playlistverse.in/tamil/heroes/vijay-top-100-hits.html">
 
     <meta property="og:image" content="https://playlistverse.in/images/tamil/heroes/vijay.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Thalapathy Vijay Songs Playlist | 1992-2026">
+
+    <meta name="twitter:description" content="Best Thalapathy Vijay Spotify playlists spanning his entire career, 1992-2026.">
+
+    <meta name="twitter:image" content="https://playlistverse.in/images/tamil/heroes/vijay.webp">
+
+    <style>
+        .artist-faq { margin-top: 2.5rem; }
+        .faq-list { counter-reset: faq-counter; margin-top: 1.25rem; }
+        .faq-item {
+            counter-increment: faq-counter;
+            position: relative;
+            display: flex;
+            gap: 1rem;
+            padding: 1.1rem 1.25rem 1.1rem 1.1rem;
+            margin-bottom: 0.9rem;
+            border-left: 3px solid #4f46e5;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(79,70,229,0.06), rgba(6,182,212,0.04));
+        }
+        .faq-item::before {
+            content: counter(faq-counter);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .faq-body h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+        .faq-body p { margin: 0; }
+    </style>
 
 </head>
 
@@ -204,6 +244,22 @@
             </div>
         </section>
 
+        <section class="artist-bio">
+            <h2>Who Is Thalapathy Vijay?</h2>
+            <p>Born Joseph Vijay Chandrasekhar on 22 June 1974 in Chennai, he grew up on film sets — his father S.A. Chandrasekhar is a veteran director, and his mother Shoba Chandrasekhar is a playback singer. He appeared as a child actor in his father's film "Vetri" (1984) and studied visual communication at Loyola College, Chennai, alongside future stars Suriya, Yuvan Shankar Raja, and Karthik Raja, before his lead debut in "Naalaiya Theerpu" (1992).</p>
+            <p>Over three decades he built a soundtrack legacy running from tender 1990s melodies ("Poove Unakkaga," "Kadhalukku Mariyadhai") through his rise as a mass hero in the 2000s ("Ghilli," "Pokkiri") and into the genre-defining anthems of the 2010s and 2020s — "Thuppakki," "Kaththi," "Mersal," "Bigil," "Master," "Beast," "Varisu," and "Leo." His fans call him Thalapathy, meaning "commander," a nod to the fierce loyalty he commands both on screen and off. His 2026 film "Jana Nayagan" marked his final role as a lead actor, closing out a film career of more than 65 films as he moved into public life, founding the political party Tamilaga Vettri Kazhagam in 2024.</p>
+        </section>
+
+        <section class="artist-tracklist">
+            <h2>Songs By Era</h2>
+            <ul>
+                <li><strong>1990s</strong> — "Poove Unakkaga," "Kadhalukku Mariyadhai," "Thulladha Manamum Thullum": the melodies that built his early fanbase</li>
+                <li><strong>2000s</strong> — "Ghilli" and "Pokkiri": the soundtracks that cemented his mass-hero image</li>
+                <li><strong>2010s</strong> — "Thuppakki," "Kaththi," "Mersal," "Bigil": his socially conscious, image-defining decade</li>
+                <li><strong>2020s</strong> — "Master," "Beast," "Varisu," "Leo," and "Jana Nayagan": his final run as a leading man</li>
+            </ul>
+        </section>
+
         <section>
 
             <h2>Why Listen to these Playlists?</h2>
@@ -224,17 +280,86 @@
 
         </section>
 
+        <section class="artist-faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>Why is Vijay called "Thalapathy"?</h3>
+                        <p>"Thalapathy" means "commander" in Tamil — the nickname reflects the fierce, near-military loyalty his fanbase has shown him throughout his career.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>What was Vijay's first film?</h3>
+                        <p>He appeared as a child actor in his father S.A. Chandrasekhar's film "Vetri" (1984), then made his lead debut in "Naalaiya Theerpu" (1992).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>What is Vijay's real name?</h3>
+                        <p>He was born Joseph Vijay Chandrasekhar on 22 June 1974 in Chennai.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>Was Jana Nayagan Vijay's last film?</h3>
+                        <p>Yes — "Jana Nayagan" (2026) was his final role as a lead actor, as he moved into full-time politics with the party he founded in 2024.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <script type="application/ld+json">
 
 {
- "@context":"https://schema.org",
- "@type":"MusicPlaylist",
- "name":"Thalapathy Vijay Songs Playlist Collection",
- "description":"Complete Thalapathy Vijay Spotify playlist collection spanning 1992-2026, organised by decade and mood.",
- "url":"https://playlistverse.in/tamil/heroes/vijay-top-100-hits.html",
- "image":"https://playlistverse.in/images/tamil/heroes/vijay.webp"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicPlaylist",
+      "name": "Thalapathy Vijay Songs Playlist Collection",
+      "description": "Complete Thalapathy Vijay Spotify playlist collection spanning 1992-2026, organised by decade and mood.",
+      "url": "https://playlistverse.in/tamil/heroes/vijay-top-100-hits.html",
+      "image": "https://playlistverse.in/images/tamil/heroes/vijay.webp",
+      "numTracks": "250"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://playlistverse.in/"},
+        {"@type": "ListItem", "position": 2, "name": "Tamil", "item": "https://playlistverse.in/tamil/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "Heroes", "item": "https://playlistverse.in/tamil/heroes/index.html"},
+        {"@type": "ListItem", "position": 4, "name": "Vijay", "item": "https://playlistverse.in/tamil/heroes/vijay-top-100-hits.html"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is Vijay called \"Thalapathy\"?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Thalapathy means commander in Tamil — the nickname reflects the fierce, near-military loyalty his fanbase has shown him throughout his career."}
+        },
+        {
+          "@type": "Question",
+          "name": "What was Vijay's first film?",
+          "acceptedAnswer": {"@type": "Answer", "text": "He appeared as a child actor in his father S.A. Chandrasekhar's film Vetri (1984), then made his lead debut in Naalaiya Theerpu (1992)."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is Vijay's real name?",
+          "acceptedAnswer": {"@type": "Answer", "text": "He was born Joseph Vijay Chandrasekhar on 22 June 1974 in Chennai."}
+        },
+        {
+          "@type": "Question",
+          "name": "Was Jana Nayagan Vijay's last film?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes — Jana Nayagan (2026) was his final role as a lead actor, as he moved into full-time politics with the party he founded in 2024."}
+        }
+      ]
+    }
+  ]
 }
 
 </script>
