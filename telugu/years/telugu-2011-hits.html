@@ -22,7 +22,7 @@
 
     <!-- Open Graph -->
 
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="music.playlist">
 
     <meta property="og:title" content="Best Telugu Songs of 2011">
 
@@ -31,6 +31,46 @@
     <meta property="og:url" content="https://playlistverse.in/telugu/years/telugu-2011-hits.html">
 
     <meta property="og:image" content="https://playlistverse.in/images/telugu/years/telugu-2011-hits.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Best Telugu Songs of 2011">
+
+    <meta name="twitter:description" content="Top Telugu movie songs of 2011 in one Spotify playlist.">
+
+    <meta name="twitter:image" content="https://playlistverse.in/images/telugu/years/telugu-2011-hits.webp">
+
+    <style>
+        .artist-faq { margin-top: 2.5rem; }
+        .faq-list { counter-reset: faq-counter; margin-top: 1.25rem; }
+        .faq-item {
+            counter-increment: faq-counter;
+            position: relative;
+            display: flex;
+            gap: 1rem;
+            padding: 1.1rem 1.25rem 1.1rem 1.1rem;
+            margin-bottom: 0.9rem;
+            border-left: 3px solid #4f46e5;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(79,70,229,0.06), rgba(6,182,212,0.04));
+        }
+        .faq-item::before {
+            content: counter(faq-counter);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .faq-body h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+        .faq-body p { margin: 0; }
+    </style>
 
 </head>
 
@@ -88,6 +128,18 @@
             </div>
         </section>
 
+        <section class="artist-tracklist">
+            <h2>Notable Films of 2011</h2>
+            <ul>
+                <li>"Dookudu"</li>
+                <li>"Mr. Perfect"</li>
+                <li>"Oosaravelli"</li>
+                <li>"Badrinath"</li>
+                <li>"Kandireega"</li>
+                <li>"100% Love"</li>
+            </ul>
+        </section>
+
         <section>
 
             <h2>Why Listen to this Playlist?</h2>
@@ -117,8 +169,34 @@
                 released in 2011, not just skimming the songs that got the most airplay. That's where the
                 underrated picks come from — tracks that deserved more attention than they got when the movie
                 first released.
+
+                The list of films used as reference for 2011 releases came from Wikipedia's <a href="https://en.wikipedia.org/wiki/List_of_Telugu_films_of_2011" target="_blank" rel="noopener noreferrer">List of Telugu films of 2011</a> and FilmiBeat's <a href="https://www.filmibeat.com/telugu/movies-by-year/2011.html" target="_blank" rel="noopener noreferrer">Telugu movies by year: 2011</a> archive.
             </p>
 
+        </section>
+
+        <section class="artist-faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>What was the biggest Telugu film of 2011?</h3>
+                        <p>"Dookudu" — Mahesh Babu's action comedy was the year's highest grosser and swept Best Film, Best Actor, and Best Music Director at the South Indian International Movie Awards.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>Does this playlist include underrated songs, or just the popular hits?</h3>
+                        <p>Both. This playlist was curated by going through every Telugu film released in 2011, using Wikipedia's "List of Telugu films of 2011" and FilmiBeat's movies-by-year archive as reference, so a number of underrated tracks that didn't get their moment sit alongside the well-known hits.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>How many Telugu films were released in 2011?</h3>
+                        <p>Around 105 straight Telugu films were released in 2011, according to Wikipedia's List of Telugu films of 2011.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="related-artists">
@@ -147,12 +225,45 @@
     <script type="application/ld+json">
 
 {
- "@context":"https://schema.org",
- "@type":"MusicPlaylist",
- "name":"Best Telugu Songs of 2011",
- "description":"Top Telugu movie songs of 2011 in one Spotify playlist.",
- "url":"https://playlistverse.in/telugu/years/telugu-2011-hits.html",
- "image":"https://playlistverse.in/images/telugu/years/telugu-2011-hits.webp"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicPlaylist",
+      "name": "Best Telugu Songs of 2011",
+      "description": "Top Telugu movie songs of 2011 in one Spotify playlist.",
+      "url": "https://playlistverse.in/telugu/years/telugu-2011-hits.html",
+      "image": "https://playlistverse.in/images/telugu/years/telugu-2011-hits.webp"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://playlistverse.in/"},
+        {"@type": "ListItem", "position": 2, "name": "Telugu", "item": "https://playlistverse.in/telugu/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "Years", "item": "https://playlistverse.in/telugu/years/index.html"},
+        {"@type": "ListItem", "position": 4, "name": "2011", "item": "https://playlistverse.in/telugu/years/telugu-2011-hits.html"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What was the biggest Telugu film of 2011?",
+          "acceptedAnswer": {"@type": "Answer", "text": "\"Dookudu\" \u2014 Mahesh Babu's action comedy was the year's highest grosser and swept Best Film, Best Actor, and Best Music Director at the South Indian International Movie Awards."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does this playlist include underrated songs, or just the popular hits?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Both. This playlist was curated by going through every Telugu film released in 2011, using Wikipedia's \"List of Telugu films of 2011\" and FilmiBeat's movies-by-year archive as reference, so a number of underrated tracks that didn't get their moment sit alongside the well-known hits."}
+        },
+        {
+          "@type": "Question",
+          "name": "How many Telugu films were released in 2011?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Around 105 straight Telugu films were released in 2011, according to Wikipedia's List of Telugu films of 2011."}
+        }
+      ]
+    }
+  ]
 }
 
 </script>
