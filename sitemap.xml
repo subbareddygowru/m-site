@@ -212,6 +212,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://playlistverse.in/telugu/years/telugu-2015-hits.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://playlistverse.in/telugu/years/telugu-2016-hits.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://playlistverse.in/telugu/years/telugu-2017-hits.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://playlistverse.in/telugu/years/telugu-2018-hits.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://playlistverse.in/telugu/years/telugu-2019-hits.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://playlistverse.in/telugu/genres/</loc>
     <lastmod>2026-08-11</lastmod>
     <changefreq>weekly</changefreq>
