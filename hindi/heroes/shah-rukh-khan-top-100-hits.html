@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <title>Shah Rukh Khan Top 100 Hits Playlist | PlaylistVerse</title>
+    <title>Shah Rukh Khan Top 100 Hits | PlaylistVerse</title>
 
     <meta name="description"
-        content="Listen to the best Shah Rukh Khan songs on Spotify. Enjoy his top 100 Bollywood hits, romantic melodies and blockbuster songs curated by PlaylistVerse.">
+        content="Shah Rukh Khan's top 100 Bollywood songs — romantic melodies and blockbuster hits — curated by PlaylistVerse with his full career story.">
 
     <meta name="keywords"
-        content="Shah Rukh Khan songs, Shah Rukh Khan Spotify playlist, Shah Rukh Khan Hindi songs, Shah Rukh Khan Bollywood hits, SRK songs, King Khan songs">
+        content="Shah Rukh Khan songs, Shah Rukh Khan Top Hits, Shah Rukh Khan Hindi songs, SRK songs, King Khan songs">
 
     <meta name="robots" content="index,follow">
 
@@ -24,15 +24,55 @@
 
     <!-- Open Graph -->
 
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="music.playlist">
 
     <meta property="og:title" content="Shah Rukh Khan Top 100 Hits">
 
-    <meta property="og:description" content="Best Shah Rukh Khan Spotify playlist with iconic Bollywood hits.">
+    <meta property="og:description" content="Shah Rukh Khan's top 100 Bollywood songs — romantic melodies and blockbuster hits — curated by PlaylistVerse with his full career story.">
 
     <meta property="og:url" content="https://playlistverse.in/hindi/heroes/shah-rukh-khan-top-100-hits.html">
 
     <meta property="og:image" content="https://playlistverse.in/images/hindi/heroes/shah-rukh-khan.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Shah Rukh Khan Top 100 Hits">
+
+    <meta name="twitter:description" content="Shah Rukh Khan's top 100 Bollywood songs — romantic melodies and blockbuster hits.">
+
+    <meta name="twitter:image" content="https://playlistverse.in/images/hindi/heroes/shah-rukh-khan.webp">
+
+    <style>
+        .artist-faq { margin-top: 2.5rem; }
+        .faq-list { counter-reset: faq-counter; margin-top: 1.25rem; }
+        .faq-item {
+            counter-increment: faq-counter;
+            position: relative;
+            display: flex;
+            gap: 1rem;
+            padding: 1.1rem 1.25rem 1.1rem 1.1rem;
+            margin-bottom: 0.9rem;
+            border-left: 3px solid #4f46e5;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(79,70,229,0.06), rgba(6,182,212,0.04));
+        }
+        .faq-item::before {
+            content: counter(faq-counter);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .faq-body h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+        .faq-body p { margin: 0; }
+    </style>
 
 </head>
 
@@ -60,21 +100,20 @@
         <!-- Artist Header with Custom Visual -->
         <div class="artist-header">
             <!-- Drop your artist image here: images/hindi/heroes/shah-rukh-khan.webp -->
-            <img src="/images/hindi/heroes/shah-rukh-khan.webp" alt="Shah Rukh Khan Top Hits Spotify Playlist"
+            <img src="/images/hindi/heroes/shah-rukh-khan.webp" alt="Shah Rukh Khan Top Hits"
                 class="artist-cover-image">
 
             <div class="artist-info">
                 <h1>Shah Rukh Khan</h1>
-                <p>Bollywood's beloved "King of Romance", Shah Rukh Khan's films have given us some of Hindi cinema's
-                    most unforgettable songs. This collection brings together his signature hits, evergreen romantic
-                    melodies and dance chartbusters from across his legendary career. Whether you're reliving nostalgic
-                    favorites or discovering his iconic songs for the first time, these playlists celebrate the journey
-                    of one of India's greatest superstars.
+                <p>Bollywood's "King of Romance" built a soundtrack legacy that spans villain-era menace, heartbreak
+                    ballads, and the arms-outstretched dance move that became shorthand for Hindi cinema itself.
+                    This collection brings together his biggest song moments across more than three decades,
+                    from early 90s hits to his most recent blockbusters.
                 </p>
             </div>
         </div>
 
-        <!-- SPOTIFY PLAYLIST EMBEDS -->
+        <!-- PLAYLIST EMBEDS -->
         <section class="artist-playlists">
             <h2>Top Playlists</h2>
 
@@ -82,7 +121,7 @@
 
                 <div class="card">
                     <h3>🔥 Shah Rukh Khan Top 100 Hits</h3>
-                    <!-- Replace src with the specific Spotify embed link -->
+                    <!-- Replace src with the specific embed link -->
                     <iframe style="border-radius:12px" title="Shah Rukh Khan Top 100 Hits"
                         src="https://open.spotify.com/embed/playlist/2coutPEKXpozZNNZjmEoLY" width="100%" height="352"
                         frameBorder="0" allowfullscreen=""
@@ -90,27 +129,39 @@
                         loading="lazy"></iframe>
                 </div>
 
-                <!-- <div class="card">
-                    <h3>❤️ Romantic Melodies</h3>
-                    <iframe style="border-radius:12px" src="YOUR_SPOTIFY_EMBED_URL_2" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div> -->
-
             </div>
+        </section>
+
+        <section class="artist-bio">
+            <h2>Who Is Shah Rukh Khan?</h2>
+            <p>Born Shahrukh Khan on 2 November 1965 in New Delhi, he trained in theatre under Barry John and studied at Hansraj College before breaking into television with "Fauji" (1989) and "Circus." His Bollywood debut came with "Deewana" (1992), which won him the Filmfare Award for Best Male Debut. He was first known for villainous roles in "Baazigar" (1993), "Darr" (1993), and "Anjaam" (1994) — "Baazigar" brought his first Filmfare Best Actor win — before "Dilwale Dulhania Le Jayenge" (1995) reset his image entirely and made his on-screen pairing with Kajol iconic.</p>
+            <p>He's since starred in over 100 films, holding a record eight Filmfare Best Actor awards, and won the National Film Award for Best Actor for "Jawan" in 2025. He co-owns the production house Red Chillies Entertainment with wife Gauri Khan, and became a co-owner of the IPL's Kolkata Knight Riders in 2008. He received India's Padma Shri in 2005, France's Ordre des Arts et des Lettres in 2007, and the Legion of Honour in 2014.</p>
+        </section>
+
+        <section class="artist-tracklist">
+            <h2>Notable Songs</h2>
+            <ul>
+                <li><strong>Tujhe Dekha To</strong> — from "Dilwale Dulhania Le Jayenge" (1995), his career-defining romantic anthem</li>
+                <li><strong>Chaiyya Chaiyya</strong> — from "Dil Se" (1998), filmed atop a moving train without safety harnesses</li>
+                <li><strong>Kuch Kuch Hota Hai</strong> — title track from the 1998 film that cemented his romantic-hero image</li>
+                <li><strong>Suraj Hua Maddham</strong> — from "Kabhi Khushi Kabhie Gham" (2001)</li>
+                <li><strong>Zinda</strong> — from "Jawan" (2023), part of his award-winning 2020s comeback run</li>
+            </ul>
         </section>
 
         <section>
 
-            <h2>Why Listen to this Playlist?</h2>
+            <h2>Why This Playlist</h2>
 
             <ul>
 
-                <li>100 handpicked songs</li>
+                <li>100 handpicked songs spanning over three decades of Bollywood</li>
 
-                <li>Best romantic hits</li>
+                <li>Best romantic hits and blockbuster anthems side by side</li>
 
-                <li>Evergreen classics</li>
+                <li>Evergreen classics from his 90s peak to his 2020s comeback</li>
 
-                <li>High quality Spotify playlist</li>
+                <li>High quality Top Hits collection</li>
 
                 <li>Regularly updated</li>
 
@@ -118,15 +169,44 @@
 
         </section>
 
+        <section class="artist-faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>What was Shah Rukh Khan's debut Bollywood film?</h3>
+                        <p>"Deewana" (1992), which won him the Filmfare Award for Best Male Debut and launched his film career after a run of television roles.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>How many Filmfare Awards has Shah Rukh Khan won?</h3>
+                        <p>He holds a record eight Filmfare Best Actor awards, part of 14 Filmfare wins overall, and won the National Film Award for Best Actor for "Jawan" in 2025.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>What is Shah Rukh Khan's most iconic song?</h3>
+                        <p>"Tujhe Dekha To," from "Dilwale Dulhania Le Jayenge" (1995), is widely considered his defining romantic anthem and remains one of Bollywood's most-loved love songs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="related-artists">
 
             <h2>You May Also Like</h2>
 
-            <div class="related-grid">
+            <div class="related-grid" id="relatedGrid">
 
                 <a href="../singers/shreya-ghoshal-top-100-hits.html" class="related-card">
                     <img src="/images/hindi/singers/shreya-ghoshal.webp" alt="Shreya Ghoshal" loading="lazy">
                     <h3>Shreya Ghoshal</h3>
+                </a>
+
+                <a href="../singers/udit-narayan-top-100-hits.html" class="related-card">
+                    <img src="/images/hindi/singers/udit-narayan.webp" alt="Udit Narayan" loading="lazy">
+                    <h3>Udit Narayan</h3>
                 </a>
 
                 <a href="salman-khan-top-50-hits.html" class="related-card">
@@ -148,16 +228,62 @@
     <script type="application/ld+json">
 
 {
- "@context":"https://schema.org",
- "@type":"MusicPlaylist",
- "name":"Shah Rukh Khan Top 100 Hits",
- "description":"Best Shah Rukh Khan songs playlist",
- "url":"https://playlistverse.in/hindi/heroes/shah-rukh-khan-top-100-hits.html",
- "image":"https://playlistverse.in/images/hindi/heroes/shah-rukh-khan.webp",
- "numTracks":"100"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicPlaylist",
+      "name": "Shah Rukh Khan Top 100 Hits",
+      "description": "Shah Rukh Khan's top 100 Bollywood songs, romantic melodies and blockbuster hits, curated by PlaylistVerse.",
+      "url": "https://playlistverse.in/hindi/heroes/shah-rukh-khan-top-100-hits.html",
+      "image": "https://playlistverse.in/images/hindi/heroes/shah-rukh-khan.webp",
+      "numTracks": "100"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://playlistverse.in/"},
+        {"@type": "ListItem", "position": 2, "name": "Hindi", "item": "https://playlistverse.in/hindi/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "Heroes", "item": "https://playlistverse.in/hindi/heroes/index.html"},
+        {"@type": "ListItem", "position": 4, "name": "Shah Rukh Khan", "item": "https://playlistverse.in/hindi/heroes/shah-rukh-khan-top-100-hits.html"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What was Shah Rukh Khan's debut Bollywood film?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Deewana (1992), which won him the Filmfare Award for Best Male Debut and launched his film career after a run of television roles."}
+        },
+        {
+          "@type": "Question",
+          "name": "How many Filmfare Awards has Shah Rukh Khan won?",
+          "acceptedAnswer": {"@type": "Answer", "text": "He holds a record eight Filmfare Best Actor awards, part of 14 Filmfare wins overall, and won the National Film Award for Best Actor for Jawan in 2025."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is Shah Rukh Khan's most iconic song?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Tujhe Dekha To, from Dilwale Dulhania Le Jayenge (1995), is widely considered his defining romantic anthem and remains one of Bollywood's most-loved love songs."}
+        }
+      ]
+    }
+  ]
 }
 
 </script>
+
+    <script>
+        (function () {
+            var grid = document.getElementById("relatedGrid");
+            if (!grid) return;
+            var cards = Array.prototype.slice.call(grid.children);
+            for (var i = cards.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var tmp = cards[i]; cards[i] = cards[j]; cards[j] = tmp;
+            }
+            cards.forEach(function (c) { grid.appendChild(c); });
+        })();
+    </script>
 
 </body>
 <div id="footer"></div>
