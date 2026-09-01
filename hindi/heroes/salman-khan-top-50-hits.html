@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <title>Salman Khan Top 50 Hits Playlist | PlaylistVerse</title>
+    <title>Salman Khan Top 50 Hits | PlaylistVerse</title>
 
     <meta name="description"
-        content="Listen to the best Salman Khan songs on Spotify. His top 50 Bollywood hits, wedding anthems and dance chartbusters, curated by PlaylistVerse.">
+        content="Salman Khan's top 50 Bollywood songs — wedding anthems and dance chartbusters — curated by PlaylistVerse with his full career story.">
 
     <meta name="keywords"
-        content="Salman Khan songs, Salman Khan Spotify playlist, Salman Khan Hindi songs, Salman Khan Bollywood hits, Bhaijaan songs, Salman Khan top songs">
+        content="Salman Khan songs, Salman Khan Top Hits, Salman Khan Hindi songs, Salman Khan Bollywood hits, Bhaijaan songs">
 
     <meta name="robots" content="index,follow">
 
@@ -24,15 +24,55 @@
 
     <!-- Open Graph -->
 
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="music.playlist">
 
     <meta property="og:title" content="Salman Khan Top 50 Hits">
 
-    <meta property="og:description" content="Best Salman Khan Spotify playlist with wedding anthems and dance hits.">
+    <meta property="og:description" content="Salman Khan's top 50 Bollywood songs — wedding anthems and dance chartbusters — curated by PlaylistVerse with his full career story.">
 
     <meta property="og:url" content="https://playlistverse.in/hindi/heroes/salman-khan-top-50-hits.html">
 
     <meta property="og:image" content="https://playlistverse.in/images/hindi/heroes/salman-khan.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Salman Khan Top 50 Hits">
+
+    <meta name="twitter:description" content="Salman Khan's top 50 Bollywood songs — wedding anthems and dance chartbusters.">
+
+    <meta name="twitter:image" content="https://playlistverse.in/images/hindi/heroes/salman-khan.webp">
+
+    <style>
+        .artist-faq { margin-top: 2.5rem; }
+        .faq-list { counter-reset: faq-counter; margin-top: 1.25rem; }
+        .faq-item {
+            counter-increment: faq-counter;
+            position: relative;
+            display: flex;
+            gap: 1rem;
+            padding: 1.1rem 1.25rem 1.1rem 1.1rem;
+            margin-bottom: 0.9rem;
+            border-left: 3px solid #4f46e5;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(79,70,229,0.06), rgba(6,182,212,0.04));
+        }
+        .faq-item::before {
+            content: counter(faq-counter);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .faq-body h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+        .faq-body p { margin: 0; }
+    </style>
 
 </head>
 
@@ -60,7 +100,7 @@
         <!-- Artist Header with Custom Visual -->
         <div class="artist-header">
             <!-- Drop your artist image here: images/hindi/heroes/salman-khan.webp -->
-            <img src="/images/hindi/heroes/salman-khan.webp" alt="Salman Khan Top Hits Spotify Playlist"
+            <img src="/images/hindi/heroes/salman-khan.webp" alt="Salman Khan Top Hits"
                 class="artist-cover-image">
 
             <div class="artist-info">
@@ -75,7 +115,7 @@
             </div>
         </div>
 
-        <!-- SPOTIFY PLAYLIST EMBEDS -->
+        <!-- PLAYLIST EMBEDS -->
         <section class="artist-playlists">
             <h2>Top Playlist</h2>
 
@@ -91,6 +131,23 @@
                 </div>
 
             </div>
+        </section>
+
+        <section class="artist-bio">
+            <h2>Who Is Salman Khan?</h2>
+            <p>Born Abdul Rashid Salim Salman Khan on 27 December 1965 in Indore, he's the son of screenwriter Salim Khan, one half of the legendary Salim-Javed writing duo. He debuted with a supporting role in "Biwi Ho To Aisi" (1988), but it was Sooraj Barjatya's "Maine Pyaar Kiya" (1989) that made him an overnight star and won him the Filmfare Award for Best Male Debut — the film's soundtrack, and his "Prem" persona, became a cultural reset for Bollywood romance.</p>
+            <p>His song legacy since then has leaned less on his own singing and more on picking soundtracks people can't stop dancing to — "Didi Tera Devar Deewana" from "Hum Aapke Hain Koun..!" (1994) turned into a permanent wedding-season fixture, and after his early-2000s box-office lull he reset his image entirely with "Wanted" (2009) and the "Dabangg" franchise. He's since lent his own voice to tracks like "Jag Ghoomeya" and "Main Hoon Hero Tera." Off screen, he founded the Being Human Foundation in 2007 and has won two National Film Awards as a producer, for "Chillar Party" and "Bajrangi Bhaijaan."</p>
+        </section>
+
+        <section class="artist-tracklist">
+            <h2>Notable Songs</h2>
+            <ul>
+                <li><strong>Didi Tera Devar Deewana</strong> — from "Hum Aapke Hain Koun..!" (1994), a wedding-season staple ever since</li>
+                <li><strong>Oh Oh Jaane Jaana</strong> — from "Pyaar Kiya To Darna Kya" (1998), the ripped-jeans look that became a trend</li>
+                <li><strong>Jag Ghoomeya</strong> — from "Sultan" (2016), one of his own vocal contributions</li>
+                <li><strong>Main Hoon Hero Tera</strong> — from "Hero" (2015), another track featuring his own voice</li>
+                <li>Chartbusters from the <strong>Dabangg</strong> and <strong>Tiger</strong> franchises</li>
+            </ul>
         </section>
 
         <section>
@@ -111,7 +168,7 @@
 
                 <li>Three decades of Bollywood dance hits</li>
 
-                <li>High quality Spotify playlist</li>
+                <li>High quality Top Hits collection</li>
 
                 <li>Regularly updated</li>
 
@@ -119,11 +176,35 @@
 
         </section>
 
+        <section class="artist-faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>What was Salman Khan's breakout song?</h3>
+                        <p>"Dil Deewana," from his 1989 debut hit "Maine Pyaar Kiya," established the soft, romantic "Prem" image that defined his early career.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>Does Salman Khan sing his own songs?</h3>
+                        <p>Occasionally — he's lent his own voice to tracks like "Jag Ghoomeya" (Sultan) and "Main Hoon Hero Tera" (Hero), though most of his soundtracks are sung by professional playback singers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>What is Salman Khan's most iconic wedding song?</h3>
+                        <p>"Didi Tera Devar Deewana," from "Hum Aapke Hain Koun..!" (1994), remains one of Bollywood's most-played wedding anthems three decades on.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="related-artists">
 
             <h2>You May Also Like</h2>
 
-            <div class="related-grid">
+            <div class="related-grid" id="relatedGrid">
 
                 <a href="shah-rukh-khan-top-100-hits.html" class="related-card">
                     <img src="/images/hindi/heroes/shah-rukh-khan.webp" alt="Shah Rukh Khan" loading="lazy">
@@ -135,6 +216,16 @@
                     <h3>Emraan Hashmi</h3>
                 </a>
 
+                <a href="../singers/kumar-sanu-top-50-hits.html" class="related-card">
+                    <img src="/images/hindi/singers/kumar-sanu.webp" alt="Kumar Sanu" loading="lazy">
+                    <h3>Kumar Sanu</h3>
+                </a>
+
+                <a href="../singers/arijit-singh-top-100-hits.html" class="related-card">
+                    <img src="/images/hindi/singers/arijit-singh.webp" alt="Arijit Singh" loading="lazy">
+                    <h3>Arijit Singh</h3>
+                </a>
+
             </div>
 
         </section>
@@ -144,16 +235,62 @@
     <script type="application/ld+json">
 
 {
- "@context":"https://schema.org",
- "@type":"MusicPlaylist",
- "name":"Salman Khan Top 50 Hits",
- "description":"Best Salman Khan songs playlist",
- "url":"https://playlistverse.in/hindi/heroes/salman-khan-top-50-hits.html",
- "image":"https://playlistverse.in/images/hindi/heroes/salman-khan.webp",
- "numTracks":"50"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicPlaylist",
+      "name": "Salman Khan Top 50 Hits",
+      "description": "Salman Khan's top 50 Bollywood songs, wedding anthems and dance chartbusters, curated by PlaylistVerse.",
+      "url": "https://playlistverse.in/hindi/heroes/salman-khan-top-50-hits.html",
+      "image": "https://playlistverse.in/images/hindi/heroes/salman-khan.webp",
+      "numTracks": "50"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://playlistverse.in/"},
+        {"@type": "ListItem", "position": 2, "name": "Hindi", "item": "https://playlistverse.in/hindi/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "Heroes", "item": "https://playlistverse.in/hindi/heroes/index.html"},
+        {"@type": "ListItem", "position": 4, "name": "Salman Khan", "item": "https://playlistverse.in/hindi/heroes/salman-khan-top-50-hits.html"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What was Salman Khan's breakout song?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Dil Deewana, from his 1989 debut hit Maine Pyaar Kiya, established the soft, romantic Prem image that defined his early career."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does Salman Khan sing his own songs?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Occasionally — he's lent his own voice to tracks like Jag Ghoomeya (Sultan) and Main Hoon Hero Tera (Hero), though most of his soundtracks are sung by professional playback singers."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is Salman Khan's most iconic wedding song?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Didi Tera Devar Deewana, from Hum Aapke Hain Koun..! (1994), remains one of Bollywood's most-played wedding anthems three decades on."}
+        }
+      ]
+    }
+  ]
 }
 
 </script>
+
+    <script>
+        (function () {
+            var grid = document.getElementById("relatedGrid");
+            if (!grid) return;
+            var cards = Array.prototype.slice.call(grid.children);
+            for (var i = cards.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var tmp = cards[i]; cards[i] = cards[j]; cards[j] = tmp;
+            }
+            cards.forEach(function (c) { grid.appendChild(c); });
+        })();
+    </script>
 
 </body>
 <div id="footer"></div>
