@@ -72,6 +72,48 @@
         }
         .faq-body h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
         .faq-body p { margin: 0; }
+
+        .platform-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+        .platform-tab {
+            border: none;
+            cursor: pointer;
+            padding: 0.55rem 1.1rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.92rem;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+        .platform-tab[data-tab="spotify"] { color: #1DB954; background: rgba(29,185,84,0.10); }
+        .platform-tab[data-tab="spotify"].active { color: #fff; background: #1DB954; }
+
+        .platform-tab[data-tab="ytmusic"] { color: #FF0000; background: rgba(255,0,0,0.08); }
+        .platform-tab[data-tab="ytmusic"].active { color: #fff; background: #FF0000; }
+
+        .platform-tab[data-tab="amazonmusic"] { color: #00A8E1; background: rgba(0,168,225,0.10); }
+        .platform-tab[data-tab="amazonmusic"].active { color: #fff; background: #00A8E1; }
+
+        .platform-panel { display: none; }
+        .platform-panel.active { display: block; }
+        .amazon-music-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            background: linear-gradient(90deg, rgba(0,168,225,0.08), rgba(0,168,225,0.02));
+            border: 1px solid rgba(0,168,225,0.25);
+        }
+        .amazon-music-card p { margin: 0; }
+        .amazon-music-card a.btn-link {
+            display: inline-block;
+            padding: 0.6rem 1.3rem;
+            border-radius: 8px;
+            background: #00A8E1;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
     </style>
 
 </head>
@@ -118,24 +160,37 @@
         <section class="artist-playlists">
             <h2>Top Playlists</h2>
 
-            <!-- Reusing your existing grid CSS for consistency -->
-            <div class="grid">
+            <div class="card">
+                <h3>🔥 Nandamuri Balakrishna Top 100 Hits</h3>
 
-                <div class="card">
-                    <h3>🔥 Nandamuri Balakrishna Top 100 Hits</h3>
-                    <!-- Replace src with the specific embed link -->
-                    <iframe style="border-radius:12px" title="Nandamuri Balakrishna Top 100 Hits"
+                <div class="platform-tabs" role="tablist">
+                    <button type="button" class="platform-tab active" data-tab="spotify">Spotify</button>
+                    <button type="button" class="platform-tab" data-tab="ytmusic">YouTube Music</button>
+                    <button type="button" class="platform-tab" data-tab="amazonmusic">Amazon Music</button>
+                </div>
+
+                <div class="platform-panel active" data-panel="spotify">
+                    <iframe style="border-radius:12px" title="Nandamuri Balakrishna Top 100 Hits on Spotify"
                         src="https://open.spotify.com/embed/playlist/55iCxkCjxD8aga6nD2XNQz" width="100%" height="352"
                         frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
                 </div>
 
-                <!-- <div class="card">
-                    <h3>❤️ Romantic Melodies</h3>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/55iCxkCjxD8aga6nD2XNQz" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div> -->
+                <div class="platform-panel" data-panel="ytmusic">
+                    <iframe style="border-radius:12px" title="Nandamuri Balakrishna Top 100 Hits on YouTube Music"
+                        src="https://www.youtube.com/embed/videoseries?list=PLUq-fCX05tN0VPnR2AY2_ZsL2XeChAaWk"
+                        width="100%" height="352" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy"></iframe>
+                </div>
 
+                <div class="platform-panel" data-panel="amazonmusic">
+                    <div class="amazon-music-card">
+                        <p>Amazon Music doesn't support embedded playlist players, so this one opens directly in Amazon Music.</p>
+                        <a class="btn-link" href="https://music.amazon.in/user-playlists/b8861e2d47554450b8ebe6d1174bd25bi8n0" target="_blank" rel="noopener noreferrer">Open in Amazon Music</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -280,6 +335,22 @@
 }
 
 </script>
+
+    <script>
+        (function () {
+            var tabs = document.querySelectorAll(".platform-tab");
+            var panels = document.querySelectorAll(".platform-panel");
+            tabs.forEach(function (tab) {
+                tab.addEventListener("click", function () {
+                    var target = tab.getAttribute("data-tab");
+                    tabs.forEach(function (t) { t.classList.remove("active"); });
+                    panels.forEach(function (p) { p.classList.remove("active"); });
+                    tab.classList.add("active");
+                    document.querySelector('.platform-panel[data-panel="' + target + '"]').classList.add("active");
+                });
+            });
+        })();
+    </script>
 
     <script>
         (function () {
