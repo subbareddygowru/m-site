@@ -73,15 +73,22 @@
         .faq-body h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
         .faq-body p { margin: 0; }
 
-        .platform-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+        .platform-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: nowrap; }
         .platform-tab {
+            flex: 1;
             border: none;
             cursor: pointer;
-            padding: 0.55rem 1.1rem;
+            padding: 0.55rem 0.6rem;
             border-radius: 999px;
             font-weight: 600;
             font-size: 0.92rem;
+            text-align: center;
+            white-space: nowrap;
             transition: background 0.15s ease, color 0.15s ease;
+        }
+        @media (max-width: 480px) {
+            .platform-tabs { gap: 0.3rem; }
+            .platform-tab { padding: 0.45rem 0.3rem; font-size: 0.68rem; border-radius: 8px; }
         }
         .platform-tab[data-tab="spotify"] { color: #1DB954; background: rgba(29,185,84,0.10); }
         .platform-tab[data-tab="spotify"].active { color: #fff; background: #1DB954; }
@@ -114,6 +121,11 @@
             font-weight: 600;
             text-decoration: none;
         }
+        .yt-music-card {
+            background: linear-gradient(90deg, rgba(255,0,0,0.08), rgba(255,0,0,0.02));
+            border: 1px solid rgba(255,0,0,0.25);
+        }
+        .yt-music-card a.btn-link.yt-btn { background: #FF0000; }
     </style>
 
 </head>
@@ -178,7 +190,11 @@
                 </div>
 
                 <div class="platform-panel" data-panel="ytmusic">
-                    <iframe style="border-radius:12px" title="Nandamuri Balakrishna Top 100 Hits on YouTube Music"
+                    <div class="amazon-music-card yt-music-card">
+                        <p>YouTube doesn't offer an embeddable player that matches the YouTube Music app experience, so this opens the full experience directly in YouTube Music. A quick preview is embedded below.</p>
+                        <a class="btn-link yt-btn" href="https://music.youtube.com/playlist?list=PLUq-fCX05tN0VPnR2AY2_ZsL2XeChAaWk" target="_blank" rel="noopener noreferrer">Open in YouTube Music</a>
+                    </div>
+                    <iframe style="border-radius:12px; margin-top: 1rem;" title="Nandamuri Balakrishna Top 100 Hits preview on YouTube"
                         src="https://www.youtube.com/embed/videoseries?list=PLUq-fCX05tN0VPnR2AY2_ZsL2XeChAaWk"
                         width="100%" height="352" frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
