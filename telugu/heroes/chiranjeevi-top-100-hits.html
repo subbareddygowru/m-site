@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Megastar Chiranjeevi Telugu Hits & Spotify Playlist | PlaylistVerse</title>
+    <title>Megastar Chiranjeevi Telugu Hits | Top Hits | PlaylistVerse</title>
 
     <meta name="description"
-        content="Stream Megastar Chiranjeevi's top 100 Telugu songs on Spotify — evergreen dance numbers, romantic melodies and blockbuster hits, curated by PlaylistVerse.">
+        content="Megastar Chiranjeevi's top 100 Telugu songs — evergreen dance numbers, romantic melodies and blockbuster hits, curated by PlaylistVerse.">
 
     <meta name="keywords"
-        content="Chiranjeevi songs, Chiranjeevi Spotify playlist, Chiranjeevi Telugu songs, Megastar Chiranjeevi hits, Chiranjeevi dance songs">
+        content="Chiranjeevi songs, Chiranjeevi Top Hits, Chiranjeevi Telugu songs, Megastar Chiranjeevi hits, Chiranjeevi dance songs">
 
     <meta name="robots" content="index,follow">
 
@@ -27,9 +27,9 @@
 
     <meta property="og:type" content="music.playlist">
 
-    <meta property="og:title" content="Megastar Chiranjeevi Telugu Hits & Spotify Playlist">
+    <meta property="og:title" content="Megastar Chiranjeevi Telugu Hits | Top Hits">
 
-    <meta property="og:description" content="Stream Megastar Chiranjeevi's top 100 Telugu songs on Spotify — evergreen dance numbers, romantic melodies and blockbuster hits, curated by PlaylistVerse.">
+    <meta property="og:description" content="Megastar Chiranjeevi's top 100 Telugu songs — evergreen dance numbers, romantic melodies and blockbuster hits, curated by PlaylistVerse.">
 
     <meta property="og:url" content="https://playlistverse.in/telugu/heroes/chiranjeevi-top-100-hits.html">
 
@@ -37,11 +37,67 @@
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <meta name="twitter:title" content="Megastar Chiranjeevi Telugu Hits & Spotify Playlist">
+    <meta name="twitter:title" content="Megastar Chiranjeevi Telugu Hits | Top Hits">
 
-    <meta name="twitter:description" content="Stream Megastar Chiranjeevi's top 100 Telugu songs on Spotify — evergreen dance numbers, romantic melodies and blockbuster hits.">
+    <meta name="twitter:description" content="Megastar Chiranjeevi's top 100 Telugu songs — evergreen dance numbers, romantic melodies and blockbuster hits.">
 
     <meta name="twitter:image" content="https://playlistverse.in/images/telugu/heroes/chiranjeevi.webp">
+
+    <style>
+        .platform-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: nowrap; }
+        .platform-tab {
+            flex: 1;
+            border: none;
+            cursor: pointer;
+            padding: 0.55rem 0.6rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.92rem;
+            text-align: center;
+            white-space: nowrap;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+        @media (max-width: 480px) {
+            .platform-tabs { gap: 0.3rem; }
+            .platform-tab { padding: 0.45rem 0.3rem; font-size: 0.68rem; border-radius: 8px; }
+        }
+        .platform-tab[data-tab="spotify"] { color: #1DB954; background: rgba(29,185,84,0.10); }
+        .platform-tab[data-tab="spotify"].active { color: #fff; background: #1DB954; }
+
+        .platform-tab[data-tab="ytmusic"] { color: #FF0000; background: rgba(255,0,0,0.08); }
+        .platform-tab[data-tab="ytmusic"].active { color: #fff; background: #FF0000; }
+
+        .platform-tab[data-tab="amazonmusic"] { color: #00A8E1; background: rgba(0,168,225,0.10); }
+        .platform-tab[data-tab="amazonmusic"].active { color: #fff; background: #00A8E1; }
+
+        .platform-panel { display: none; }
+        .platform-panel.active { display: block; }
+        .amazon-music-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            background: linear-gradient(90deg, rgba(0,168,225,0.08), rgba(0,168,225,0.02));
+            border: 1px solid rgba(0,168,225,0.25);
+        }
+        .amazon-music-card p { margin: 0; }
+        .amazon-music-card a.btn-link {
+            display: inline-block;
+            padding: 0.6rem 1.3rem;
+            border-radius: 8px;
+            background: #00A8E1;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .yt-music-card {
+            background: linear-gradient(90deg, rgba(255,0,0,0.08), rgba(255,0,0,0.02));
+            border: 1px solid rgba(255,0,0,0.25);
+        }
+        .yt-music-card a.btn-link.yt-btn { background: #FF0000; }
+    </style>
 
 </head>
 
@@ -68,7 +124,7 @@
         <!-- Artist Header with Custom Visual -->
         <div class="artist-header">
             <!-- Drop your 3D enriched visual asset here -->
-            <img src="/images/telugu/heroes/chiranjeevi.webp" alt="Megastar Chiranjeevi Top Hits Spotify Playlist"
+            <img src="/images/telugu/heroes/chiranjeevi.webp" alt="Megastar Chiranjeevi Top Hits"
                 class="artist-cover-image" width="320" height="320" fetchpriority="high" decoding="async">
 
             <div class="artist-info">
@@ -78,19 +134,41 @@
             </div>
         </div>
 
-        <!-- SPOTIFY PLAYLIST EMBEDS -->
+        <!-- PLAYLIST EMBEDS -->
         <section class="artist-playlists">
             <h2>Top Playlists</h2>
 
-            <!-- Reusing your existing grid CSS for consistency -->
-            <div class="grid">
+            <div class="card">
+                <h3>🔥 Megastar Chiranjeevi Top 100 Hits</h3>
 
-                <div class="card">
-                    <h3>🔥 Megastar Chiranjeevi Top 100 Hits</h3>
-                    <!-- Replace src with the specific Spotify embed link -->
-                    <iframe title="Megastar Chiranjeevi Top 100 Hits" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3OvAW5ftw50pQeriBrhuKz" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <div class="platform-tabs" role="tablist">
+                    <button type="button" class="platform-tab active" data-tab="spotify">Spotify</button>
+                    <button type="button" class="platform-tab" data-tab="ytmusic">YouTube Music</button>
+                    <button type="button" class="platform-tab" data-tab="amazonmusic">Amazon Music</button>
                 </div>
 
+                <div class="platform-panel active" data-panel="spotify">
+                    <iframe title="Megastar Chiranjeevi Top 100 Hits on Spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3OvAW5ftw50pQeriBrhuKz" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+
+                <div class="platform-panel" data-panel="ytmusic">
+                    <div class="amazon-music-card yt-music-card">
+                        <p>YouTube doesn't offer an embeddable player that matches the YouTube Music app experience, so this opens the full experience directly in YouTube Music. A quick preview is embedded below.</p>
+                        <a class="btn-link yt-btn" href="https://music.youtube.com/playlist?list=PLUq-fCX05tN0gw92tmHeZY9Jw8LU5lHpw" target="_blank" rel="noopener noreferrer">Open in YouTube Music</a>
+                    </div>
+                    <iframe style="border-radius:12px; margin-top: 1rem;" title="Megastar Chiranjeevi Top 100 Hits preview on YouTube"
+                        src="https://www.youtube.com/embed/videoseries?list=PLUq-fCX05tN0gw92tmHeZY9Jw8LU5lHpw"
+                        width="100%" height="352" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <div class="platform-panel" data-panel="amazonmusic">
+                    <div class="amazon-music-card">
+                        <p>Amazon Music doesn't support embedded playlist players, so this one opens directly in Amazon Music.</p>
+                        <a class="btn-link" href="https://music.amazon.in/user-playlists/e4e23a7f317f4d35a906ae558b1c4725i8n0" target="_blank" rel="noopener noreferrer">Open in Amazon Music</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -111,6 +189,19 @@
             </ul>
         </section>
 
+        <section class="artist-tracklist">
+            <h2>Career Timeline: How Chiranjeevi's Output Changed</h2>
+
+            <h3>1980s — Extremely High Output</h3>
+            <p>Chiranjeevi was still building his career in the 1980s and was willing to take on multiple films at once — acting in around 60 films across the decade. Multiple releases in a single year was common for Telugu stars at the time, and he took on supporting, negative, experimental, and multi-starrer roles early on. As his popularity exploded, producers wanted to capitalize on his availability, and by the late 1980s he'd become one of Telugu cinema's biggest stars. 1987–89 was especially productive, with films including "Pasivadi Pranam," "Swayam Krushi," "Rudraveena," "Khaidi No. 786," and "Yuddha Bhoomi."</p>
+
+            <h3>1990s — Fewer Films, Bigger Productions</h3>
+            <p>The big shift in the 1990s was that Chiranjeevi became a far more selective lead actor. Instead of doing six to eight films a year, he increasingly focused on bigger-budget productions, stronger scripts, elaborate action and dance sequences, higher production values, and projects built around his star image. Major releases of the decade included "Jagadeka Veerudu Athiloka Sundari" (1990), "Gang Leader" (1991), "Gharana Mogudu" (1992), "Mutamestri" (1993), "Big Boss" (1995), "Hitler" (1997), and "Sneham Kosam" (1999). He was still extremely successful, but the number of films he made each year dropped sharply.</p>
+
+            <h3>2000s — Very Selective, Long Gaps</h3>
+            <p>This is where the shift became most obvious. After "Indra" (2002), his filmography grew much less frequent — "Tagore" (2003), "Andarivadu" (2005), "Jai Chiranjeeva" (2005), and "Stalin" (2006), followed by a long gap before his next release as he moved toward politics and, later, his 2019 comeback.</p>
+        </section>
+
         <section>
 
             <h2>Why This Playlist</h2>
@@ -121,7 +212,7 @@
 
                 <li>Evergreen dance numbers, romantic melodies and mass chartbusters in one place</li>
 
-                <li>High quality Spotify playlist that works on mobile and desktop</li>
+                <li>High quality Top Hits collection that works on mobile and desktop</li>
 
                 <li>Regularly updated by PlaylistVerse</li>
 
@@ -187,7 +278,7 @@
     {
       "@type": "MusicPlaylist",
       "name": "Megastar Chiranjeevi Top 100 Hits",
-      "description": "Stream Megastar Chiranjeevi's top 100 Telugu songs on Spotify, spanning five decades of Telugu cinema, curated by PlaylistVerse.",
+      "description": "Megastar Chiranjeevi's top 100 Telugu songs, spanning five decades of Telugu cinema, curated by PlaylistVerse.",
       "url": "https://playlistverse.in/telugu/heroes/chiranjeevi-top-100-hits.html",
       "image": "https://playlistverse.in/images/telugu/heroes/chiranjeevi.webp",
       "numTracks": "100"
@@ -225,6 +316,22 @@
 }
 
 </script>
+
+    <script>
+        (function () {
+            var tabs = document.querySelectorAll(".platform-tab");
+            var panels = document.querySelectorAll(".platform-panel");
+            tabs.forEach(function (tab) {
+                tab.addEventListener("click", function () {
+                    var target = tab.getAttribute("data-tab");
+                    tabs.forEach(function (t) { t.classList.remove("active"); });
+                    panels.forEach(function (p) { p.classList.remove("active"); });
+                    tab.classList.add("active");
+                    document.querySelector('.platform-panel[data-panel="' + target + '"]').classList.add("active");
+                });
+            });
+        })();
+    </script>
 
     <div id="footer"></div>
 
