@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <title>Allu Arjun Top 100 Hits Playlist | PlaylistVerse</title>
+    <title>Allu Arjun Top 100 Hits | Telugu Songs | PlaylistVerse</title>
 
     <meta name="description"
-        content="Listen to the best Allu Arjun songs on Spotify. Enjoy his top 100 Telugu hits, evergreen classics, romantic melodies and blockbuster songs curated by PlaylistVerse.">
+        content="Allu Arjun's top 100 Telugu hits — mass dance anthems and stylish romantic numbers — curated by PlaylistVerse with his full career story.">
 
     <meta name="keywords"
-        content="Allu Arjun songs, Allu Arjun Spotify playlist, Allu Arjun Melody Songs, Allu Arjun Complete Filmography Hits, Allu Arjun Telugu songs, Allu Arjun Telugu hits,Allu Arjun Top 100 hits, Top 10 Allu Arjun Songs">
+        content="Allu Arjun songs, Allu Arjun Top Hits, Allu Arjun Telugu songs, Allu Arjun Pushpa songs, Icon Star Allu Arjun hits">
 
     <meta name="robots" content="index,follow">
 
@@ -24,15 +24,109 @@
 
     <!-- Open Graph -->
 
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="music.playlist">
 
-    <meta property="og:title" content="Allu Arjun Top 100 Hits">
+    <meta property="og:title" content="Allu Arjun Top 100 Hits | Telugu Songs">
 
-    <meta property="og:description" content="Best Allu Arjun Spotify playlist with evergreen Telugu hits.">
+    <meta property="og:description" content="Allu Arjun's top 100 Telugu hits — mass dance anthems and stylish romantic numbers — curated by PlaylistVerse with his full career story.">
 
     <meta property="og:url" content="https://playlistverse.in/telugu/heroes/allu-arjun-top-100-hits.html">
 
     <meta property="og:image" content="https://playlistverse.in/images/telugu/heroes/allu-arjun.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Allu Arjun Top 100 Hits | Telugu Songs">
+
+    <meta name="twitter:description" content="Allu Arjun's top 100 Telugu hits — mass dance anthems and stylish romantic numbers.">
+
+    <meta name="twitter:image" content="https://playlistverse.in/images/telugu/heroes/allu-arjun.webp">
+
+    <style>
+        .artist-faq { margin-top: 2.5rem; }
+        .faq-list { counter-reset: faq-counter; margin-top: 1.25rem; }
+        .faq-item {
+            counter-increment: faq-counter;
+            position: relative;
+            display: flex;
+            gap: 1rem;
+            padding: 1.1rem 1.25rem 1.1rem 1.1rem;
+            margin-bottom: 0.9rem;
+            border-left: 3px solid #4f46e5;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(79,70,229,0.06), rgba(6,182,212,0.04));
+        }
+        .faq-item::before {
+            content: counter(faq-counter);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .faq-body h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+        .faq-body p { margin: 0; }
+
+        .platform-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: nowrap; }
+        .platform-tab {
+            flex: 1;
+            border: none;
+            cursor: pointer;
+            padding: 0.55rem 0.6rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.92rem;
+            text-align: center;
+            white-space: nowrap;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+        @media (max-width: 480px) {
+            .platform-tabs { gap: 0.3rem; }
+            .platform-tab { padding: 0.45rem 0.3rem; font-size: 0.68rem; border-radius: 8px; }
+        }
+        .platform-tab[data-tab="spotify"] { color: #1DB954; background: rgba(29,185,84,0.10); }
+        .platform-tab[data-tab="spotify"].active { color: #fff; background: #1DB954; }
+
+        .platform-tab[data-tab="ytmusic"] { color: #FF0000; background: rgba(255,0,0,0.08); }
+        .platform-tab[data-tab="ytmusic"].active { color: #fff; background: #FF0000; }
+
+        .platform-tab[data-tab="amazonmusic"] { color: #00A8E1; background: rgba(0,168,225,0.10); }
+        .platform-tab[data-tab="amazonmusic"].active { color: #fff; background: #00A8E1; }
+
+        .platform-panel { display: none; }
+        .platform-panel.active { display: block; }
+        .amazon-music-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            background: linear-gradient(90deg, rgba(0,168,225,0.08), rgba(0,168,225,0.02));
+            border: 1px solid rgba(0,168,225,0.25);
+        }
+        .amazon-music-card p { margin: 0; }
+        .amazon-music-card a.btn-link {
+            display: inline-block;
+            padding: 0.6rem 1.3rem;
+            border-radius: 8px;
+            background: #00A8E1;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .yt-music-card {
+            background: linear-gradient(90deg, rgba(255,0,0,0.08), rgba(255,0,0,0.02));
+            border: 1px solid rgba(255,0,0,0.25);
+        }
+        .yt-music-card a.btn-link.yt-btn { background: #FF0000; }
+    </style>
 
 </head>
 
@@ -59,7 +153,7 @@
         <!-- Artist Header with Custom Visual -->
         <div class="artist-header">
             <!-- Drop your 3D enriched visual asset here -->
-            <img src="/images/telugu/heroes/allu-arjun.webp" alt="Allu Arjun Top Hits Spotify Playlist"
+            <img src="/images/telugu/heroes/allu-arjun.webp" alt="Allu Arjun Top Hits"
                 class="artist-cover-image">
 
             <div class="artist-info">
@@ -74,34 +168,68 @@
             </div>
         </div>
 
-        <!-- SPOTIFY PLAYLIST EMBEDS -->
+        <!-- PLAYLIST EMBEDS -->
         <section class="artist-playlists">
             <h2>Top Playlists</h2>
 
-            <!-- Reusing your existing grid CSS for consistency -->
-            <div class="grid">
+            <div class="card">
+                <h3>🔥 Allu Arjun Top 100 Hits</h3>
 
-                <div class="card">
-                    <h3>🔥 Allu Arjun Top 100 Hits</h3>
-                    <!-- Replace src with the specific Spotify embed link -->
-                    <iframe style="border-radius:12px" title="Allu Arjun Top 100 Hits"
+                <div class="platform-tabs" role="tablist">
+                    <button type="button" class="platform-tab active" data-tab="spotify">Spotify</button>
+                    <button type="button" class="platform-tab" data-tab="ytmusic">YouTube Music</button>
+                    <button type="button" class="platform-tab" data-tab="amazonmusic">Amazon Music</button>
+                </div>
+
+                <div class="platform-panel active" data-panel="spotify">
+                    <iframe style="border-radius:12px" title="Allu Arjun Top 100 Hits on Spotify"
                         src="https://open.spotify.com/embed/playlist/4wqdMkxCmwNEyNuLlEbsWo" width="100%" height="352"
                         frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
                 </div>
 
-                <!-- <div class="card">
-                    <h3>❤️ Romantic Melodies</h3>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3OvAW5ftw50pQeriBrhuKz" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div> -->
+                <div class="platform-panel" data-panel="ytmusic">
+                    <div class="amazon-music-card yt-music-card">
+                        <p>YouTube doesn't offer an embeddable player that matches the YouTube Music app experience, so this opens the full experience directly in YouTube Music. A quick preview is embedded below.</p>
+                        <a class="btn-link yt-btn" href="https://music.youtube.com/playlist?list=PLUq-fCX05tN3FQlbYkDKAkEWBBxNyXY2-" target="_blank" rel="noopener noreferrer">Open in YouTube Music</a>
+                    </div>
+                    <iframe style="border-radius:12px; margin-top: 1rem;" title="Allu Arjun Top 100 Hits preview on YouTube"
+                        src="https://www.youtube.com/embed/videoseries?list=PLUq-fCX05tN3FQlbYkDKAkEWBBxNyXY2-"
+                        width="100%" height="352" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy"></iframe>
+                </div>
 
+                <div class="platform-panel" data-panel="amazonmusic">
+                    <div class="amazon-music-card">
+                        <p>Amazon Music doesn't support embedded playlist players, so this one opens directly in Amazon Music.</p>
+                        <a class="btn-link" href="https://music.amazon.in/user-playlists/472524f11f744856adbefc1542bd7feci8n0" target="_blank" rel="noopener noreferrer">Open in Amazon Music</a>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section class="artist-bio">
+            <h2>Who Is Allu Arjun?</h2>
+            <p>Allu Arjun was born on 8 April 1982 in Madras (now Chennai), into one of Telugu cinema's most prominent film families. He's the son of producer Allu Aravind, grandson of comedian Allu Ramalingaiah, and cousin of Ram Charan — his aunt Surekha is married to Chiranjeevi. He appeared as a child artist in "Vijetha" (1985) and as a dancer in "Daddy" (2001) before making his lead debut in "Gangotri" (2003). His breakthrough came a year later with Sukumar's "Arya" (2004), which won him a Nandi Special Jury Award and made him a youth icon almost overnight.</p>
+            <p>He picked up his first Filmfare Award for Best Actor – Telugu for "Parugu" (2008), followed by a second for "Vedam" (2010) and a third for "Race Gurram" (2014) — his first ₹100 crore grosser. "Ala Vaikunthapurramuloo" (2020) became a career-redefining blockbuster, but it was "Pushpa: The Rise" (2021) that took him pan-India, earning him the National Film Award for Best Actor and making him the first Telugu actor to win it. He's since become a fixture on Forbes India's Celebrity 100 list, and "Pushpa 2: The Rule" (2024) became one of Indian cinema's biggest-ever box-office hits.</p>
+        </section>
+
+        <section class="artist-tracklist">
+            <h2>Notable Films</h2>
+            <ul>
+                <li><strong>Arya</strong> (2004) — his breakthrough, winning a Nandi Special Jury Award</li>
+                <li><strong>Race Gurram</strong> (2014) — his first ₹100 crore grosser, and third Filmfare Award</li>
+                <li><strong>Ala Vaikunthapurramuloo</strong> (2020) — a career-redefining blockbuster</li>
+                <li><strong>Pushpa: The Rise</strong> (2021) — won him the National Film Award for Best Actor, the first for a Telugu actor</li>
+                <li><strong>Pushpa 2: The Rule</strong> (2024) — one of Indian cinema's biggest-ever box-office hits</li>
+            </ul>
         </section>
 
         <section>
 
-            <h2>Why Listen to this Playlist?</h2>
+            <h2>Why This Playlist</h2>
 
             <ul>
                 <li>Complete Filmography Hits</li>
@@ -112,7 +240,7 @@
 
                 <li>Stylish romantic numbers</li>
 
-                <li>High quality Spotify playlist</li>
+                <li>High quality Top Hits collection</li>
 
                 <li>Regularly updated</li>
 
@@ -120,11 +248,35 @@
 
         </section>
 
+        <section class="artist-faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>Why is Allu Arjun called the "Icon Star"?</h3>
+                        <p>The title reflects his all-around influence on Telugu pop culture — his dancing, fashion sense, and screen presence have made his hook steps and catchphrases into cultural moments.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>What was Allu Arjun's breakthrough film?</h3>
+                        <p>"Arya" (2004), directed by Sukumar, made him a youth icon almost overnight and won him a Nandi Special Jury Award.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>Is Allu Arjun related to Ram Charan?</h3>
+                        <p>Yes — they're first cousins. Allu Arjun's aunt Surekha is married to Chiranjeevi, making Ram Charan his cousin.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="related-artists">
 
             <h2>You May Also Like</h2>
 
-            <div class="related-grid">
+            <div class="related-grid" id="relatedGrid">
 
                 <a href="balakrishna-top-100-hits.html" class="related-card">
                     <img src="/images/telugu/heroes/balakrishna.webp" alt="Balakrishna" loading="lazy">
@@ -157,16 +309,78 @@
     <script type="application/ld+json">
 
 {
- "@context":"https://schema.org",
- "@type":"MusicPlaylist",
- "name":"Allu Arjun Top 100 Hits",
- "description":"Best Allu Arjun songs playlist",
- "url":"https://playlistverse.in/telugu/heroes/allu-arjun-top-100-hits.html",
- "image":"https://playlistverse.in/images/allu-arjun.webp",
- "numTracks":"100"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicPlaylist",
+      "name": "Allu Arjun Top 100 Hits",
+      "description": "Allu Arjun's top 100 Telugu hits, mass dance anthems and stylish romantic numbers, curated by PlaylistVerse.",
+      "url": "https://playlistverse.in/telugu/heroes/allu-arjun-top-100-hits.html",
+      "image": "https://playlistverse.in/images/telugu/heroes/allu-arjun.webp",
+      "numTracks": "100"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://playlistverse.in/"},
+        {"@type": "ListItem", "position": 2, "name": "Telugu", "item": "https://playlistverse.in/telugu/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "Heroes", "item": "https://playlistverse.in/telugu/heroes/index.html"},
+        {"@type": "ListItem", "position": 4, "name": "Allu Arjun", "item": "https://playlistverse.in/telugu/heroes/allu-arjun-top-100-hits.html"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is Allu Arjun called the \"Icon Star\"?",
+          "acceptedAnswer": {"@type": "Answer", "text": "The title reflects his all-around influence on Telugu pop culture — his dancing, fashion sense, and screen presence have made his hook steps and catchphrases into cultural moments."}
+        },
+        {
+          "@type": "Question",
+          "name": "What was Allu Arjun's breakthrough film?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Arya (2004), directed by Sukumar, made him a youth icon almost overnight and won him a Nandi Special Jury Award."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is Allu Arjun related to Ram Charan?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes — they're first cousins. Allu Arjun's aunt Surekha is married to Chiranjeevi, making Ram Charan his cousin."}
+        }
+      ]
+    }
+  ]
 }
 
 </script>
+
+    <script>
+        (function () {
+            var tabs = document.querySelectorAll(".platform-tab");
+            var panels = document.querySelectorAll(".platform-panel");
+            tabs.forEach(function (tab) {
+                tab.addEventListener("click", function () {
+                    var target = tab.getAttribute("data-tab");
+                    tabs.forEach(function (t) { t.classList.remove("active"); });
+                    panels.forEach(function (p) { p.classList.remove("active"); });
+                    tab.classList.add("active");
+                    document.querySelector('.platform-panel[data-panel="' + target + '"]').classList.add("active");
+                });
+            });
+        })();
+    </script>
+
+    <script>
+        (function () {
+            var grid = document.getElementById("relatedGrid");
+            if (!grid) return;
+            var cards = Array.prototype.slice.call(grid.children);
+            for (var i = cards.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var tmp = cards[i]; cards[i] = cards[j]; cards[j] = tmp;
+            }
+            cards.forEach(function (c) { grid.appendChild(c); });
+        })();
+    </script>
 
 </body>
 <div id="footer"></div>
