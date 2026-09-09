@@ -1,36 +1,356 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
-<title>Allari Naresh Top Hits Spotify Playlist | PlaylistVerse</title>
-<meta content="Listen to the best Allari Naresh Telugu songs on Spotify. Explore handpicked hits from Allari, Sudigadu, Seema Tapakai, Gamyam, Naandhi and Ugram, curated by PlaylistVerse." name="description"/>
-<meta content="Allari Naresh songs, Allari Naresh Spotify playlist, Telugu hero songs, Telugu hits" name="keywords"/>
-<meta content="index,follow" name="robots"/>
-<link href="https://playlistverse.in/telugu/heroes/allari-naresh-top-50-hits.html" rel="canonical"/>
-<link href="/style.css" rel="stylesheet"/>
-<link href="/favicon.webp" rel="icon"/>
-<meta content="website" property="og:type"/>
-<meta content="Allari Naresh Top Hits" property="og:title"/>
-<meta content="Listen to the best Allari Naresh Telugu songs on Spotify. Explore handpicked hits from Allari, Sudigadu, Seema Tapakai, Gamyam, Naandhi and Ugram, curated by PlaylistVerse." property="og:description"/>
-<meta content="https://playlistverse.in/telugu/heroes/allari-naresh-top-50-hits.html" property="og:url"/>
-<meta content="https://playlistverse.in/images/telugu/heroes/allari-naresh.webp" property="og:image"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Allari Naresh Top Hits | Telugu Songs | PlaylistVerse</title>
+
+    <meta name="description"
+        content="Allari Naresh's top Telugu hits from Allari, Sudigadu, Gamyam and Naandhi — curated by PlaylistVerse with his full career story.">
+
+    <meta name="keywords"
+        content="Allari Naresh songs, Allari Naresh Top Hits, Telugu hero songs, Allari Naresh Sudigadu Gamyam, Telugu comedy hero songs">
+
+    <meta name="robots" content="index,follow">
+
+    <link rel="canonical" href="https://playlistverse.in/telugu/heroes/allari-naresh-top-50-hits.html">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="icon" href="/favicon.webp">
+
+    <!-- Open Graph -->
+
+    <meta property="og:type" content="music.playlist">
+
+    <meta property="og:title" content="Allari Naresh Top Hits | Telugu Songs">
+
+    <meta property="og:description" content="Allari Naresh's top Telugu hits from Allari, Sudigadu, Gamyam and Naandhi — curated by PlaylistVerse with his full career story.">
+
+    <meta property="og:url" content="https://playlistverse.in/telugu/heroes/allari-naresh-top-50-hits.html">
+
+    <meta property="og:image" content="https://playlistverse.in/images/telugu/heroes/allari-naresh.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Allari Naresh Top Hits | Telugu Songs">
+
+    <meta name="twitter:description" content="Allari Naresh's top Telugu hits from Allari, Sudigadu, Gamyam and Naandhi.">
+
+    <meta name="twitter:image" content="https://playlistverse.in/images/telugu/heroes/allari-naresh.webp">
+
+    <style>
+        .artist-faq { margin-top: 2.5rem; }
+        .faq-list { counter-reset: faq-counter; margin-top: 1.25rem; }
+        .faq-item {
+            counter-increment: faq-counter;
+            position: relative;
+            display: flex;
+            gap: 1rem;
+            padding: 1.1rem 1.25rem 1.1rem 1.1rem;
+            margin-bottom: 0.9rem;
+            border-left: 3px solid #4f46e5;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(79,70,229,0.06), rgba(6,182,212,0.04));
+        }
+        .faq-item::before {
+            content: counter(faq-counter);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .faq-body h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+        .faq-body p { margin: 0; }
+
+        .platform-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: nowrap; }
+        .platform-tab {
+            flex: 1;
+            border: none;
+            cursor: pointer;
+            padding: 0.55rem 0.6rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.92rem;
+            text-align: center;
+            white-space: nowrap;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+        @media (max-width: 480px) {
+            .platform-tabs { gap: 0.3rem; }
+            .platform-tab { padding: 0.45rem 0.3rem; font-size: 0.68rem; border-radius: 8px; }
+        }
+        .platform-tab[data-tab="spotify"] { color: #1DB954; background: rgba(29,185,84,0.10); }
+        .platform-tab[data-tab="spotify"].active { color: #fff; background: #1DB954; }
+
+        .platform-tab[data-tab="ytmusic"] { color: #FF0000; background: rgba(255,0,0,0.08); }
+        .platform-tab[data-tab="ytmusic"].active { color: #fff; background: #FF0000; }
+
+        .platform-tab[data-tab="amazonmusic"] { color: #00A8E1; background: rgba(0,168,225,0.10); }
+        .platform-tab[data-tab="amazonmusic"].active { color: #fff; background: #00A8E1; }
+
+        .platform-panel { display: none; }
+        .platform-panel.active { display: block; }
+        .amazon-music-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            background: linear-gradient(90deg, rgba(0,168,225,0.08), rgba(0,168,225,0.02));
+            border: 1px solid rgba(0,168,225,0.25);
+        }
+        .amazon-music-card p { margin: 0; }
+        .amazon-music-card a.btn-link {
+            display: inline-block;
+            padding: 0.6rem 1.3rem;
+            border-radius: 8px;
+            background: #00A8E1;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .yt-music-card {
+            background: linear-gradient(90deg, rgba(255,0,0,0.08), rgba(255,0,0,0.02));
+            border: 1px solid rgba(255,0,0,0.25);
+        }
+        .yt-music-card a.btn-link.yt-btn { background: #FF0000; }
+    </style>
+
 </head>
+
 <body>
-<div id="header"></div>
-<main class="artist-page-container">
-<nav aria-label="Breadcrumb" class="breadcrumb"><a aria-label="Home" href="/"><i class="bi bi-house-door-fill"></i></a><span>›</span><a href="../index.html">Telugu</a><span>›</span><a href="index.html">Heroes</a><span>›</span><span class="current">Allari Naresh</span></nav>
-<div class="artist-header">
-<img alt="Allari Naresh Telugu Spotify playlist" class="artist-cover-image" src="/images/telugu/heroes/allari-naresh.webp"/>
-<div class="artist-info"><h1>Allari Naresh</h1><p>Allari Naresh is best known for comedy entertainers, relatable characters and a versatile shift into serious roles. His films offer humorous songs, catchy dance numbers and pleasant melodies from many popular albums.</p></div>
-</div>
-<section class="artist-playlists"><h2>Top Playlist</h2><div class="grid"><div class="card"><h3>🔥 Allari Naresh Top Hits</h3><iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" height="352" loading="lazy" src="https://open.spotify.com/embed/playlist/3YDBUERiyIjrFlmVXcGsmb" style="border-radius:12px" width="100%"></iframe></div></div></section>
-<section><h2>Popular Movies and Songs</h2><p>This playlist brings together memorable songs from Allari, Sudigadu, Seema Tapakai, Gamyam, Naandhi and Ugram, along with other favourites from Allari Naresh’s filmography.</p><h2>Why Listen to This Playlist?</h2><ul><li>Handpicked songs from popular films</li><li>Romantic melodies and energetic hits</li><li>Evergreen favourites and recent tracks</li><li>High-quality Spotify playback</li><li>Regularly updated by PlaylistVerse</li></ul></section>
-<section class="related-artists"><h2>You May Also Like</h2><div class="related-grid"><a class="related-card" href="prabhas-top-100-hits.html"><img alt="Prabhas" loading="lazy" src="/images/telugu/heroes/prabhas.webp"/><h3>Prabhas</h3></a><a class="related-card" href="naga-chaitanya-top-50-hits.html"><img alt="Naga Chaitanya" loading="lazy" src="/images/telugu/heroes/naga-chaitanya.webp"/><h3>Naga Chaitanya</h3></a><a class="related-card" href="allu-arjun-top-100-hits.html"><img alt="Allu Arjun" loading="lazy" src="/images/telugu/heroes/allu-arjun.webp"/><h3>Allu Arjun</h3></a><a class="related-card" href="pawan-kalyan-top-100-hits.html"><img alt="Pawan Kalyan" loading="lazy" src="/images/telugu/heroes/pawan-kalyan.webp"/><h3>Pawan Kalyan</h3></a></div></section>
-<div id="explore-telugu"></div>
-</main>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MusicPlaylist", "name": "Allari Naresh Top Hits", "description": "Listen to the best Allari Naresh Telugu songs on Spotify. Explore handpicked hits from Allari, Sudigadu, Seema Tapakai, Gamyam, Naandhi and Ugram, curated by PlaylistVerse.", "url": "https://playlistverse.in/telugu/heroes/allari-naresh-top-50-hits.html", "image": "https://playlistverse.in/images/telugu/heroes/allari-naresh.webp", "numTracks": 50}</script>
-<div id="footer"></div><script src="/js/include.js"></script>
-</body></html>
+    <div id="header"></div>
+    <main class="artist-page-container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/" aria-label="Home"><i class="bi bi-house-door-fill"></i></a>
+            <span>&rsaquo;</span>
+            <a href="../index.html">Telugu</a>
+            <span>&rsaquo;</span>
+            <a href="index.html">Heroes</a>
+            <span>&rsaquo;</span>
+            <span class="current">Allari Naresh</span>
+        </nav>
+
+        <div class="artist-header">
+            <img src="/images/telugu/heroes/allari-naresh.webp" alt="Allari Naresh Top Hits" class="artist-cover-image">
+            <div class="artist-info">
+                <h1>Allari Naresh</h1>
+                <p>Allari Naresh is best known for comedy entertainers, relatable characters and a versatile shift into serious roles. His films offer humorous songs, catchy dance numbers and pleasant melodies from many popular albums.</p>
+            </div>
+        </div>
+
+        <section class="artist-playlists">
+            <h2>Top Playlist</h2>
+
+            <div class="card">
+                <h3>🔥 Allari Naresh Top Hits</h3>
+
+                <div class="platform-tabs" role="tablist">
+                    <button type="button" class="platform-tab active" data-tab="spotify">Spotify</button>
+                    <button type="button" class="platform-tab" data-tab="ytmusic">YouTube Music</button>
+                    <button type="button" class="platform-tab" data-tab="amazonmusic">Amazon Music</button>
+                </div>
+
+                <div class="platform-panel active" data-panel="spotify">
+                    <iframe style="border-radius:12px" title="Allari Naresh Top Hits on Spotify"
+                        src="https://open.spotify.com/embed/playlist/3YDBUERiyIjrFlmVXcGsmb" width="100%" height="352"
+                        frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+
+                <div class="platform-panel" data-panel="ytmusic">
+                    <div class="amazon-music-card yt-music-card">
+                        <p>YouTube doesn't offer an embeddable player that matches the YouTube Music app experience, so this opens the full experience directly in YouTube Music. A quick preview is embedded below.</p>
+                        <a class="btn-link yt-btn" href="https://music.youtube.com/playlist?list=PLUq-fCX05tN3R9_nE9yFfPH2URhzV4qdd" target="_blank" rel="noopener noreferrer">Open in YouTube Music</a>
+                    </div>
+                    <iframe style="border-radius:12px; margin-top: 1rem;" title="Allari Naresh Top Hits preview on YouTube"
+                        src="https://www.youtube.com/embed/videoseries?list=PLUq-fCX05tN3R9_nE9yFfPH2URhzV4qdd"
+                        width="100%" height="352" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <div class="platform-panel" data-panel="amazonmusic">
+                    <div class="amazon-music-card">
+                        <p>Amazon Music doesn't support embedded playlist players, so this one opens directly in Amazon Music.</p>
+                        <a class="btn-link" href="https://music.amazon.in/user-playlists/4af33631a8a04b1b9fa90319cdc74094i8n0" target="_blank" rel="noopener noreferrer">Open in Amazon Music</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artist-bio">
+            <h2>Who Is Allari Naresh?</h2>
+            <p>Edara Naresh was born on 30 June 1986 in Chennai, though his family traces back to Korumamidi village in West Godavari district, Andhra Pradesh. He's the son of veteran Telugu director and producer E.V.V. Satyanarayana, and the younger brother of actor Aryan Rajesh, with whom he co-runs the production banner E.V.V. Cinema. He made his debut in "Allari" (2002), directed by Ravi Babu — the film's success is where his "Allari" nickname comes from, and it's stuck ever since.</p>
+            <p>His breakout came with "Gamyam" (2008), where his performance as "Gali Seenu" won him both a Nandi Award and a Filmfare Award for Best Supporting Actor. He's since built a career around comedy entertainers, with "Sudigadu" (2012) becoming the highest-grossing film of his career at the time, alongside hits like "Seema Tapakai," "Naandhi," and a memorable supporting role in Mahesh Babu's "Maharshi" (2019). Across more than 55 films, he's shown range beyond comedy too, taking on darker, more serious roles in thrillers like "Naandhi."</p>
+        </section>
+
+        <section class="artist-tracklist">
+            <h2>Popular Movies and Songs</h2>
+            <ul>
+                <li><strong>Allari</strong> (2002) — his debut, and the source of his stage name</li>
+                <li><strong>Gamyam</strong> (2008) — won him a Nandi Award and Filmfare Award for Best Supporting Actor</li>
+                <li><strong>Sudigadu</strong> (2012) — the highest-grossing film of his career at the time</li>
+                <li><strong>Seema Tapakai</strong> and <strong>Naandhi</strong> — among his most-loved entertainers and thrillers</li>
+                <li><strong>Maharshi</strong> (2019) — a memorable supporting role alongside Mahesh Babu</li>
+            </ul>
+        </section>
+
+        <section>
+
+            <h2>Why Listen to This Playlist?</h2>
+
+            <ul>
+                <li>Handpicked songs from popular films</li>
+                <li>Romantic melodies and energetic hits</li>
+                <li>Evergreen favourites and recent tracks</li>
+                <li>High quality Top Hits collection</li>
+                <li>Regularly updated by PlaylistVerse</li>
+            </ul>
+
+        </section>
+
+        <section class="artist-faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>How did Allari Naresh get his name?</h3>
+                        <p>His birth name is Edara Naresh — "Allari" comes from the success of his 2002 debut film of the same name, and the nickname stuck for the rest of his career.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>Who is Allari Naresh's father?</h3>
+                        <p>E.V.V. Satyanarayana, a veteran Telugu film director and producer.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>What is Allari Naresh's highest-grossing film?</h3>
+                        <p>"Sudigadu" (2012), a parody comedy that became the highest-grossing film of his career at the time of its release.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-artists">
+            <h2>You May Also Like</h2>
+            <div class="related-grid" id="relatedGrid">
+                <a class="related-card" href="prabhas-top-100-hits.html">
+                    <img alt="Prabhas" loading="lazy" src="/images/telugu/heroes/prabhas.webp">
+                    <h3>Prabhas</h3>
+                </a>
+                <a class="related-card" href="naga-chaitanya-top-50-hits.html">
+                    <img alt="Naga Chaitanya" loading="lazy" src="/images/telugu/heroes/naga-chaitanya.webp">
+                    <h3>Naga Chaitanya</h3>
+                </a>
+                <a class="related-card" href="allu-arjun-top-100-hits.html">
+                    <img alt="Allu Arjun" loading="lazy" src="/images/telugu/heroes/allu-arjun.webp">
+                    <h3>Allu Arjun</h3>
+                </a>
+                <a class="related-card" href="pawan-kalyan-top-100-hits.html">
+                    <img alt="Pawan Kalyan" loading="lazy" src="/images/telugu/heroes/pawan-kalyan.webp">
+                    <h3>Pawan Kalyan</h3>
+                </a>
+            </div>
+        </section>
+
+        <div id="explore-telugu"></div>
+    </main>
+
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicPlaylist",
+      "name": "Allari Naresh Top Hits",
+      "description": "Allari Naresh's top Telugu hits from Allari, Sudigadu, Gamyam and Naandhi, curated by PlaylistVerse.",
+      "url": "https://playlistverse.in/telugu/heroes/allari-naresh-top-50-hits.html",
+      "image": "https://playlistverse.in/images/telugu/heroes/allari-naresh.webp",
+      "numTracks": "50"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://playlistverse.in/"},
+        {"@type": "ListItem", "position": 2, "name": "Telugu", "item": "https://playlistverse.in/telugu/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "Heroes", "item": "https://playlistverse.in/telugu/heroes/index.html"},
+        {"@type": "ListItem", "position": 4, "name": "Allari Naresh", "item": "https://playlistverse.in/telugu/heroes/allari-naresh-top-50-hits.html"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How did Allari Naresh get his name?",
+          "acceptedAnswer": {"@type": "Answer", "text": "His birth name is Edara Naresh — Allari comes from the success of his 2002 debut film of the same name, and the nickname stuck for the rest of his career."}
+        },
+        {
+          "@type": "Question",
+          "name": "Who is Allari Naresh's father?",
+          "acceptedAnswer": {"@type": "Answer", "text": "E.V.V. Satyanarayana, a veteran Telugu film director and producer."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is Allari Naresh's highest-grossing film?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Sudigadu (2012), a parody comedy that became the highest-grossing film of his career at the time of its release."}
+        }
+      ]
+    }
+  ]
+}
+
+</script>
+
+    <script>
+        (function () {
+            var tabs = document.querySelectorAll(".platform-tab");
+            var panels = document.querySelectorAll(".platform-panel");
+            tabs.forEach(function (tab) {
+                tab.addEventListener("click", function () {
+                    var target = tab.getAttribute("data-tab");
+                    tabs.forEach(function (t) { t.classList.remove("active"); });
+                    panels.forEach(function (p) { p.classList.remove("active"); });
+                    tab.classList.add("active");
+                    document.querySelector('.platform-panel[data-panel="' + target + '"]').classList.add("active");
+                });
+            });
+        })();
+    </script>
+
+    <script>
+        (function () {
+            var grid = document.getElementById("relatedGrid");
+            if (!grid) return;
+            var cards = Array.prototype.slice.call(grid.children);
+            for (var i = cards.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var tmp = cards[i]; cards[i] = cards[j]; cards[j] = tmp;
+            }
+            cards.forEach(function (c) { grid.appendChild(c); });
+        })();
+    </script>
+
+</body>
+<div id="footer"></div>
+
+<script src="/js/include.js"></script>
+
+</html>
