@@ -72,6 +72,60 @@
         }
         .faq-body h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
         .faq-body p { margin: 0; }
+
+        .platform-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: nowrap; }
+        .platform-tab {
+            flex: 1;
+            border: none;
+            cursor: pointer;
+            padding: 0.55rem 0.6rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.92rem;
+            text-align: center;
+            white-space: nowrap;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+        @media (max-width: 480px) {
+            .platform-tabs { gap: 0.3rem; }
+            .platform-tab { padding: 0.45rem 0.3rem; font-size: 0.68rem; border-radius: 8px; }
+        }
+        .platform-tab[data-tab="spotify"] { color: #1DB954; background: rgba(29,185,84,0.10); }
+        .platform-tab[data-tab="spotify"].active { color: #fff; background: #1DB954; }
+
+        .platform-tab[data-tab="ytmusic"] { color: #FF0000; background: rgba(255,0,0,0.08); }
+        .platform-tab[data-tab="ytmusic"].active { color: #fff; background: #FF0000; }
+
+        .platform-tab[data-tab="amazonmusic"] { color: #00A8E1; background: rgba(0,168,225,0.10); }
+        .platform-tab[data-tab="amazonmusic"].active { color: #fff; background: #00A8E1; }
+
+        .platform-panel { display: none; }
+        .platform-panel.active { display: block; }
+        .amazon-music-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            background: linear-gradient(90deg, rgba(0,168,225,0.08), rgba(0,168,225,0.02));
+            border: 1px solid rgba(0,168,225,0.25);
+        }
+        .amazon-music-card p { margin: 0; }
+        .amazon-music-card a.btn-link {
+            display: inline-block;
+            padding: 0.6rem 1.3rem;
+            border-radius: 8px;
+            background: #00A8E1;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .yt-music-card {
+            background: linear-gradient(90deg, rgba(255,0,0,0.08), rgba(255,0,0,0.02));
+            border: 1px solid rgba(255,0,0,0.25);
+        }
+        .yt-music-card a.btn-link.yt-btn { background: #FF0000; }
     </style>
 
 </head>
@@ -86,50 +140,69 @@
             <a href="/" aria-label="Home">
                 <i class="bi bi-house-door-fill"></i>
             </a>
-            <span>›</span>
+            <span>&rsaquo;</span>
 
             <a href="../index.html">Hindi</a>
-            <span>›</span>
+            <span>&rsaquo;</span>
 
             <a href="index.html">Heroes</a>
-            <span>›</span>
+            <span>&rsaquo;</span>
 
             <span class="current">Salman Khan</span>
         </nav>
 
-        <!-- Artist Header with Custom Visual -->
         <div class="artist-header">
-            <!-- Drop your artist image here: images/hindi/heroes/salman-khan.webp -->
             <img src="/images/hindi/heroes/salman-khan.webp" alt="Salman Khan Top Hits"
                 class="artist-cover-image">
 
             <div class="artist-info">
                 <h1>Salman Khan</h1>
-                <p>Since debuting with Maine Pyaar Kiya in 1989, Salman Khan has built one of Bollywood's most
-                    recognisable song legacies — the kind built more on vibe and swagger than vocal range. Hum
-                    Aapke Hain Koun turned "Didi Tera Devar Deewana" into a wedding-season fixture that's never
-                    really gone out of rotation, and later on he started lending his own voice to tracks like
-                    "Jag Ghoomeya" and "Main Hoon Hero Tera." Say what you want about the acting, the man knows
-                    how to pick a song people will dance to for years.
+                <p>Bhaijaan's soundtracks are the backbone of Indian wedding playlists and dance floors alike — from
+                    soulful 90s romance to thumping party anthems. This collection brings together his most-loved
+                    songs across more than three decades of Bollywood.
                 </p>
             </div>
         </div>
 
         <!-- PLAYLIST EMBEDS -->
         <section class="artist-playlists">
-            <h2>Top Playlist</h2>
+            <h2>Top Playlists</h2>
 
-            <div class="grid">
+            <div class="card">
+                <h3>🔥 Salman Khan Top 50 Hits</h3>
 
-                <div class="card">
-                    <h3>🔥 Salman Khan Top 50 Hits</h3>
-                    <iframe style="border-radius:12px" title="Salman Khan Top 50 Hits"
+                <div class="platform-tabs" role="tablist">
+                    <button type="button" class="platform-tab active" data-tab="spotify">Spotify</button>
+                    <button type="button" class="platform-tab" data-tab="ytmusic">YouTube Music</button>
+                    <button type="button" class="platform-tab" data-tab="amazonmusic">Amazon Music</button>
+                </div>
+
+                <div class="platform-panel active" data-panel="spotify">
+                    <iframe style="border-radius:12px" title="Salman Khan Top 50 Hits on Spotify"
                         src="https://open.spotify.com/embed/playlist/1Hvlpo6jMqDnJkM8Xwqj4C" width="100%" height="352"
                         frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
                 </div>
 
+                <div class="platform-panel" data-panel="ytmusic">
+                    <div class="amazon-music-card yt-music-card">
+                        <p>YouTube doesn't offer an embeddable player that matches the YouTube Music app experience, so this opens the full experience directly in YouTube Music. A quick preview is embedded below.</p>
+                        <a class="btn-link yt-btn" href="https://music.youtube.com/playlist?list=PLInYIKoL4KJ0" target="_blank" rel="noopener noreferrer">Open in YouTube Music</a>
+                    </div>
+                    <iframe style="border-radius:12px; margin-top: 1rem;" title="Salman Khan Top 50 Hits preview on YouTube"
+                        src="https://www.youtube.com/embed/videoseries?list=PLInYIKoL4KJ0"
+                        width="100%" height="352" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <div class="platform-panel" data-panel="amazonmusic">
+                    <div class="amazon-music-card">
+                        <p>Amazon Music doesn't support embedded playlist players, so this one opens directly in Amazon Music.</p>
+                        <a class="btn-link" href="https://music.amazon.in/user-playlists/509196aff33040faacf4cb7d10c9d164i8n0" target="_blank" rel="noopener noreferrer">Open in Amazon Music</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -278,6 +351,22 @@
 }
 
 </script>
+
+    <script>
+        (function () {
+            var tabs = document.querySelectorAll(".platform-tab");
+            var panels = document.querySelectorAll(".platform-panel");
+            tabs.forEach(function (tab) {
+                tab.addEventListener("click", function () {
+                    var target = tab.getAttribute("data-tab");
+                    tabs.forEach(function (t) { t.classList.remove("active"); });
+                    panels.forEach(function (p) { p.classList.remove("active"); });
+                    tab.classList.add("active");
+                    document.querySelector('.platform-panel[data-panel="' + target + '"]').classList.add("active");
+                });
+            });
+        })();
+    </script>
 
     <script>
         (function () {
