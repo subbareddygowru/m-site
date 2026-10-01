@@ -72,6 +72,91 @@
         }
         .faq-body h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
         .faq-body p { margin: 0; }
+
+        .platform-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: nowrap; }
+        .platform-tab {
+            flex: 1;
+            border: none;
+            cursor: pointer;
+            padding: 0.55rem 0.6rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.92rem;
+            text-align: center;
+            white-space: nowrap;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+        @media (max-width: 480px) {
+            .platform-tabs { gap: 0.3rem; }
+            .platform-tab { padding: 0.45rem 0.3rem; font-size: 0.68rem; border-radius: 8px; }
+        }
+        .platform-tab[data-tab="spotify"] { color: #1DB954; background: rgba(29,185,84,0.10); }
+        .platform-tab[data-tab="spotify"].active { color: #fff; background: #1DB954; }
+
+        .platform-tab[data-tab="ytmusic"] { color: #FF0000; background: rgba(255,0,0,0.08); }
+        .platform-tab[data-tab="ytmusic"].active { color: #fff; background: #FF0000; }
+
+        .platform-tab[data-tab="amazonmusic"] { color: #00A8E1; background: rgba(0,168,225,0.10); }
+        .platform-tab[data-tab="amazonmusic"].active { color: #fff; background: #00A8E1; }
+
+        .platform-panel { display: none; }
+        .platform-panel.active { display: block; }
+        .amazon-music-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            background: linear-gradient(90deg, rgba(0,168,225,0.08), rgba(0,168,225,0.02));
+            border: 1px solid rgba(0,168,225,0.25);
+        }
+        .amazon-music-card p { margin: 0; }
+        .amazon-music-card a.btn-link {
+            display: inline-block;
+            padding: 0.6rem 1.3rem;
+            border-radius: 8px;
+            background: #00A8E1;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .yt-music-card {
+            background: linear-gradient(90deg, rgba(255,0,0,0.08), rgba(255,0,0,0.02));
+            border: 1px solid rgba(255,0,0,0.25);
+        }
+        .yt-music-card a.btn-link.yt-btn { background: #FF0000; }
+        .yt-preview-label { font-size: 0.85rem; color: #6b7280; margin: 0.9rem 0 0.4rem; }
+
+        .whatsapp-banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+            padding: 1.1rem 1.4rem;
+            border-radius: 12px;
+            background: #25D366;
+            margin: 2.5rem 0;
+        }
+        .whatsapp-banner p {
+            margin: 0;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.98rem;
+        }
+        .whatsapp-banner a.btn-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.55rem 1.2rem;
+            border-radius: 999px;
+            background: #fff;
+            color: #128C4A;
+            font-weight: 700;
+            text-decoration: none;
+            white-space: nowrap;
+        }
     </style>
 
 </head>
@@ -118,17 +203,42 @@
         <section class="artist-playlists">
             <h2>Top Playlist</h2>
 
-            <div class="grid">
+            <div class="card">
+                <h3>🔥 Emraan Hashmi Top 100 Hits | All Time Hits</h3>
 
-                <div class="card">
-                    <h3>🔥 Emraan Hashmi Top 100 Hits | All Time Hits</h3>
-                    <iframe style="border-radius:12px" title="Emraan Hashmi Top 100 Hits | All Time Hits"
+                <div class="platform-tabs" role="tablist">
+                    <button type="button" class="platform-tab active" data-tab="spotify">Spotify</button>
+                    <button type="button" class="platform-tab" data-tab="ytmusic">YouTube Music</button>
+                    <button type="button" class="platform-tab" data-tab="amazonmusic">Amazon Music</button>
+                </div>
+
+                <div class="platform-panel active" data-panel="spotify">
+                    <iframe style="border-radius:12px" title="Emraan Hashmi Top 100 Hits on Spotify"
                         src="https://open.spotify.com/embed/playlist/7l0HqtzADt1kxMdIarpHX9" width="100%" height="352"
                         frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
                 </div>
 
+                <div class="platform-panel" data-panel="ytmusic">
+                    <div class="amazon-music-card yt-music-card">
+                        <p>Prefer listening in the YouTube Music app? Tap below to open the full playlist there.</p>
+                        <a class="btn-link yt-btn" href="https://music.youtube.com/playlist?list=PLUMl5pGNltRM" target="_blank" rel="noopener noreferrer">Open in YouTube Music</a>
+                    </div>
+                    <p class="yt-preview-label">Or preview it right here:</p>
+                    <iframe style="border-radius:12px;" title="Emraan Hashmi Top 100 Hits preview on YouTube"
+                        src="https://www.youtube.com/embed/videoseries?list=PLUMl5pGNltRM"
+                        width="100%" height="352" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <div class="platform-panel" data-panel="amazonmusic">
+                    <div class="amazon-music-card">
+                        <p>Amazon Music doesn't support embedded playlist players, so this one opens directly in Amazon Music.</p>
+                        <a class="btn-link" href="https://music.amazon.in/user-playlists/a74759cae9ff4abfa046e134adb33c7bi8n0" target="_blank" rel="noopener noreferrer">Open in Amazon Music</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -148,6 +258,11 @@
                 <li>Signature soundtracks from the <strong>Murder</strong> and <strong>Aashiqui</strong> franchises</li>
             </ul>
         </section>
+
+        <div class="whatsapp-banner">
+            <p><i class="bi bi-whatsapp"></i> Follow PlaylistVerse on WhatsApp for new playlist drops</p>
+            <a class="btn-link" href="https://whatsapp.com/channel/0029VaDkrvS6rsQqKtzeWH0n" target="_blank" rel="noopener noreferrer">Follow Channel</a>
+        </div>
 
         <section>
 
@@ -278,6 +393,22 @@
 }
 
 </script>
+
+    <script>
+        (function () {
+            var tabs = document.querySelectorAll(".platform-tab");
+            var panels = document.querySelectorAll(".platform-panel");
+            tabs.forEach(function (tab) {
+                tab.addEventListener("click", function () {
+                    var target = tab.getAttribute("data-tab");
+                    tabs.forEach(function (t) { t.classList.remove("active"); });
+                    panels.forEach(function (p) { p.classList.remove("active"); });
+                    tab.classList.add("active");
+                    document.querySelector('.platform-panel[data-panel="' + target + '"]').classList.add("active");
+                });
+            });
+        })();
+    </script>
 
     <script>
         (function () {
