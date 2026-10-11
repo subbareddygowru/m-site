@@ -1,15 +1,5 @@
 [
   {
-    "name": "Kailash Kher Top 50 Hits",
-    "href": "/hindi/singers/kailash-kher-top-50-hits.html",
-    "subtitle": "Hindi · Singers"
-  },
-  {
-    "name": "Singer Prabha",
-    "href": "/telugu/singers/singer-prabha-top-50-hits.html",
-    "subtitle": "Telugu · Singers"
-  }
-  {
     "name": "2000s Hindi Hits (Best of 2000 - 2009)",
     "href": "/hindi/decades/2000s-hindi-hits-2000-2009.html",
     "subtitle": "Hindi · Decades"
@@ -73,11 +63,6 @@
     "name": "Anup Rubens",
     "href": "/telugu/music-directors/anup-rubens-top-100-hits.html",
     "subtitle": "Telugu · Music Directors"
-  },
-  {
-    "name": "Anuradha Sriram",
-    "href": "/tamil/singer/anuradha-sriram-top-50-hits.html",
-    "subtitle": "Tamil"
   },
   {
     "name": "Anuradha Sriram",
@@ -805,16 +790,6 @@
     "subtitle": "Telugu · Singers"
   },
   {
-    "name": "Subhashini",
-    "href": "/tamil/singer/subhashini-top-hits.html",
-    "subtitle": "Tamil"
-  },
-  {
-    "name": "Subhashini",
-    "href": "/tamil/singers/subhashini-top-hits.html",
-    "subtitle": "Tamil · Singers"
-  },
-  {
     "name": "Sublahshini",
     "href": "/tamil/singers/sublahshini-top-hits.html",
     "subtitle": "Tamil · Singers"
@@ -867,11 +842,6 @@
   {
     "name": "Tamil Music Directors",
     "href": "/tamil/music-directors/index.html",
-    "subtitle": "Tamil"
-  },
-  {
-    "name": "Tamil None",
-    "href": "/tamil/singer/index.html",
     "subtitle": "Tamil"
   },
   {
