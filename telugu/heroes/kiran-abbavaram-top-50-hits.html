@@ -1,36 +1,404 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
-<title>Kiran Abbavaram Top Hits Spotify Playlist | PlaylistVerse</title>
-<meta content="Listen to the best Kiran Abbavaram Telugu songs on Spotify. Explore handpicked hits from Raja Vaaru Rani Gaaru, SR Kalyanamandapam, Vinaro Bhagyamu Vishnu Katha and KA, curated by PlaylistVerse." name="description"/>
-<meta content="Kiran Abbavaram songs, Kiran Abbavaram Spotify playlist, Telugu hero songs, Telugu hits" name="keywords"/>
-<meta content="index,follow" name="robots"/>
-<link href="https://playlistverse.in/telugu/heroes/kiran-abbavaram-top-50-hits.html" rel="canonical"/>
-<link href="/style.css" rel="stylesheet"/>
-<link href="/favicon.webp" rel="icon"/>
-<meta content="website" property="og:type"/>
-<meta content="Kiran Abbavaram Top Hits" property="og:title"/>
-<meta content="Listen to the best Kiran Abbavaram Telugu songs on Spotify. Explore handpicked hits from Raja Vaaru Rani Gaaru, SR Kalyanamandapam, Vinaro Bhagyamu Vishnu Katha and KA, curated by PlaylistVerse." property="og:description"/>
-<meta content="https://playlistverse.in/telugu/heroes/kiran-abbavaram-top-50-hits.html" property="og:url"/>
-<meta content="https://playlistverse.in/images/telugu/heroes/kiran-abbavaram.webp" property="og:image"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Kiran Abbavaram Top Hits | Telugu Songs | PlaylistVerse</title>
+
+    <meta name="description" content="Kiran Abbavaram's best Telugu songs, including the trending Bhaja Govindam from Reality, plus KA, SR Kalyanamandapam and more, curated by PlaylistVerse.">
+
+    <meta name="keywords" content="Kiran Abbavaram songs, Bhaja Govindam song, Reality movie songs, Kiran Abbavaram Top Hits, Telugu hero songs, KA movie songs, SR Kalyanamandapam songs, Raja Vaaru Rani Gaaru songs">
+
+    <meta name="robots" content="index,follow">
+
+    <link rel="canonical" href="https://playlistverse.in/telugu/heroes/kiran-abbavaram-top-50-hits.html">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="icon" href="/favicon.webp">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="music.playlist">
+    <meta property="og:title" content="Kiran Abbavaram Top Hits | Telugu Songs">
+    <meta property="og:description" content="Kiran Abbavaram's best Telugu songs, including the trending Bhaja Govindam from Reality, plus KA, SR Kalyanamandapam and more, curated by PlaylistVerse.">
+    <meta property="og:url" content="https://playlistverse.in/telugu/heroes/kiran-abbavaram-top-50-hits.html">
+    <meta property="og:image" content="https://playlistverse.in/images/telugu/heroes/kiran-abbavaram.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kiran Abbavaram Top Hits | Telugu Songs">
+    <meta name="twitter:description" content="Kiran Abbavaram's best Telugu songs from Raja Vaaru Rani Gaaru, SR Kalyanamandapam and KA.">
+    <meta name="twitter:image" content="https://playlistverse.in/images/telugu/heroes/kiran-abbavaram.webp">
+
+    <style>
+        .artist-faq { margin-top: 2.5rem; }
+        .faq-list { counter-reset: faq-counter; margin-top: 1.25rem; }
+        .faq-item {
+            counter-increment: faq-counter;
+            position: relative;
+            display: flex;
+            gap: 1rem;
+            padding: 1.1rem 1.25rem 1.1rem 1.1rem;
+            margin-bottom: 0.9rem;
+            border-left: 3px solid #4f46e5;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(79,70,229,0.06), rgba(6,182,212,0.04));
+        }
+        .faq-item::before {
+            content: counter(faq-counter);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .faq-body h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+        .faq-body p { margin: 0; }
+
+        .platform-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: nowrap; }
+        .platform-tab {
+            flex: 1;
+            border: none;
+            cursor: pointer;
+            padding: 0.55rem 0.6rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.92rem;
+            text-align: center;
+            white-space: nowrap;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+        @media (max-width: 480px) {
+            .platform-tabs { gap: 0.3rem; }
+            .platform-tab { padding: 0.45rem 0.3rem; font-size: 0.68rem; border-radius: 8px; }
+        }
+        .platform-tab[data-tab="spotify"] { color: #1DB954; background: rgba(29,185,84,0.10); }
+        .platform-tab[data-tab="spotify"].active { color: #fff; background: #1DB954; }
+        .platform-tab[data-tab="ytmusic"] { color: #FF0000; background: rgba(255,0,0,0.08); }
+        .platform-tab[data-tab="ytmusic"].active { color: #fff; background: #FF0000; }
+        .platform-tab[data-tab="amazonmusic"] { color: #00A8E1; background: rgba(0,168,225,0.10); }
+        .platform-tab[data-tab="amazonmusic"].active { color: #fff; background: #00A8E1; }
+        .platform-panel { display: none; }
+        .platform-panel.active { display: block; }
+        .amazon-music-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            background: linear-gradient(90deg, rgba(0,168,225,0.08), rgba(0,168,225,0.02));
+            border: 1px solid rgba(0,168,225,0.25);
+        }
+        .amazon-music-card p { margin: 0; }
+        .amazon-music-card a.btn-link {
+            display: inline-block;
+            padding: 0.6rem 1.3rem;
+            border-radius: 8px;
+            background: #00A8E1;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .yt-music-card {
+            background: linear-gradient(90deg, rgba(255,0,0,0.08), rgba(255,0,0,0.02));
+            border: 1px solid rgba(255,0,0,0.25);
+        }
+        .yt-music-card a.btn-link.yt-btn { background: #FF0000; }
+        .yt-preview-label { font-size: 0.85rem; color: #6b7280; margin: 0.9rem 0 0.4rem; }
+
+        .whatsapp-banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+            padding: 1.1rem 1.4rem;
+            border-radius: 12px;
+            background: #25D366;
+            margin: 2.5rem 0;
+        }
+        .whatsapp-banner p { margin: 0; color: #fff; font-weight: 600; font-size: 0.98rem; }
+        .whatsapp-banner a.btn-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.55rem 1.2rem;
+            border-radius: 999px;
+            background: #fff;
+            color: #128C4A;
+            font-weight: 700;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .related-card h3 { padding-bottom: 4px; }
+        .related-card .related-label {
+            margin: 0;
+            padding: 0 10px 14px;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #4f46e5;
+        }
+    </style>
+
 </head>
+
 <body>
-<div id="header"></div>
-<main class="artist-page-container">
-<nav aria-label="Breadcrumb" class="breadcrumb"><a aria-label="Home" href="/"><i class="bi bi-house-door-fill"></i></a><span>›</span><a href="../index.html">Telugu</a><span>›</span><a href="index.html">Heroes</a><span>›</span><span class="current">Kiran Abbavaram</span></nav>
-<div class="artist-header">
-<img alt="Kiran Abbavaram Telugu Spotify playlist" class="artist-cover-image" src="/images/telugu/heroes/kiran-abbavaram.webp"/>
-<div class="artist-info"><h1>Kiran Abbavaram</h1><p>Kiran Abbavaram represents a newer generation of Telugu actors with youthful stories and rooted characters. His films feature contemporary romantic tracks, energetic songs and fresh melodies for modern playlists.</p></div>
-</div>
-<section class="artist-playlists"><h2>Top Playlist</h2><div class="grid"><div class="card"><h3>🔥 Kiran Abbavaram Top Hits</h3><iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" height="352" loading="lazy" src="https://open.spotify.com/embed/playlist/6gJwvNY1AbQiQX0du65gqF" style="border-radius:12px" width="100%"></iframe></div></div></section>
-<section><h2>Popular Movies and Songs</h2><p>This playlist brings together memorable songs from Raja Vaaru Rani Gaaru, SR Kalyanamandapam, Vinaro Bhagyamu Vishnu Katha and KA, along with other favourites from Kiran Abbavaram’s filmography.</p><h2>Why Listen to This Playlist?</h2><ul><li>Handpicked songs from popular films</li><li>Romantic melodies and energetic hits</li><li>Evergreen favourites and recent tracks</li><li>High-quality Spotify playback</li><li>Regularly updated by PlaylistVerse</li></ul></section>
-<section class="related-artists"><h2>You May Also Like</h2><div class="related-grid"><a class="related-card" href="mahesh-babu-top-100-hits.html"><img alt="Mahesh Babu" loading="lazy" src="/images/telugu/heroes/mahesh-babu.webp"/><h3>Mahesh Babu</h3></a><a class="related-card" href="vijay-deverakonda-all-time-hits.html"><img alt="Vijay Deverakonda" loading="lazy" src="/images/telugu/heroes/vijay-deverakonda.webp"/><h3>Vijay Deverakonda</h3></a><a class="related-card" href="manchu-manoj-all-time-hits.html"><img alt="Manchu Manoj" loading="lazy" src="/images/telugu/heroes/manchu-manoj.webp"/><h3>Manchu Manoj</h3></a><a class="related-card" href="nagarjuna-top-100-hits.html"><img alt="Nagarjuna" loading="lazy" src="/images/telugu/heroes/akkineni-nagarjuna.webp"/><h3>Nagarjuna</h3></a></div></section>
-<div id="explore-telugu"></div>
-</main>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MusicPlaylist", "name": "Kiran Abbavaram Top Hits", "description": "Listen to the best Kiran Abbavaram Telugu songs on Spotify. Explore handpicked hits from Raja Vaaru Rani Gaaru, SR Kalyanamandapam, Vinaro Bhagyamu Vishnu Katha and KA, curated by PlaylistVerse.", "url": "https://playlistverse.in/telugu/heroes/kiran-abbavaram-top-50-hits.html", "image": "https://playlistverse.in/images/telugu/heroes/kiran-abbavaram.webp", "numTracks": 50}</script>
-<div id="footer"></div><script src="/js/include.js"></script>
-</body></html>
+    <div id="header"></div>
+    <main class="artist-page-container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/" aria-label="Home"><i class="bi bi-house-door-fill"></i></a>
+            <span>&rsaquo;</span><a href="../index.html">Telugu</a>
+            <span>&rsaquo;</span><a href="index.html">Heroes</a>
+            <span>&rsaquo;</span><span class="current">Kiran Abbavaram</span>
+        </nav>
+
+        <div class="artist-header">
+            <img src="/images/telugu/heroes/kiran-abbavaram.webp" alt="Kiran Abbavaram Top Hits" class="artist-cover-image">
+            <div class="artist-info">
+                <h1>Kiran Abbavaram</h1>
+                <p>Kiran Abbavaram represents a newer generation of Telugu actors with youthful stories and rooted characters. His films feature contemporary romantic tracks, energetic songs and fresh melodies for modern playlists.</p>
+            </div>
+        </div>
+
+        <!-- PLAYLIST EMBEDS -->
+        <section class="artist-playlists">
+            <h2>Top Playlist</h2>
+
+            <div class="card">
+                <h3>🔥 Kiran Abbavaram Top Hits</h3>
+
+                <div class="platform-tabs" role="tablist">
+                    <button type="button" class="platform-tab active" data-tab="spotify">Spotify</button>
+                    <button type="button" class="platform-tab" data-tab="ytmusic">YouTube Music</button>
+                    <button type="button" class="platform-tab" data-tab="amazonmusic">Amazon Music</button>
+                </div>
+
+                <div class="platform-panel active" data-panel="spotify">
+                    <iframe style="border-radius:12px" title="Kiran Abbavaram Top Hits on Spotify"
+                        src="https://open.spotify.com/embed/playlist/6gJwvNY1AbQiQX0du65gqF" width="100%" height="352"
+                        frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+
+                <div class="platform-panel" data-panel="ytmusic">
+                    <div class="amazon-music-card yt-music-card">
+                        <p>Prefer listening in the YouTube Music app? Tap below to open the full playlist there.</p>
+                        <a class="btn-link yt-btn" href="https://music.youtube.com/playlist?list=PLKzx4AvTkpSo" target="_blank" rel="noopener noreferrer">Open in YouTube Music</a>
+                    </div>
+                    <p class="yt-preview-label">Or preview it right here:</p>
+                    <iframe style="border-radius:12px;" title="Kiran Abbavaram Top Hits preview on YouTube"
+                        src="https://www.youtube.com/embed/videoseries?list=PLKzx4AvTkpSo"
+                        width="100%" height="352" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <div class="platform-panel" data-panel="amazonmusic">
+                    <div class="amazon-music-card">
+                        <p>Amazon Music doesn't support embedded playlist players, so this one opens directly in Amazon Music.</p>
+                        <a class="btn-link" href="https://music.amazon.in/user-playlists/e31ef49c9abc4f2ba8ac31bc526d63c0i8n0" target="_blank" rel="noopener noreferrer">Open in Amazon Music</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artist-tracklist">
+            <h2>Trending Now: "Bhaja Govindam" from Reality</h2>
+            <p>The song everyone is replaying right now is "Bhaja Govindam," the first single from <strong>Reality</strong>, Kiran Abbavaram's directorial debut. It was released in October 2026 on the Saregama Telugu label and has already crossed 5 million views on YouTube. Chief Minister N. Chandrababu Naidu also praised it publicly, which pushed it even further.</p>
+            <ul>
+                <li><strong>Music:</strong> Bheems Ceciroleo, who also used the traditional "Bhaja Govindam" bhajan in the film's title glimpse</li>
+                <li><strong>Singer:</strong> Vaikom Vijayalakshmi</li>
+                <li><strong>Lyrics:</strong> Sanare</li>
+                <li><strong>The feel:</strong> an upbeat song about treating life as a celebration, set against the middle-class family world of the film</li>
+            </ul>
+            <p>In <strong>Reality</strong>, Kiran plays Anandam, a young man who manages a hotel and works to clear his family's debts. Devika Bhat is the female lead, with Sharath Kumar, Sai Kumar and Rohini in the cast. The film, produced by Sudhakar Chaganti and shot in Machilipatnam, is scheduled for release on 25 December.</p>
+        </section>
+
+        <section class="artist-bio">
+            <h2>Who Is Kiran Abbavaram?</h2>
+            <p>Kiran Kumar Reddy Abbavaram was born on 15 July 1992 in Rayachoti, Andhra Pradesh. He came into films as an actor and writer, making his debut in the romantic comedy "Raja Vaaru Rani Gaaru" (2019), directed by Ravi Kiran Kola. The film gave him a SIIMA nomination for Best Male Debut – Telugu, and its leading lady, Rahasya Gorak, became his wife in August 2024.</p>
+            <p>He followed it with "SR Kalyanamandapam" (2021), a father-and-son drama set in Rayachoti, where he also wrote the story and screenplay, and with the 2022 releases "Vinaro Bhagyamu Vishnu Katha" and "Nenu Meeku Baaga Kavalsinavaadini," for which he wrote the screenplay and dialogue. "KA" (2024) is a mystery thriller in which he plays a dual role as Abhinaya Vasudev and KA Peddha Sir, and a sequel, "KA 2," has been announced. In 2026 he stepped behind the camera as well: "Reality," his directorial debut, is due on 25 December, and its first single, "Bhaja Govindam," has been one of the most talked-about Telugu songs of the season.</p>
+        </section>
+
+        <section class="artist-tracklist">
+            <h2>Popular Movies and Songs</h2>
+            <ul>
+                <li><strong>Raja Vaaru Rani Gaaru</strong> (2019) — his debut, an old-world romance on the banks of the Godavari</li>
+                <li><strong>SR Kalyanamandapam</strong> (2021) — a family drama he wrote himself, with Chaitan Bharadwaj's music</li>
+                <li><strong>Vinaro Bhagyamu Vishnu Katha</strong> (2022)</li>
+                <li><strong>Nenu Meeku Baaga Kavalsinavaadini</strong> (2022) — screenplay and dialogue by Kiran Abbavaram</li>
+                <li><strong>KA</strong> (2024) — a mystery thriller with a dual role</li>
+                <li><strong>Reality</strong> (releasing 25 December) — his directorial debut, home to the trending "Bhaja Govindam"</li>
+            </ul>
+        </section>
+
+        <div class="whatsapp-banner">
+            <p><i class="bi bi-whatsapp"></i> Follow PlaylistVerse on WhatsApp for new playlist drops</p>
+            <a class="btn-link" href="https://whatsapp.com/channel/0029VaDkrvS6rsQqKtzeWH0n" target="_blank" rel="noopener noreferrer">Follow Channel</a>
+        </div>
+
+        <section>
+            <h2>Why Listen to This Playlist?</h2>
+            <ul>
+                <li>Handpicked songs from popular films</li>
+                <li>Romantic melodies and energetic hits</li>
+                <li>Evergreen favourites and recent tracks</li>
+                <li>High quality Top Hits collection</li>
+                <li>Regularly updated by PlaylistVerse</li>
+            </ul>
+        </section>
+
+        <section class="artist-faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>What was Kiran Abbavaram's first film?</h3>
+                        <p>"Raja Vaaru Rani Gaaru" (2019), a romantic comedy directed by Ravi Kiran Kola. His performance earned a SIIMA nomination for Best Male Debut – Telugu.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>Does Kiran Abbavaram write his own films?</h3>
+                        <p>Yes. He wrote the story and screenplay for "SR Kalyanamandapam" (2021) and the screenplay and dialogue for "Nenu Meeku Baaga Kavalsinavaadini" (2022).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>What is Kiran Abbavaram's film KA about, and is there a sequel?</h3>
+                        <p>"KA" (2024) is a mystery thriller in which he plays a dual role, Abhinaya Vasudev and KA Peddha Sir. A sequel, "KA 2", has been announced.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>What is "Bhaja Govindam" from Reality?</h3>
+                        <p>"Bhaja Govindam" is the first single from "Reality," Kiran Abbavaram's directorial debut. Bheems Ceciroleo composed it, Vaikom Vijayalakshmi sang it, and Sanare wrote the lyrics. It crossed 5 million YouTube views soon after its October 2026 release.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-artists">
+            <h2>You May Also Like</h2>
+            <div class="related-grid" id="relatedGrid">
+                <a class="related-card" href="mahesh-babu-top-100-hits.html">
+                    <img alt="Mahesh Babu" loading="lazy" src="/images/telugu/heroes/mahesh-babu.webp">
+                    <h3>Mahesh Babu</h3>
+                    <p class="related-label">Top 100 Hits</p>
+                </a>
+                <a class="related-card" href="vijay-deverakonda-all-time-hits.html">
+                    <img alt="Vijay Deverakonda" loading="lazy" src="/images/telugu/heroes/vijay-deverakonda.webp">
+                    <h3>Vijay Deverakonda</h3>
+                    <p class="related-label">Top Hits</p>
+                </a>
+                <a class="related-card" href="manchu-manoj-all-time-hits.html">
+                    <img alt="Manchu Manoj" loading="lazy" src="/images/telugu/heroes/manchu-manoj.webp">
+                    <h3>Manchu Manoj</h3>
+                    <p class="related-label">Top Hits</p>
+                </a>
+                <a class="related-card" href="nagarjuna-top-100-hits.html">
+                    <img alt="Nagarjuna" loading="lazy" src="/images/telugu/heroes/akkineni-nagarjuna.webp">
+                    <h3>Nagarjuna</h3>
+                    <p class="related-label">Top 100 Hits</p>
+                </a>
+            </div>
+        </section>
+
+        <div id="explore-telugu"></div>
+    </main>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicPlaylist",
+      "name": "Kiran Abbavaram Top Hits",
+      "description": "Kiran Abbavaram's best Telugu songs, including the trending Bhaja Govindam from Reality, plus KA, SR Kalyanamandapam and more, curated by PlaylistVerse.",
+      "url": "https://playlistverse.in/telugu/heroes/kiran-abbavaram-top-50-hits.html",
+      "image": "https://playlistverse.in/images/telugu/heroes/kiran-abbavaram.webp",
+      "numTracks": "50"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://playlistverse.in/"},
+        {"@type": "ListItem", "position": 2, "name": "Telugu", "item": "https://playlistverse.in/telugu/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "Heroes", "item": "https://playlistverse.in/telugu/heroes/index.html"},
+        {"@type": "ListItem", "position": 4, "name": "Kiran Abbavaram", "item": "https://playlistverse.in/telugu/heroes/kiran-abbavaram-top-50-hits.html"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What was Kiran Abbavaram's first film?",
+          "acceptedAnswer": {"@type": "Answer", "text": "\"Raja Vaaru Rani Gaaru\" (2019), a romantic comedy directed by Ravi Kiran Kola. His performance earned a SIIMA nomination for Best Male Debut \u2013 Telugu."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does Kiran Abbavaram write his own films?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. He wrote the story and screenplay for \"SR Kalyanamandapam\" (2021) and the screenplay and dialogue for \"Nenu Meeku Baaga Kavalsinavaadini\" (2022)."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is Kiran Abbavaram's film KA about, and is there a sequel?",
+          "acceptedAnswer": {"@type": "Answer", "text": "\"KA\" (2024) is a mystery thriller in which he plays a dual role, Abhinaya Vasudev and KA Peddha Sir. A sequel, \"KA 2\", has been announced."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is \"Bhaja Govindam\" from Reality?",
+          "acceptedAnswer": {"@type": "Answer", "text": "\"Bhaja Govindam\" is the first single from \"Reality,\" Kiran Abbavaram's directorial debut. Bheems Ceciroleo composed it, Vaikom Vijayalakshmi sang it, and Sanare wrote the lyrics. It crossed 5 million YouTube views soon after its October 2026 release."}
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script>
+        (function () {
+            var tabs = document.querySelectorAll(".platform-tab");
+            var panels = document.querySelectorAll(".platform-panel");
+            tabs.forEach(function (tab) {
+                tab.addEventListener("click", function () {
+                    var target = tab.getAttribute("data-tab");
+                    tabs.forEach(function (t) { t.classList.remove("active"); });
+                    panels.forEach(function (p) { p.classList.remove("active"); });
+                    tab.classList.add("active");
+                    document.querySelector('.platform-panel[data-panel="' + target + '"]').classList.add("active");
+                });
+            });
+        })();
+    </script>
+
+    <script>
+        (function () {
+            var grid = document.getElementById("relatedGrid");
+            if (!grid) return;
+            var cards = Array.prototype.slice.call(grid.children);
+            for (var i = cards.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var tmp = cards[i]; cards[i] = cards[j]; cards[j] = tmp;
+            }
+            cards.forEach(function (c) { grid.appendChild(c); });
+        })();
+    </script>
+
+</body>
+<div id="footer"></div>
+
+<script src="/js/include.js"></script>
+
+</html>
