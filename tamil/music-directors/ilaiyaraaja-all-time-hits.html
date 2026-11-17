@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Ilaiyaraaja All Time Hits | PlaylistVerse</title>
+
+    <meta name="description"
+        content="Ilaiyaraaja's all-time Tamil hits — the Isaignani's melodies, folk-flavoured classics and film-score landmarks from 1976 onwards — curated by PlaylistVerse with his full career story.">
+
+    <meta name="keywords"
+        content="Ilaiyaraaja songs, Ilaiyaraaja all time hits, Ilaiyaraaja Tamil songs, Ilaiyaraaja melodies, Ilayaraja songs, Isaignani Ilaiyaraaja, Ilaiyaraaja Spotify playlist">
+
+    <meta name="robots" content="index,follow">
+
+    <link rel="canonical" href="https://playlistverse.in/tamil/music-directors/ilaiyaraaja-all-time-hits.html">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="icon" href="/favicon.webp">
+
+    <!-- Open Graph -->
+
+    <meta property="og:type" content="music.playlist">
+
+    <meta property="og:title" content="Ilaiyaraaja All Time Hits">
+
+    <meta property="og:description" content="Ilaiyaraaja's all-time Tamil hits — the Isaignani's melodies, folk-flavoured classics and film-score landmarks from 1976 onwards — curated by PlaylistVerse with his full career story.">
+
+    <meta property="og:url" content="https://playlistverse.in/tamil/music-directors/ilaiyaraaja-all-time-hits.html">
+
+    <meta property="og:image" content="https://playlistverse.in/images/tamil/music-directors/ilaiyaraaja.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Ilaiyaraaja All Time Hits">
+
+    <meta name="twitter:description" content="Ilaiyaraaja's all-time Tamil hits — melodies, folk classics and film-score landmarks from 1976 onwards.">
+
+    <meta name="twitter:image" content="https://playlistverse.in/images/tamil/music-directors/ilaiyaraaja.webp">
+
+    <style>
+        .artist-faq { margin-top: 2.5rem; }
+        .faq-list { counter-reset: faq-counter; margin-top: 1.25rem; }
+        .faq-item {
+            counter-increment: faq-counter;
+            position: relative;
+            display: flex;
+            gap: 1rem;
+            padding: 1.1rem 1.25rem 1.1rem 1.1rem;
+            margin-bottom: 0.9rem;
+            border-left: 3px solid #4f46e5;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(79,70,229,0.06), rgba(6,182,212,0.04));
+        }
+        .faq-item::before {
+            content: counter(faq-counter);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .faq-body h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+        .faq-body p { margin: 0; }
+
+        .platform-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: nowrap; }
+        .platform-tab {
+            flex: 1;
+            border: none;
+            cursor: pointer;
+            padding: 0.55rem 0.6rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.92rem;
+            text-align: center;
+            white-space: nowrap;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+        @media (max-width: 480px) {
+            .platform-tabs { gap: 0.3rem; }
+            .platform-tab { padding: 0.45rem 0.3rem; font-size: 0.68rem; border-radius: 8px; }
+        }
+        .platform-tab[data-tab="spotify"] { color: #1DB954; background: rgba(29,185,84,0.10); }
+        .platform-tab[data-tab="spotify"].active { color: #fff; background: #1DB954; }
+
+        .platform-tab[data-tab="ytmusic"] { color: #FF0000; background: rgba(255,0,0,0.08); }
+        .platform-tab[data-tab="ytmusic"].active { color: #fff; background: #FF0000; }
+
+        .platform-tab[data-tab="amazonmusic"] { color: #00A8E1; background: rgba(0,168,225,0.10); }
+        .platform-tab[data-tab="amazonmusic"].active { color: #fff; background: #00A8E1; }
+
+        .platform-panel { display: none; }
+        .platform-panel.active { display: block; }
+        .amazon-music-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            background: linear-gradient(90deg, rgba(0,168,225,0.08), rgba(0,168,225,0.02));
+            border: 1px solid rgba(0,168,225,0.25);
+        }
+        .amazon-music-card p { margin: 0; }
+        .amazon-music-card a.btn-link {
+            display: inline-block;
+            padding: 0.6rem 1.3rem;
+            border-radius: 8px;
+            background: #00A8E1;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .yt-music-card {
+            background: linear-gradient(90deg, rgba(255,0,0,0.08), rgba(255,0,0,0.02));
+            border: 1px solid rgba(255,0,0,0.25);
+        }
+        .yt-music-card a.btn-link.yt-btn { background: #FF0000; }
+        .yt-preview-label {
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin: 0.9rem 0 0.4rem;
+        }
+
+        .whatsapp-banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+            flex-wrap: nowrap;
+            padding: 1.1rem 1.4rem;
+            border-radius: 12px;
+            background: #25D366;
+            margin: 2.5rem 0;
+        }
+        .whatsapp-banner p {
+            margin: 0;
+            flex: 1;
+            min-width: 0;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.98rem;
+        }
+        .whatsapp-banner .wa-short { display: none; }
+        .whatsapp-banner a.btn-link {
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.55rem 1.2rem;
+            border-radius: 999px;
+            background: #fff;
+            color: #128C4A;
+            font-weight: 700;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        @media (max-width: 600px) {
+            .whatsapp-banner { padding: 0.8rem 0.9rem; gap: 0.6rem; }
+            .whatsapp-banner p { font-size: 0.85rem; }
+            .whatsapp-banner .wa-long { display: none; }
+            .whatsapp-banner .wa-short { display: inline; }
+            .whatsapp-banner a.btn-link { padding: 0.45rem 0.8rem; font-size: 0.8rem; }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <div id="header"></div>
+
+    <!-- ARTIST PROFILE SECTION -->
+    <main class="artist-page-container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/" aria-label="Home">
+                <i class="bi bi-house-door-fill"></i>
+            </a>
+            <span>&rsaquo;</span>
+
+            <a href="../index.html">Tamil</a>
+            <span>&rsaquo;</span>
+
+            <a href="index.html">Music Directors</a>
+            <span>&rsaquo;</span>
+
+            <span class="current">Ilaiyaraaja</span>
+        </nav>
+
+        <div class="artist-header">
+            <img src="/images/tamil/music-directors/ilaiyaraaja.webp" alt="Ilaiyaraaja All Time Hits"
+                class="artist-cover-image">
+
+            <div class="artist-info">
+                <h1>Ilaiyaraaja — His All-Time Tamil Hits</h1>
+                <p>Ask any Tamil household for a favourite Ilaiyaraaja song and you'll hear a different decade, a
+                    different film, a different memory — and that's the point of this playlist. It runs from the
+                    village folk tunes of "Annakili" in 1976 through the lush 80s melodies, the "Thalapathi" and
+                    "Guna" era of the early 90s, and the late-night radio favourites that people still hum today.
+                </p>
+            </div>
+        </div>
+
+        <!-- PLAYLIST EMBEDS -->
+        <section class="artist-playlists">
+            <h2>Listen Now</h2>
+
+            <div class="card">
+                <h3>🎼 Ilaiyaraaja All Time Hits</h3>
+
+                <div class="platform-tabs" role="tablist">
+                    <button type="button" class="platform-tab active" data-tab="spotify">Spotify</button>
+                    <button type="button" class="platform-tab" data-tab="ytmusic">YouTube Music</button>
+                    <button type="button" class="platform-tab" data-tab="amazonmusic">Amazon Music</button>
+                </div>
+
+                <div class="platform-panel active" data-panel="spotify">
+                    <iframe style="border-radius:12px" title="Ilaiyaraaja All Time Hits on Spotify"
+                        src="https://open.spotify.com/embed/playlist/78W08WZkZxkXO79WX5sOVn" width="100%" height="352"
+                        frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+
+                <div class="platform-panel" data-panel="ytmusic">
+                    <div class="amazon-music-card yt-music-card">
+                        <p>Prefer listening in the YouTube Music app? Tap below to open the full playlist there.</p>
+                        <a class="btn-link yt-btn" href="https://music.youtube.com/playlist?list=PLEBE5WjMLk6U" target="_blank" rel="noopener noreferrer">Open in YouTube Music</a>
+                    </div>
+                    <p class="yt-preview-label">Or preview it right here:</p>
+                    <iframe style="border-radius:12px;" title="Ilaiyaraaja All Time Hits preview on YouTube"
+                        src="https://www.youtube.com/embed/videoseries?list=PLEBE5WjMLk6U"
+                        width="100%" height="352" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <div class="platform-panel" data-panel="amazonmusic">
+                    <div class="amazon-music-card">
+                        <p>Amazon Music doesn't support embedded playlist players, so this one opens directly in Amazon Music.</p>
+                        <a class="btn-link" href="https://music.amazon.in/user-playlists/8c36f3c46cbd444b9a01d79b51e538acdede" target="_blank" rel="noopener noreferrer">Open in Amazon Music</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artist-bio">
+            <h2>Who Is Ilaiyaraaja?</h2>
+            <p>Born on 2 June 1943 in Pannaipuram, a village in Tamil Nadu's Theni district, Ilaiyaraaja grew up as Rasayya and spent his early years touring with his elder brother's musical troupe. He later moved to Madras, studied with Dhanraj Master, and earned a classical guitar qualification from Trinity College of Music, London. His film debut came with "Annakili" (1976) — a score that blended Tamil folk with Western orchestration so naturally that it changed what film music in the language could sound like, and earned him the name Ilaiyaraaja, "the young king."</p>
+            <p>What's remarkable is the sheer scale. By most counts he has scored well over a thousand films — his 1,000th was "Thaarai Thappattai" (2016) — and composed thousands of songs across Tamil, Telugu, Kannada, Malayalam and Hindi, with Hindi credits like "Cheeni Kum," "Paa" and "Shamitabh." Fans call him Isaignani, "the musical genius," and "Maestro." He has won five National Film Awards, including for "Sindhu Bhairavi" (1985), and was honoured with the Padma Bhushan in 2010 and the Padma Vibhushan in 2018. Beyond film, he has made fusion and classical work like "How to Name It?" and the devotional "Thiruvasagam in Symphony," recorded with the Budapest Symphony Orchestra.</p>
+        </section>
+
+        <section class="artist-tracklist">
+            <h2>A Few You'll Recognize</h2>
+            <ul>
+                <li><strong>Sundari Kannaal Oru Sethi</strong> — "Thalapathi" (1991), the duet that still opens every Tamil nostalgia playlist</li>
+                <li><strong>Ilaya Nila Pozhigirathe</strong> — "Payanangal Mudivathillai" (1982), a moonlit classic in S. P. Balasubrahmanyam's voice</li>
+                <li><strong>Kanmani Anbodu Kadhalan</strong> — "Guna" (1991), one of Tamil cinema's most-loved love songs</li>
+                <li><strong>Mandram Vandha</strong> — "Mouna Ragam" (1986), the soft, rain-soaked romance of the 80s</li>
+                <li><strong>Paadariyen Padippariyen</strong> — "Sindhu Bhairavi" (1985), the classical showpiece from his National Award-winning score</li>
+            </ul>
+        </section>
+
+        <div class="whatsapp-banner">
+            <p><i class="bi bi-whatsapp"></i> <span class="wa-long">Follow PlaylistVerse on WhatsApp for new playlist drops</span><span class="wa-short">Follow us on WhatsApp</span></p>
+            <a class="btn-link" href="https://whatsapp.com/channel/0029VaDkrvS6rsQqKtzeWH0n" target="_blank" rel="noopener noreferrer">Follow Channel</a>
+        </div>
+
+        <section>
+
+            <h2>Why This Playlist</h2>
+
+            <p>This isn't just his catalogue by streaming numbers — it's weighted toward the songs people actually
+                return to, decade after decade: the road-trip melodies, the rainy-day favourites and the film
+                scores everyone can hum. It's updated as more songs earn their place, and it's playable straight
+                from your phone or laptop with no extra app needed.</p>
+
+        </section>
+
+        <section class="artist-faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>What was Ilaiyaraaja's debut film?</h3>
+                        <p>His debut as a film composer was "Annakili" (1976), whose folk-meets-orchestral sound made him an instant sensation in Tamil cinema.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>Why is Ilaiyaraaja called Isaignani?</h3>
+                        <p>"Isaignani" means "musical genius" in Tamil. It's the title fans and the industry gave him, alongside "Maestro," for his scale of work and his blending of Indian folk and classical music with Western orchestration.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>How many National Awards has Ilaiyaraaja won?</h3>
+                        <p>Ilaiyaraaja has won five National Film Awards, including Best Music Direction for "Sindhu Bhairavi" (1985). He also received the Padma Bhushan in 2010 and the Padma Vibhushan in 2018.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-artists">
+
+            <h2>You May Also Like</h2>
+
+            <div class="related-grid" id="relatedGrid">
+
+                <a href="yuvan-shankar-raja-top-100-hits.html" class="related-card">
+                    <img src="/images/tamil/music-directors/yuvan-shankar-raja.webp" alt="Yuvan Shankar Raja" loading="lazy">
+                    <h3>Yuvan Shankar Raja</h3>
+                </a>
+
+                <a href="harris-jayaraj-top-200-hits.html" class="related-card">
+                    <img src="/images/tamil/music-directors/harris-jayaraj.webp" alt="Harris Jayaraj" loading="lazy">
+                    <h3>Harris Jayaraj</h3>
+                </a>
+
+                <a href="d-imman-top-100-hits.html" class="related-card">
+                    <img src="/images/tamil/music-directors/d-imman.webp" alt="D. Imman" loading="lazy">
+                    <h3>D. Imman</h3>
+                </a>
+
+                <a href="anirudh-top-200-hits.html" class="related-card">
+                    <img src="/images/tamil/music-directors/anirudh.webp" alt="Anirudh" loading="lazy">
+                    <h3>Anirudh</h3>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicPlaylist",
+      "name": "Ilaiyaraaja All Time Hits",
+      "description": "Ilaiyaraaja's all-time Tamil hits, melodies, folk classics and film-score landmarks, curated by PlaylistVerse.",
+      "url": "https://playlistverse.in/tamil/music-directors/ilaiyaraaja-all-time-hits.html",
+      "image": "https://playlistverse.in/images/tamil/music-directors/ilaiyaraaja.webp"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://playlistverse.in/"},
+        {"@type": "ListItem", "position": 2, "name": "Tamil", "item": "https://playlistverse.in/tamil/index.html"},
+        {"@type": "ListItem", "position": 3, "name": "Music Directors", "item": "https://playlistverse.in/tamil/music-directors/index.html"},
+        {"@type": "ListItem", "position": 4, "name": "Ilaiyaraaja", "item": "https://playlistverse.in/tamil/music-directors/ilaiyaraaja-all-time-hits.html"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What was Ilaiyaraaja's debut film?",
+          "acceptedAnswer": {"@type": "Answer", "text": "His debut as a film composer was Annakili (1976), whose folk-meets-orchestral sound made him an instant sensation in Tamil cinema."}
+        },
+        {
+          "@type": "Question",
+          "name": "Why is Ilaiyaraaja called Isaignani?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Isaignani means musical genius in Tamil. It's the title fans and the industry gave him, alongside Maestro, for his scale of work and his blending of Indian folk and classical music with Western orchestration."}
+        },
+        {
+          "@type": "Question",
+          "name": "How many National Awards has Ilaiyaraaja won?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Ilaiyaraaja has won five National Film Awards, including Best Music Direction for Sindhu Bhairavi (1985). He also received the Padma Bhushan in 2010 and the Padma Vibhushan in 2018."}
+        }
+      ]
+    }
+  ]
+}
+
+</script>
+
+    <script>
+        (function () {
+            var tabs = document.querySelectorAll(".platform-tab");
+            var panels = document.querySelectorAll(".platform-panel");
+            tabs.forEach(function (tab) {
+                tab.addEventListener("click", function () {
+                    var target = tab.getAttribute("data-tab");
+                    tabs.forEach(function (t) { t.classList.remove("active"); });
+                    panels.forEach(function (p) { p.classList.remove("active"); });
+                    tab.classList.add("active");
+                    document.querySelector('.platform-panel[data-panel="' + target + '"]').classList.add("active");
+                });
+            });
+        })();
+    </script>
+
+    <script>
+        (function () {
+            var grid = document.getElementById("relatedGrid");
+            if (!grid) return;
+            var cards = Array.prototype.slice.call(grid.children);
+            for (var i = cards.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var tmp = cards[i]; cards[i] = cards[j]; cards[j] = tmp;
+            }
+            cards.forEach(function (c) { grid.appendChild(c); });
+        })();
+    </script>
+
+</body>
+<div id="footer"></div>
+
+<script src="/js/include.js"></script>
+
+</html>
