@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <title>Mahesh Babu Top 100 Hits | PlaylistVerse</title>
+    <title>Mahesh Babu Top 100 Hits: Pokiri, Dookudu & Varanasi | PlaylistVerse</title>
 
     <meta name="description"
-        content="Mahesh Babu's top 100 Telugu hits — from Pokiri to Sarkaru Vaari Paata — curated by PlaylistVerse with his full career story.">
+        content="Mahesh Babu's top 10 Telugu hits, the Pokiri songs that defined an era, and what to expect from his upcoming Rajamouli film Varanasi — all in one playlist page.">
 
     <meta name="keywords"
-        content="Mahesh Babu songs, Mahesh Babu Top Hits, Mahesh Babu Complete Filmography Hits, Mahesh Babu Telugu songs, Mahesh Babu Pokiri Srimanthudu">
+        content="Mahesh Babu songs, Mahesh Babu top 10 hits, Mahesh Babu Telugu songs, Pokiri songs, Pokiri songs list, Mahesh Babu Varanasi, Varanasi movie, Mahesh Babu Spotify playlist">
 
-    <meta name="robots" content="index,follow">
+    <meta name="robots" content="index,follow,max-image-preview:large">
 
     <link rel="canonical" href="https://playlistverse.in/telugu/heroes/mahesh-babu-top-100-hits.html">
 
@@ -26,9 +26,9 @@
 
     <meta property="og:type" content="music.playlist">
 
-    <meta property="og:title" content="Mahesh Babu Top 100 Hits">
+    <meta property="og:title" content="Mahesh Babu Top 10 Hits: Pokiri, Dookudu & Varanasi">
 
-    <meta property="og:description" content="Mahesh Babu's top 100 Telugu hits — from Pokiri to Sarkaru Vaari Paata — curated by PlaylistVerse with his full career story.">
+    <meta property="og:description" content="Mahesh Babu's top 10 Telugu hits, the Pokiri songs that defined an era, and what to expect from his upcoming Rajamouli film Varanasi — all in one playlist page.">
 
     <meta property="og:url" content="https://playlistverse.in/telugu/heroes/mahesh-babu-top-100-hits.html">
 
@@ -36,9 +36,9 @@
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <meta name="twitter:title" content="Mahesh Babu Top 100 Hits">
+    <meta name="twitter:title" content="Mahesh Babu Top 10 Hits: Pokiri, Dookudu & Varanasi">
 
-    <meta name="twitter:description" content="Mahesh Babu's top 100 Telugu hits — from Pokiri to Sarkaru Vaari Paata.">
+    <meta name="twitter:description" content="Mahesh Babu's top 10 hits, the Pokiri songs, and the upcoming Varanasi — curated by PlaylistVerse.">
 
     <meta name="twitter:image" content="https://playlistverse.in/images/telugu/heroes/mahesh-babu.webp">
 
@@ -72,6 +72,106 @@
         }
         .faq-body h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
         .faq-body p { margin: 0; }
+
+        .platform-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: nowrap; }
+        .platform-tab {
+            flex: 1;
+            border: none;
+            cursor: pointer;
+            padding: 0.55rem 0.6rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.92rem;
+            text-align: center;
+            white-space: nowrap;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+        @media (max-width: 480px) {
+            .platform-tabs { gap: 0.3rem; }
+            .platform-tab { padding: 0.45rem 0.3rem; font-size: 0.68rem; border-radius: 8px; }
+        }
+        .platform-tab[data-tab="spotify"] { color: #1DB954; background: rgba(29,185,84,0.10); }
+        .platform-tab[data-tab="spotify"].active { color: #fff; background: #1DB954; }
+
+        .platform-tab[data-tab="ytmusic"] { color: #FF0000; background: rgba(255,0,0,0.08); }
+        .platform-tab[data-tab="ytmusic"].active { color: #fff; background: #FF0000; }
+
+        .platform-tab[data-tab="amazonmusic"] { color: #00A8E1; background: rgba(0,168,225,0.10); }
+        .platform-tab[data-tab="amazonmusic"].active { color: #fff; background: #00A8E1; }
+
+        .platform-panel { display: none; }
+        .platform-panel.active { display: block; }
+        .amazon-music-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            background: linear-gradient(90deg, rgba(0,168,225,0.08), rgba(0,168,225,0.02));
+            border: 1px solid rgba(0,168,225,0.25);
+        }
+        .amazon-music-card p { margin: 0; }
+        .amazon-music-card a.btn-link {
+            display: inline-block;
+            padding: 0.6rem 1.3rem;
+            border-radius: 8px;
+            background: #00A8E1;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .yt-music-card {
+            background: linear-gradient(90deg, rgba(255,0,0,0.08), rgba(255,0,0,0.02));
+            border: 1px solid rgba(255,0,0,0.25);
+        }
+        .yt-music-card a.btn-link.yt-btn { background: #FF0000; }
+        .yt-preview-label {
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin: 0.9rem 0 0.4rem;
+        }
+
+        .whatsapp-banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+            flex-wrap: nowrap;
+            padding: 1.1rem 1.4rem;
+            border-radius: 12px;
+            background: #25D366;
+            margin: 2.5rem 0;
+        }
+        .whatsapp-banner p {
+            margin: 0;
+            flex: 1;
+            min-width: 0;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.98rem;
+        }
+        .whatsapp-banner .wa-short { display: none; }
+        .whatsapp-banner a.btn-link {
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.55rem 1.2rem;
+            border-radius: 999px;
+            background: #fff;
+            color: #128C4A;
+            font-weight: 700;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        @media (max-width: 600px) {
+            .whatsapp-banner { padding: 0.8rem 0.9rem; gap: 0.6rem; }
+            .whatsapp-banner p { font-size: 0.85rem; }
+            .whatsapp-banner .wa-long { display: none; }
+            .whatsapp-banner .wa-short { display: inline; }
+            .whatsapp-banner a.btn-link { padding: 0.45rem 0.8rem; font-size: 0.8rem; }
+        }
     </style>
 
 </head>
@@ -86,56 +186,72 @@
             <a href="/" aria-label="Home">
                 <i class="bi bi-house-door-fill"></i>
             </a>
-            <span>›</span>
+            <span>&rsaquo;</span>
 
             <a href="../index.html">Telugu</a>
-            <span>›</span>
+            <span>&rsaquo;</span>
 
             <a href="index.html">Heroes</a>
-            <span>›</span>
+            <span>&rsaquo;</span>
 
             <span class="current">Mahesh Babu</span>
         </nav>
-        <!-- Artist Header with Custom Visual -->
+
         <div class="artist-header">
-            <!-- Drop your 3D enriched visual asset here -->
-            <img src="/images/telugu/heroes/mahesh-babu.webp" alt="Mahesh Babu Top Hits"
+            <img src="/images/telugu/heroes/mahesh-babu.webp" alt="Mahesh Babu Top 10 Hits"
                 class="artist-cover-image">
 
             <div class="artist-info">
-                <h1>Mahesh Babu</h1>
+                <h1>Mahesh Babu Top 100 Hits</h1>
                 <p>Superstar Mahesh Babu's music mirrors his effortless screen charisma, blending stylish urban beats
-                    with heartfelt family melodies and mass entertainer anthems. This collection brings together his
-                    chartbuster hits from Pokiri, Athadu and Sarileru Neekevvaru, along with romantic classics and
-                    high-energy chartbusters spanning his celebrated career. Whether you're vibing to his slick dance
-                    numbers or enjoying his soulful melodies, these playlists capture the effortless swag of one of
-                    Tollywood's most beloved superstars.
+                    with heartfelt family melodies and mass entertainer anthems. This page brings together his ten
+                    biggest songs, the full story of the "Pokiri" soundtrack, and a first look at what's next —
+                    S. S. Rajamouli's "Varanasi". Whether you're here for the slick dance numbers or the soulful
+                    melodies, these playlists capture the swag of one of Tollywood's most beloved superstars.
                 </p>
             </div>
         </div>
 
         <!-- PLAYLIST EMBEDS -->
         <section class="artist-playlists">
-            <h2>Top Playlists</h2>
+            <h2>Listen Now</h2>
 
-            <!-- Reusing your existing grid CSS for consistency -->
-            <div class="grid">
+            <div class="card">
+                <h3>🔥 Mahesh Babu Top Hits</h3>
 
-                <div class="card">
-                    <h3>🔥 Mahesh Babu Top 100 Hits</h3>
-                    <!-- Replace src with the specific embed link -->
-                    <iframe style="border-radius:12px"
+                <div class="platform-tabs" role="tablist">
+                    <button type="button" class="platform-tab active" data-tab="spotify">Spotify</button>
+                    <button type="button" class="platform-tab" data-tab="ytmusic">YouTube Music</button>
+                    <button type="button" class="platform-tab" data-tab="amazonmusic">Amazon Music</button>
+                </div>
+
+                <div class="platform-panel active" data-panel="spotify">
+                    <iframe style="border-radius:12px" title="Mahesh Babu Top Hits on Spotify"
                         src="https://open.spotify.com/embed/playlist/5E25SZB1eIuggr2dZbTBy4" width="100%" height="352"
                         frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
                 </div>
 
-                <!-- <div class="card">
-                    <h3>❤️ Romantic Melodies</h3>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3OvAW5ftw50pQeriBrhuKz" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div> -->
+                <div class="platform-panel" data-panel="ytmusic">
+                    <div class="amazon-music-card yt-music-card">
+                        <p>Prefer listening in the YouTube Music app? Tap below to open the full playlist there.</p>
+                        <a class="btn-link yt-btn" href="https://music.youtube.com/playlist?list=PLbCYO7N7FBBk" target="_blank" rel="noopener noreferrer">Open in YouTube Music</a>
+                    </div>
+                    <p class="yt-preview-label">Or preview it right here:</p>
+                    <iframe style="border-radius:12px;" title="Mahesh Babu Top Hits preview on YouTube"
+                        src="https://www.youtube.com/embed/videoseries?list=PLbCYO7N7FBBk"
+                        width="100%" height="352" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy"></iframe>
+                </div>
 
+                <div class="platform-panel" data-panel="amazonmusic">
+                    <div class="amazon-music-card">
+                        <p>Amazon Music doesn't support embedded playlist players, so this one opens directly in Amazon Music.</p>
+                        <a class="btn-link" href="https://music.amazon.in/user-playlists/f13d5babbc4842598ab6e93d844b919bi8n0" target="_blank" rel="noopener noreferrer">Open in Amazon Music</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -146,32 +262,47 @@
         </section>
 
         <section class="artist-tracklist">
-            <h2>Notable Films</h2>
+            <h2>Mahesh Babu Top 10 Songs</h2>
             <ul>
-                <li><strong>Pokiri</strong> (2006) — a genre-defining blockbuster and one of his most iconic performances</li>
-                <li><strong>Dookudu</strong> (2011) — a record-breaking hit critics called a "Telugu cinema festival"</li>
-                <li><strong>Srimanthudu</strong> (2015) — earned him his fifth Filmfare Award and eighth Nandi Award, the most by any individual</li>
-                <li><strong>Bharat Ane Nenu</strong> (2018) — a socially conscious hit about governance and youth empowerment</li>
-                <li><strong>Sarkaru Vaari Paata</strong> (2022) — one of his most recent major releases</li>
+                <li><strong>Dole Dole</strong> — Pokiri (2006), Mani Sharma; the swaggering anthem that opened the era</li>
+                <li><strong>Gala Gala</strong> — Pokiri (2006), Mani Sharma; a high-energy mass number from the same chartbusting album</li>
+                <li><strong>Chandamama</strong> — Athadu (2005), Mani Sharma; a breezy romantic favourite from the Trivikram thriller</li>
+                <li><strong>Guruvaram</strong> — Dookudu (2011), S. Thaman; a stylish party track that won awards for its singer and lyricist</li>
+                <li><strong>Jatha Kalise</strong> — Srimanthudu (2015), Devi Sri Prasad; a soft, heartfelt melody from his 2015 blockbuster</li>
+                <li><strong>Vachadayyo Saami</strong> — Bharat Ane Nenu (2018), Devi Sri Prasad; a booming, colourful set piece set in Rayalaseema</li>
+                <li><strong>Padara Padara</strong> — Maharshi (2019), Devi Sri Prasad; a motivational anthem sung by Shankar Mahadevan</li>
+                <li><strong>Mind Block</strong> — Sarileru Neekevvaru (2020), Devi Sri Prasad; a full-throttle dance number from his highest grosser</li>
+                <li><strong>Kalaavathi</strong> — Sarkaru Vaari Paata (2022), S. Thaman; the smooth romantic hit that dominated playlists in 2022</li>
+                <li><strong>Kurchi Madathapetti</strong> — Guntur Kaaram (2024), S. Thaman; a loud, rhythmic mass track from his most recent release</li>
             </ul>
         </section>
 
+        <section class="artist-bio">
+            <h2>Pokiri (2006): The Blockbuster and Its Songs</h2>
+            <p>Few films define Mahesh Babu's career like "Pokiri." Directed by Puri Jagannadh and released in April 2006, the action thriller turned him into a bona fide mass hero and went on to hold the record as the highest-grossing Telugu film of its time. It was later remade in Tamil as "Pokkiri," in Hindi, and in Kannada, which says plenty about how far its story travelled.</p>
+            <p>The music was just as big a part of the success. Mani Sharma's six-song soundtrack — "Devuda Devuda," "Dole Dole," "Gala Gala," "Ippatikinka," "Jagadame" and "Choododdu" — was a bestselling album that year. "Dole Dole" (Ranjith and Suchitra) and "Gala Gala" (Nihal) are the tracks most people still reach for first, while "Devuda Devuda" (Naveen) and "Jagadame" (Kunal Ganjawala) round out an album that mixes swagger, romance and heavy bass in equal measure.</p>
+        </section>
+
+        <section class="artist-bio">
+            <h2>Coming Next: Varanasi</h2>
+            <p>The biggest thing on Mahesh Babu's horizon is "Varanasi," his first film with S. S. Rajamouli, the director behind "RRR." The title and a teaser were unveiled at a grand event in Hyderabad in November 2025. Mahesh plays a character called Rudhra, with Priyanka Chopra Jonas and Prithviraj Sukumaran in key roles and M. M. Keeravani composing the music. Billed as a globe-spanning action adventure shot for IMAX, it marks his first release since "Guntur Kaaram" (2024).</p>
+            <p>"Varanasi" has been officially announced for a worldwide release on 7 April 2027, timed around Ugadi. Release dates for films of this scale can move, so check the makers' official announcements for the latest. We'll keep this page updated as songs from the film arrive.</p>
+        </section>
+
+        <div class="whatsapp-banner">
+            <p><i class="bi bi-whatsapp"></i> <span class="wa-long">Follow PlaylistVerse on WhatsApp for new playlist drops</span><span class="wa-short">Follow us on WhatsApp</span></p>
+            <a class="btn-link" href="https://whatsapp.com/channel/0029VaDkrvS6rsQqKtzeWH0n" target="_blank" rel="noopener noreferrer">Follow Channel</a>
+        </div>
+
         <section>
 
-            <h2>Why Listen to this Playlist?</h2>
+            <h2>Why Listen to This Playlist?</h2>
 
             <ul>
-
-                <li>100 handpicked songs</li>
-
-                <li>Stylish mass entertainer hits</li>
-
-                <li>Heartfelt family melodies</li>
-
-                <li>High quality Top Hits collection</li>
-
-                <li>Regularly updated</li>
-
+                <li>The ten songs fans return to most, from "Pokiri" to "Guntur Kaaram"</li>
+                <li>Stylish mass entertainer hits and heartfelt family melodies</li>
+                <li>Playable on Spotify, YouTube Music and Amazon Music</li>
+                <li>Regularly updated, including songs from "Varanasi" when they release</li>
             </ul>
 
         </section>
@@ -183,6 +314,18 @@
                     <div class="faq-body">
                         <h3>What was Mahesh Babu's breakthrough film?</h3>
                         <p>"Okkadu" (2003) marked his early breakthrough, and "Pokiri" (2006) became the genre-defining blockbuster most fans still consider his signature role.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>Who composed the songs of Pokiri?</h3>
+                        <p>Mani Sharma composed Pokiri's six-song soundtrack, which includes "Dole Dole," "Gala Gala," "Devuda Devuda," "Ippatikinka," "Jagadame" and "Choododdu." The film was directed by Puri Jagannadh.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-body">
+                        <h3>When does Mahesh Babu's Varanasi release?</h3>
+                        <p>S. S. Rajamouli's Varanasi has been officially announced for a worldwide release on 7 April 2027. As with any large film, dates can change, so check the makers' official channels for the latest.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -241,11 +384,10 @@
   "@graph": [
     {
       "@type": "MusicPlaylist",
-      "name": "Mahesh Babu Top 100 Hits",
-      "description": "Mahesh Babu's top 100 Telugu hits \u2014 from Pokiri to Sarkaru Vaari Paata, curated by PlaylistVerse.",
+      "name": "Mahesh Babu Top 10 Hits",
+      "description": "Mahesh Babu's top 10 hits, the Pokiri songs, and the upcoming Varanasi — curated by PlaylistVerse.",
       "url": "https://playlistverse.in/telugu/heroes/mahesh-babu-top-100-hits.html",
-      "image": "https://playlistverse.in/images/telugu/heroes/mahesh-babu.webp",
-      "numTracks": "100"
+      "image": "https://playlistverse.in/images/telugu/heroes/mahesh-babu.webp"
     },
     {
       "@type": "BreadcrumbList",
@@ -259,27 +401,33 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What was Mahesh Babu's breakthrough film?",
-          "acceptedAnswer": {"@type": "Answer", "text": "\"Okkadu\" (2003) marked his early breakthrough, and \"Pokiri\" (2006) became the genre-defining blockbuster most fans still consider his signature role."}
-        },
-        {
-          "@type": "Question",
-          "name": "How many Filmfare and Nandi Awards has Mahesh Babu won?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Five Filmfare Awards South and nine Nandi Awards \u2014 \"Srimanthudu\" (2015) alone brought him his fifth Filmfare and eighth Nandi, the most by any individual."}
-        },
-        {
-          "@type": "Question",
-          "name": "What charity does Mahesh Babu support?",
-          "acceptedAnswer": {"@type": "Answer", "text": "The Mahesh Babu Foundation, which he founded to fund life-saving congenital heart surgeries for children in need."}
-        }
+        {"@type": "Question", "name": "What was Mahesh Babu's breakthrough film?", "acceptedAnswer": {"@type": "Answer", "text": "\"Okkadu\" (2003) marked his early breakthrough, and \"Pokiri\" (2006) became the genre-defining blockbuster most fans still consider his signature role."}},
+        {"@type": "Question", "name": "Who composed the songs of Pokiri?", "acceptedAnswer": {"@type": "Answer", "text": "Mani Sharma composed Pokiri's six-song soundtrack, which includes \"Dole Dole,\" \"Gala Gala,\" \"Devuda Devuda,\" \"Ippatikinka,\" \"Jagadame\" and \"Choododdu.\" The film was directed by Puri Jagannadh."}},
+        {"@type": "Question", "name": "When does Mahesh Babu's Varanasi release?", "acceptedAnswer": {"@type": "Answer", "text": "S. S. Rajamouli's Varanasi has been officially announced for a worldwide release on 7 April 2027. As with any large film, dates can change, so check the makers' official channels for the latest."}},
+        {"@type": "Question", "name": "How many Filmfare and Nandi Awards has Mahesh Babu won?", "acceptedAnswer": {"@type": "Answer", "text": "Five Filmfare Awards South and nine Nandi Awards — \"Srimanthudu\" (2015) alone brought him his fifth Filmfare and eighth Nandi, the most by any individual."}},
+        {"@type": "Question", "name": "What charity does Mahesh Babu support?", "acceptedAnswer": {"@type": "Answer", "text": "The Mahesh Babu Foundation, which he founded to fund life-saving congenital heart surgeries for children in need."}}
       ]
     }
   ]
 }
 
 </script>
+
+    <script>
+        (function () {
+            var tabs = document.querySelectorAll(".platform-tab");
+            var panels = document.querySelectorAll(".platform-panel");
+            tabs.forEach(function (tab) {
+                tab.addEventListener("click", function () {
+                    var target = tab.getAttribute("data-tab");
+                    tabs.forEach(function (t) { t.classList.remove("active"); });
+                    panels.forEach(function (p) { p.classList.remove("active"); });
+                    tab.classList.add("active");
+                    document.querySelector('.platform-panel[data-panel="' + target + '"]').classList.add("active");
+                });
+            });
+        })();
+    </script>
 
     <script>
         (function () {
@@ -293,6 +441,7 @@
             cards.forEach(function (c) { grid.appendChild(c); });
         })();
     </script>
+
 </body>
 <div id="footer"></div>
 
